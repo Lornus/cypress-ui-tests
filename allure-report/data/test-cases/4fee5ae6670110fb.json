@@ -1,0 +1,119 @@
+{
+  "uid" : "4fee5ae6670110fb",
+  "name" : "Text above images displayed",
+  "fullName" : "Text above images displayed",
+  "historyId" : "1e5c5942cb01da94ea33a224a47e99e3",
+  "time" : {
+    "start" : 1626252726083,
+    "stop" : 1626252728578,
+    "duration" : 2495
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1626252726085,
+        "stop" : 1626252728542,
+        "duration" : 2457
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit (\"/\")",
+        "time" : {
+          "start" : 1626252726111,
+          "stop" : 1626252728540,
+          "duration" : 2429
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "get (\".home_text\")",
+      "time" : {
+        "start" : 1626252728548,
+        "stop" : 1626252728577,
+        "duration" : 29
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **<p.home_text>** to have text **See amazing views of planets on our site for free!** assert",
+      "time" : {
+        "start" : 1626252728577,
+        "stop" : 1626252728577,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "8e4b55bb6bd889f2",
+      "name" : "home.page.test.js.mp4",
+      "source" : "8e4b55bb6bd889f2.mp4",
+      "type" : "video/mp4",
+      "size" : 237210
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "All elements on the homepage displayed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4fee5ae6670110fb.json",
+  "parameterValues" : [ ]
+}

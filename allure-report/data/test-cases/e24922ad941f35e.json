@@ -1,0 +1,243 @@
+{
+  "uid" : "e24922ad941f35e",
+  "name" : "Main table elements displayed",
+  "fullName" : "Main table elements displayed",
+  "historyId" : "83799d85bfdc6c4f9fa0964b86f968b8",
+  "time" : {
+    "start" : 1625774378063,
+    "stop" : 1625774379987,
+    "duration" : 1924
+  },
+  "status" : "failed",
+  "statusMessage" : "this.getDataFromFile is not a function",
+  "statusTrace" : "TypeError: this.getDataFromFile is not a function\n    at HomePage.checkFromTableExceptionDisplayed (https://npplanets.herokuapp.com/__cypress/tests?p=cypress/tests/specs/home.page.test.js:181:119)\n    at Context.eval (https://npplanets.herokuapp.com/__cypress/tests?p=cypress/tests/specs/home.page.test.js:227:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "this.getDataFromFile is not a function",
+    "statusTrace" : "TypeError: this.getDataFromFile is not a function\n    at HomePage.checkFromTableExceptionDisplayed (https://npplanets.herokuapp.com/__cypress/tests?p=cypress/tests/specs/home.page.test.js:181:119)\n    at Context.eval (https://npplanets.herokuapp.com/__cypress/tests?p=cypress/tests/specs/home.page.test.js:227:21)",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1625774378063,
+        "stop" : 1625774378085,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "fixture (\"example\")",
+        "time" : {
+          "start" : 1625774378077,
+          "stop" : 1625774378084,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "visit (\"/\")",
+      "time" : {
+        "start" : 1625774378096,
+        "stop" : 1625774379937,
+        "duration" : 1841
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log (\"Races\")",
+      "time" : {
+        "start" : 1625774379937,
+        "stop" : 1625774379945,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\"ul>li\")",
+      "time" : {
+        "start" : 1625774379945,
+        "stop" : 1625774379969,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "invoke (\"text\")",
+      "time" : {
+        "start" : 1625774379969,
+        "stop" : 1625774379984,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "fixture (\"example\")",
+      "time" : {
+        "start" : 1625774379987,
+        "stop" : 1625774379987,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\"ul>li\")",
+      "time" : {
+        "start" : 1625774379988,
+        "stop" : 1625774380020,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **'[ <li>, 3 more... ]'** to have text **'&nbsp;&nbsp;Home   Users   Planets   About&nbsp;'** assert",
+      "time" : {
+        "start" : 1625774380020,
+        "stop" : 1625774380020,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\"a>li\")",
+      "time" : {
+        "start" : 1625774380020,
+        "stop" : 1625774380048,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **<li>** to be **visible** assert",
+      "time" : {
+        "start" : 1625774380048,
+        "stop" : 1625774380048,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **<li>** not to be **disabled** assert",
+      "time" : {
+        "start" : 1625774380048,
+        "stop" : 1625774380048,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "8e4b55bb6bd889f2",
+      "name" : "home.page.test.js.mp4",
+      "source" : "8e4b55bb6bd889f2.mp4",
+      "type" : "video/mp4",
+      "size" : 237210
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 12,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "All elements on page displayed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e24922ad941f35e.json",
+  "parameterValues" : [ ]
+}

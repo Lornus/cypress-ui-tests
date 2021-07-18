@@ -1,0 +1,213 @@
+{
+  "uid" : "f44c6c74af418a89",
+  "name" : "Getting all header rows of table with users`s planets",
+  "fullName" : "Getting all header rows of table with users`s planets",
+  "historyId" : "aa14e120d1cbb1274db254be9a592d26",
+  "time" : {
+    "start" : 1626247595798,
+    "stop" : 1626247602840,
+    "duration" : 7042
+  },
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 4000ms: Expected to find element: ``, but never found it. Queried from element: [ <th>, 2 more... ]",
+  "statusTrace" : "AssertionError: Timed out retrying after 4000ms: Expected to find element: ``, but never found it. Queried from element: [ <th>, 2 more... ]\n    at eval (https://npplanets.herokuapp.com/__cypress/tests?p=cypress/tests/specs/users.page.test.js:257:64)\n    at Context.eval (https://npplanets.herokuapp.com/__cypress/tests?p=cypress/tests/specs/users.page.test.js:256:19)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Timed out retrying after 4000ms: Expected to find element: ``, but never found it. Queried from element: [ <th>, 2 more... ]",
+    "statusTrace" : "AssertionError: Timed out retrying after 4000ms: Expected to find element: ``, but never found it. Queried from element: [ <th>, 2 more... ]\n    at eval (https://npplanets.herokuapp.com/__cypress/tests?p=cypress/tests/specs/users.page.test.js:257:64)\n    at Context.eval (https://npplanets.herokuapp.com/__cypress/tests?p=cypress/tests/specs/users.page.test.js:256:19)",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1626247595803,
+        "stop" : 1626247598555,
+        "duration" : 2752
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "fixture (\"users.page.fixture\")",
+        "time" : {
+          "start" : 1626247595908,
+          "stop" : 1626247596027,
+          "duration" : 119
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"data\")",
+        "time" : {
+          "start" : 1626247596027,
+          "stop" : 1626247596031,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "visit (\"/\")",
+        "time" : {
+          "start" : 1626247596031,
+          "stop" : 1626247597513,
+          "duration" : 1482
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "get (\"ul>li:nth-of-type(2)\")",
+        "time" : {
+          "start" : 1626247597513,
+          "stop" : 1626247597626,
+          "duration" : 113
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "click",
+        "time" : {
+          "start" : 1626247597626,
+          "stop" : 1626247598158,
+          "duration" : 532
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "--waiting for new page to load-- page load",
+        "time" : {
+          "start" : 1626247598156,
+          "stop" : 1626247598156,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "get (\"tr>th\")",
+      "time" : {
+        "start" : 1626247598599,
+        "stop" : 1626247598712,
+        "duration" : 113
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\"tr>th\")",
+      "time" : {
+        "start" : 1626247598734,
+        "stop" : 1626247598779,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "eq",
+      "time" : {
+        "start" : 1626247598779,
+        "stop" : 1626247602839,
+        "duration" : 4060
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "46d6894d64d16a1d",
+      "name" : "users.page.test.js.mp4",
+      "source" : "46d6894d64d16a1d.mp4",
+      "type" : "video/mp4",
+      "size" : 328628
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "All elements on the users page displayed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f44c6c74af418a89.json",
+  "parameterValues" : [ ]
+}

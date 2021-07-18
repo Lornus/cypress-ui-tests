@@ -1,0 +1,86 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Cannot read property 'email' of undefined",
+      "children" : [ {
+        "name" : "\"before all\" hook: Getting data from fixture file  for \"Main table elements displayed\"",
+        "uid" : "d579673245482108",
+        "parentUid" : "cb0eb6e1d8d3c8a3dafc91243bc1a187",
+        "status" : "failed",
+        "time" : {
+          "start" : 1625764192259,
+          "stop" : 1625764192260,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cb0eb6e1d8d3c8a3dafc91243bc1a187"
+    }, {
+      "name" : "Cannot read property 'length' of undefined",
+      "children" : [ {
+        "name" : "\"before all\" hook for \"\"Users\" button \"",
+        "uid" : "a9f39b1e84e5519f",
+        "parentUid" : "ee4745155dad17ab9df3b611b39096ef",
+        "status" : "failed",
+        "time" : {
+          "start" : 1625866976668,
+          "stop" : 1625866976670,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ee4745155dad17ab9df3b611b39096ef"
+    }, {
+      "name" : "Cypress command timeout of `4000ms` exceeded.",
+      "children" : [ {
+        "name" : "Main table elements displayed",
+        "uid" : "bc299eca263bea7c",
+        "parentUid" : "056a949133b5647271575ce8bcbcf0d6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1626440141191,
+          "stop" : 1626440145784,
+          "duration" : 4593
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "All each page element are displayed || main page",
+        "uid" : "8b75bdf461bdfabc",
+        "parentUid" : "056a949133b5647271575ce8bcbcf0d6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1626440145791,
+          "stop" : 1626440150416,
+          "duration" : 4625
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "All each page element are displayed || users page",
+        "uid" : "5136d957f90922b2",
+        "parentUid" : "056a949133b5647271575ce8bcbcf0d6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1626440167829,
+          "stop" : 1626440172419,
+          "duration" : 4590
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "056a949133b5647271575ce8bcbcf0d6"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

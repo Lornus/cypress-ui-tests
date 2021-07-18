@@ -1,0 +1,342 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "\"before all\" hook: Getting data from fixture file  for \"Main table elements displayed\"",
+    "uid" : "d579673245482108",
+    "parentUid" : "98d3104e051c652961429bf95fa0b5d6",
+    "status" : "failed",
+    "time" : {
+      "start" : 1625764192259,
+      "stop" : 1625764192260,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "All elements on page displayed",
+    "children" : [ {
+      "name" : "Main table elements displayed",
+      "uid" : "b072f7376988bd51",
+      "parentUid" : "fc3b2e56e73b8e00fff47d83c580633f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625840116094,
+        "stop" : 1625840117573,
+        "duration" : 1479
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Non table elements displayed",
+      "uid" : "bed2942971eb2067",
+      "parentUid" : "fc3b2e56e73b8e00fff47d83c580633f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625840117620,
+        "stop" : 1625840118048,
+        "duration" : 428
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "fc3b2e56e73b8e00fff47d83c580633f"
+  }, {
+    "name" : "\"before all\" hook for \"\"Users\" button \"",
+    "uid" : "a9f39b1e84e5519f",
+    "parentUid" : "98d3104e051c652961429bf95fa0b5d6",
+    "status" : "failed",
+    "time" : {
+      "start" : 1625866976668,
+      "stop" : 1625866976670,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "All elements on the users page displayed",
+    "children" : [ {
+      "name" : "lllll",
+      "uid" : "6b3212f31118c5ff",
+      "parentUid" : "499c5ca42942d4bf13f0f7c7ff467e19",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1625868083975,
+        "stop" : 1625868083978,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "\"Users\" button ",
+      "uid" : "56886e63b8c66f31",
+      "parentUid" : "499c5ca42942d4bf13f0f7c7ff467e19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625868121982,
+        "stop" : 1625868123658,
+        "duration" : 1676
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Unnamed",
+      "uid" : "64ea1214f0ae9197",
+      "parentUid" : "499c5ca42942d4bf13f0f7c7ff467e19",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1625868984446,
+        "stop" : 1625868984446,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "User full name displays with",
+      "uid" : "9666216cd3f8d41c",
+      "parentUid" : "499c5ca42942d4bf13f0f7c7ff467e19",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1626121680499,
+        "stop" : 1626121680500,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Login displays ",
+      "uid" : "2d9317ec4402c45c",
+      "parentUid" : "499c5ca42942d4bf13f0f7c7ff467e19",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1626122424477,
+        "stop" : 1626122424479,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "All each page element are displayed",
+      "uid" : "f93e3502d29078b9",
+      "parentUid" : "499c5ca42942d4bf13f0f7c7ff467e19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626251755788,
+        "stop" : 1626251756823,
+        "duration" : 1035
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "All each page element are displayed (users page)",
+      "uid" : "9e7a21681517fa92",
+      "parentUid" : "499c5ca42942d4bf13f0f7c7ff467e19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626252563730,
+        "stop" : 1626252566093,
+        "duration" : 2363
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "\"Users\"  button displayed correctly",
+      "uid" : "3762b748fcd07e6",
+      "parentUid" : "499c5ca42942d4bf13f0f7c7ff467e19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440164119,
+        "stop" : 1626440164201,
+        "duration" : 82
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Users table displays correctly",
+      "uid" : "d175bc160b2272fd",
+      "parentUid" : "499c5ca42942d4bf13f0f7c7ff467e19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440164245,
+        "stop" : 1626440164290,
+        "duration" : 45
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Users info links work",
+      "uid" : "81bc048bd50dee0",
+      "parentUid" : "499c5ca42942d4bf13f0f7c7ff467e19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440164295,
+        "stop" : 1626440165573,
+        "duration" : 1278
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "User full name displays with users planets",
+      "uid" : "90d0954c1629c18",
+      "parentUid" : "499c5ca42942d4bf13f0f7c7ff467e19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440165580,
+        "stop" : 1626440166656,
+        "duration" : 1076
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Login displays in the info when a user was created",
+      "uid" : "22465e6719f851b",
+      "parentUid" : "499c5ca42942d4bf13f0f7c7ff467e19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440166661,
+        "stop" : 1626440167696,
+        "duration" : 1035
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Getting all header rows of table with users`s planets",
+      "uid" : "7171c2edd96e6237",
+      "parentUid" : "499c5ca42942d4bf13f0f7c7ff467e19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440167701,
+        "stop" : 1626440167808,
+        "duration" : 107
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "All each page element are displayed || users page",
+      "uid" : "5136d957f90922b2",
+      "parentUid" : "499c5ca42942d4bf13f0f7c7ff467e19",
+      "status" : "failed",
+      "time" : {
+        "start" : 1626440167829,
+        "stop" : 1626440172419,
+        "duration" : 4590
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "499c5ca42942d4bf13f0f7c7ff467e19"
+  }, {
+    "name" : "All elements on the homepage displayed",
+    "children" : [ {
+      "name" : "Non table elements displayed",
+      "uid" : "f9e6ded69dea732b",
+      "parentUid" : "85b592cd9ef0472aae58947c63baafcb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626251744589,
+        "stop" : 1626251745685,
+        "duration" : 1096
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Unnamed",
+      "uid" : "3032f951c8943dd1",
+      "parentUid" : "85b592cd9ef0472aae58947c63baafcb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626252107570,
+        "stop" : 1626252108646,
+        "duration" : 1076
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "All each page element are displayed (main page)",
+      "uid" : "76044c0258fc403c",
+      "parentUid" : "85b592cd9ef0472aae58947c63baafcb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626252540548,
+        "stop" : 1626252541469,
+        "duration" : 921
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Main table elements displayed",
+      "uid" : "bc299eca263bea7c",
+      "parentUid" : "85b592cd9ef0472aae58947c63baafcb",
+      "status" : "failed",
+      "time" : {
+        "start" : 1626440141191,
+        "stop" : 1626440145784,
+        "duration" : 4593
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "All each page element are displayed || main page",
+      "uid" : "8b75bdf461bdfabc",
+      "parentUid" : "85b592cd9ef0472aae58947c63baafcb",
+      "status" : "failed",
+      "time" : {
+        "start" : 1626440145791,
+        "stop" : 1626440150416,
+        "duration" : 4625
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Home page images displayed",
+      "uid" : "84af162efda0c412",
+      "parentUid" : "85b592cd9ef0472aae58947c63baafcb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440150420,
+        "stop" : 1626440150523,
+        "duration" : 103
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Text above images displayed",
+      "uid" : "804c6dbeae690707",
+      "parentUid" : "85b592cd9ef0472aae58947c63baafcb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440150532,
+        "stop" : 1626440150575,
+        "duration" : 43
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "85b592cd9ef0472aae58947c63baafcb"
+  } ]
+}

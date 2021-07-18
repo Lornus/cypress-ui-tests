@@ -1,0 +1,856 @@
+{
+  "uid" : "90d0954c1629c18",
+  "name" : "User full name displays with users planets",
+  "fullName" : "User full name displays with users planets",
+  "historyId" : "b7c75107075090812212ca4a2a1f5a92",
+  "time" : {
+    "start" : 1626440165580,
+    "stop" : 1626440166656,
+    "duration" : 1076
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "visit (\"/users\")",
+      "time" : {
+        "start" : 1626440161469,
+        "stop" : 1626440164117,
+        "duration" : 2648
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1626440165582,
+        "stop" : 1626440165660,
+        "duration" : 78
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "fixture (\"users.page.fixture\")",
+        "time" : {
+          "start" : 1626440165659,
+          "stop" : 1626440165659,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"data\")",
+        "time" : {
+          "start" : 1626440165659,
+          "stop" : 1626440165659,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "contains (\"Admin1\")",
+      "time" : {
+        "start" : 1626440165662,
+        "stop" : 1626440165668,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "click",
+      "time" : {
+        "start" : 1626440165668,
+        "stop" : 1626440165787,
+        "duration" : 119
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "--waiting for new page to load-- page load",
+      "time" : {
+        "start" : 1626440165786,
+        "stop" : 1626440165786,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\":nth-child(6)\")",
+      "time" : {
+        "start" : 1626440165787,
+        "stop" : 1626440166013,
+        "duration" : 226
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : ":nth-child(6) get",
+      "time" : {
+        "start" : 1626440166013,
+        "stop" : 1626440166013,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **<p>** to have text **Admin1** assert",
+      "time" : {
+        "start" : 1626440166013,
+        "stop" : 1626440166013,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "go (\"back\")",
+      "time" : {
+        "start" : 1626440166013,
+        "stop" : 1626440166176,
+        "duration" : 163
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "https://npplanets.herokuapp.com/users new url",
+      "time" : {
+        "start" : 1626440166175,
+        "stop" : 1626440166175,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "contains (\"trueuser\")",
+      "time" : {
+        "start" : 1626440166176,
+        "stop" : 1626440166182,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "click",
+      "time" : {
+        "start" : 1626440166182,
+        "stop" : 1626440166268,
+        "duration" : 86
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "--waiting for new page to load-- page load",
+      "time" : {
+        "start" : 1626440166268,
+        "stop" : 1626440166268,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\":nth-child(6)\")",
+      "time" : {
+        "start" : 1626440166268,
+        "stop" : 1626440166490,
+        "duration" : 222
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : ":nth-child(6) get",
+      "time" : {
+        "start" : 1626440166490,
+        "stop" : 1626440166490,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **<p>** to have text **trueuser** assert",
+      "time" : {
+        "start" : 1626440166490,
+        "stop" : 1626440166490,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "go (\"back\")",
+      "time" : {
+        "start" : 1626440166490,
+        "stop" : 1626440166655,
+        "duration" : 165
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "https://npplanets.herokuapp.com/users new url",
+      "time" : {
+        "start" : 1626440166655,
+        "stop" : 1626440166655,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "46d6894d64d16a1d",
+      "name" : "users.page.test.js.mp4",
+      "source" : "46d6894d64d16a1d.mp4",
+      "type" : "video/mp4",
+      "size" : 328628
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 19,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "All elements on the users page displayed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "bfd531950d045662",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626439862255,
+        "stop" : 1626439863245,
+        "duration" : 990
+      }
+    }, {
+      "uid" : "98233be604eb3fda",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626439839241,
+        "stop" : 1626439840364,
+        "duration" : 1123
+      }
+    }, {
+      "uid" : "c276a9175e209e08",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626439832828,
+        "stop" : 1626439833923,
+        "duration" : 1095
+      }
+    }, {
+      "uid" : "922ee23793832ff9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626439826590,
+        "stop" : 1626439827656,
+        "duration" : 1066
+      }
+    }, {
+      "uid" : "6983b14920743f68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626439819798,
+        "stop" : 1626439821139,
+        "duration" : 1341
+      }
+    }, {
+      "uid" : "e7e61e2f592c3fdc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626439812622,
+        "stop" : 1626439813652,
+        "duration" : 1030
+      }
+    }, {
+      "uid" : "2c4def8229170c97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626439805838,
+        "stop" : 1626439806965,
+        "duration" : 1127
+      }
+    }, {
+      "uid" : "3bb79815bd958b19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626439774544,
+        "stop" : 1626439775901,
+        "duration" : 1357
+      }
+    }, {
+      "uid" : "c4806d5ba4da6194",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626437319784,
+        "stop" : 1626437320865,
+        "duration" : 1081
+      }
+    }, {
+      "uid" : "9faef044f791d1a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626437274595,
+        "stop" : 1626437275590,
+        "duration" : 995
+      }
+    }, {
+      "uid" : "a4b0358592d93b30",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626437255231,
+        "stop" : 1626437256266,
+        "duration" : 1035
+      }
+    }, {
+      "uid" : "abda5e5a82916777",
+      "status" : "failed",
+      "statusDetails" : "Cannot read property 'userName1' of undefined",
+      "time" : {
+        "start" : 1626437204936,
+        "stop" : 1626437205253,
+        "duration" : 317
+      }
+    }, {
+      "uid" : "c534753ca20e1c27",
+      "status" : "failed",
+      "statusDetails" : "Cannot read property 'userName1' of undefined",
+      "time" : {
+        "start" : 1626437124787,
+        "stop" : 1626437124822,
+        "duration" : 35
+      }
+    }, {
+      "uid" : "e493d4e92de2b39e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626286234508,
+        "stop" : 1626286241153,
+        "duration" : 6645
+      }
+    }, {
+      "uid" : "939928edb71cb4c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626257778316,
+        "stop" : 1626257780319,
+        "duration" : 2003
+      }
+    }, {
+      "uid" : "f958b0321f9dfc93",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626257574579,
+        "stop" : 1626257579583,
+        "duration" : 5004
+      }
+    }, {
+      "uid" : "8913a7175abbdf81",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626253908085,
+        "stop" : 1626253909663,
+        "duration" : 1578
+      }
+    }, {
+      "uid" : "33658af49457d577",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626253830278,
+        "stop" : 1626253832073,
+        "duration" : 1795
+      }
+    }, {
+      "uid" : "bf4b97a6b106f3fb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626252554006,
+        "stop" : 1626252557748,
+        "duration" : 3742
+      }
+    }, {
+      "uid" : "d4866f7e84b8fb97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626252520584,
+        "stop" : 1626252522510,
+        "duration" : 1926
+      }
+    }, {
+      "uid" : "8de65b72a6e47620",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626252235931,
+        "stop" : 1626252239172,
+        "duration" : 3241
+      }
+    }, {
+      "uid" : "efeeffa5b0a188cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626252113115,
+        "stop" : 1626252116556,
+        "duration" : 3441
+      }
+    }, {
+      "uid" : "e006a9f1632464ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626251749470,
+        "stop" : 1626251751556,
+        "duration" : 2086
+      }
+    }, {
+      "uid" : "c9d0c760f2694904",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626251533073,
+        "stop" : 1626251534925,
+        "duration" : 1852
+      }
+    }, {
+      "uid" : "7dc6730d0ba6298f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626251305322,
+        "stop" : 1626251307332,
+        "duration" : 2010
+      }
+    }, {
+      "uid" : "c6daf479811283b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626251191895,
+        "stop" : 1626251193726,
+        "duration" : 1831
+      }
+    }, {
+      "uid" : "24b700b000648fb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626251049778,
+        "stop" : 1626251051392,
+        "duration" : 1614
+      }
+    }, {
+      "uid" : "90603704703ebaed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626250988355,
+        "stop" : 1626250990049,
+        "duration" : 1694
+      }
+    }, {
+      "uid" : "13599f6d1331001e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626250881678,
+        "stop" : 1626250884177,
+        "duration" : 2499
+      }
+    }, {
+      "uid" : "ad1cffbb3811190",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626250536164,
+        "stop" : 1626250538363,
+        "duration" : 2199
+      }
+    }, {
+      "uid" : "64fec71f47558220",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626250507806,
+        "stop" : 1626250509710,
+        "duration" : 1904
+      }
+    }, {
+      "uid" : "df28a8073ef2b535",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626250456788,
+        "stop" : 1626250458593,
+        "duration" : 1805
+      }
+    }, {
+      "uid" : "2711e010615ff51",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626250345721,
+        "stop" : 1626250347357,
+        "duration" : 1636
+      }
+    }, {
+      "uid" : "40fbbf7dc2951b53",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: ``, but never found it.",
+      "time" : {
+        "start" : 1626250327509,
+        "stop" : 1626250333441,
+        "duration" : 5932
+      }
+    }, {
+      "uid" : "6db843b7db6d27ac",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.",
+      "time" : {
+        "start" : 1626250213000,
+        "stop" : 1626250217944,
+        "duration" : 4944
+      }
+    }, {
+      "uid" : "ecf6cf17ca4b162c",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.",
+      "time" : {
+        "start" : 1626250178172,
+        "stop" : 1626250183337,
+        "duration" : 5165
+      }
+    }, {
+      "uid" : "dc4658622f53f206",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `:nth-child(3) > :nth-child(2) > a`, but never found it.",
+      "time" : {
+        "start" : 1626250086255,
+        "stop" : 1626250091243,
+        "duration" : 4988
+      }
+    }, {
+      "uid" : "ec684be5bb419608",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: ``, but never found it.",
+      "time" : {
+        "start" : 1626250044478,
+        "stop" : 1626250049744,
+        "duration" : 5266
+      }
+    }, {
+      "uid" : "1551e4cecd9c4428",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.",
+      "time" : {
+        "start" : 1626249952302,
+        "stop" : 1626249957264,
+        "duration" : 4962
+      }
+    }, {
+      "uid" : "64ffe592c79fe472",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.",
+      "time" : {
+        "start" : 1626249934364,
+        "stop" : 1626249939342,
+        "duration" : 4978
+      }
+    }, {
+      "uid" : "48bfba8b784f7cd9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626249589646,
+        "stop" : 1626249591486,
+        "duration" : 1840
+      }
+    }, {
+      "uid" : "f516b8230e827bbe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626124073316,
+        "stop" : 1626124074806,
+        "duration" : 1490
+      }
+    }, {
+      "uid" : "a8e7cd119392b829",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626123691854,
+        "stop" : 1626123693207,
+        "duration" : 1353
+      }
+    }, {
+      "uid" : "21816325b950fd4d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626123670209,
+        "stop" : 1626123671249,
+        "duration" : 1040
+      }
+    }, {
+      "uid" : "8c6d669ecc09ece4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626123550481,
+        "stop" : 1626123551509,
+        "duration" : 1028
+      }
+    }, {
+      "uid" : "849209e08411a43",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626123510547,
+        "stop" : 1626123511557,
+        "duration" : 1010
+      }
+    }, {
+      "uid" : "da6ac19de1f38cd4",
+      "status" : "failed",
+      "statusDetails" : "page is not defined",
+      "time" : {
+        "start" : 1626123474427,
+        "stop" : 1626123474466,
+        "duration" : 39
+      }
+    }, {
+      "uid" : "5ccc6d782094b8c6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626123033541,
+        "stop" : 1626123034608,
+        "duration" : 1067
+      }
+    }, {
+      "uid" : "6f35f29c69e45612",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626122972518,
+        "stop" : 1626122973459,
+        "duration" : 941
+      }
+    }, {
+      "uid" : "21583a25f4fcec1e",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: expected '<p>' to have text 'admin', but the text was 'Admin1'",
+      "time" : {
+        "start" : 1626122930720,
+        "stop" : 1626122935069,
+        "duration" : 4349
+      }
+    }, {
+      "uid" : "db9b971da38f2e2c",
+      "status" : "failed",
+      "statusDetails" : "`cy.contains()` can only accept a string, number or regular expression.",
+      "time" : {
+        "start" : 1626122827100,
+        "stop" : 1626122827148,
+        "duration" : 48
+      }
+    }, {
+      "uid" : "15f390771e785271",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626122744747,
+        "stop" : 1626122745780,
+        "duration" : 1033
+      }
+    }, {
+      "uid" : "77c61502b8e4b3b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626122423399,
+        "stop" : 1626122424472,
+        "duration" : 1073
+      }
+    }, {
+      "uid" : "e0cb25d05d47384d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626122262388,
+        "stop" : 1626122263462,
+        "duration" : 1074
+      }
+    }, {
+      "uid" : "1c8b6846631ba6a0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626122229277,
+        "stop" : 1626122230378,
+        "duration" : 1101
+      }
+    }, {
+      "uid" : "a3f92fbeee9e5f6b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626122129805,
+        "stop" : 1626122130815,
+        "duration" : 1010
+      }
+    }, {
+      "uid" : "a11536b2cbb74abb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626122010771,
+        "stop" : 1626122011784,
+        "duration" : 1013
+      }
+    }, {
+      "uid" : "13c9784508cfae6d",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: expected '<p>' to have text 'Admin1', but the text was '(admin) Wed Feb 24 2021 19:12:03 GMT+0000 (Coordinated Universal Time)'",
+      "time" : {
+        "start" : 1626121895086,
+        "stop" : 1626121899487,
+        "duration" : 4401
+      }
+    }, {
+      "uid" : "451c9bda85a21615",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626121798050,
+        "stop" : 1626121799742,
+        "duration" : 1692
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "90d0954c1629c18.json",
+  "parameterValues" : [ ]
+}

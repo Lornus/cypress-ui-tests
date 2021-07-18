@@ -1,0 +1,251 @@
+[ {
+  "uid" : "d579673245482108",
+  "name" : "\"before all\" hook: Getting data from fixture file  for \"Main table elements displayed\"",
+  "time" : {
+    "start" : 1625764192259,
+    "stop" : 1625764192260,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "6b3212f31118c5ff",
+  "name" : "lllll",
+  "time" : {
+    "start" : 1625868083975,
+    "stop" : 1625868083978,
+    "duration" : 3
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "56886e63b8c66f31",
+  "name" : "\"Users\" button ",
+  "time" : {
+    "start" : 1625868121982,
+    "stop" : 1625868123658,
+    "duration" : 1676
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3032f951c8943dd1",
+  "name" : "Unnamed",
+  "time" : {
+    "start" : 1626252107570,
+    "stop" : 1626252108646,
+    "duration" : 1076
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8b75bdf461bdfabc",
+  "name" : "All each page element are displayed || main page",
+  "time" : {
+    "start" : 1626440145791,
+    "stop" : 1626440150416,
+    "duration" : 4625
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "81bc048bd50dee0",
+  "name" : "Users info links work",
+  "time" : {
+    "start" : 1626440164295,
+    "stop" : 1626440165573,
+    "duration" : 1278
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc299eca263bea7c",
+  "name" : "Main table elements displayed",
+  "time" : {
+    "start" : 1626440141191,
+    "stop" : 1626440145784,
+    "duration" : 4593
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a9f39b1e84e5519f",
+  "name" : "\"before all\" hook for \"\"Users\" button \"",
+  "time" : {
+    "start" : 1625866976668,
+    "stop" : 1625866976670,
+    "duration" : 2
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "804c6dbeae690707",
+  "name" : "Text above images displayed",
+  "time" : {
+    "start" : 1626440150532,
+    "stop" : 1626440150575,
+    "duration" : 43
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22465e6719f851b",
+  "name" : "Login displays in the info when a user was created",
+  "time" : {
+    "start" : 1626440166661,
+    "stop" : 1626440167696,
+    "duration" : 1035
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d175bc160b2272fd",
+  "name" : "Users table displays correctly",
+  "time" : {
+    "start" : 1626440164245,
+    "stop" : 1626440164290,
+    "duration" : 45
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d9317ec4402c45c",
+  "name" : "Login displays ",
+  "time" : {
+    "start" : 1626122424477,
+    "stop" : 1626122424479,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "90d0954c1629c18",
+  "name" : "User full name displays with users planets",
+  "time" : {
+    "start" : 1626440165580,
+    "stop" : 1626440166656,
+    "duration" : 1076
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bed2942971eb2067",
+  "name" : "Non table elements displayed",
+  "time" : {
+    "start" : 1625840117620,
+    "stop" : 1625840118048,
+    "duration" : 428
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3762b748fcd07e6",
+  "name" : "\"Users\"  button displayed correctly",
+  "time" : {
+    "start" : 1626440164119,
+    "stop" : 1626440164201,
+    "duration" : 82
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e7a21681517fa92",
+  "name" : "All each page element are displayed (users page)",
+  "time" : {
+    "start" : 1626252563730,
+    "stop" : 1626252566093,
+    "duration" : 2363
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f93e3502d29078b9",
+  "name" : "All each page element are displayed",
+  "time" : {
+    "start" : 1626251755788,
+    "stop" : 1626251756823,
+    "duration" : 1035
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f9e6ded69dea732b",
+  "name" : "Non table elements displayed",
+  "time" : {
+    "start" : 1626251744589,
+    "stop" : 1626251745685,
+    "duration" : 1096
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "64ea1214f0ae9197",
+  "name" : "Unnamed",
+  "time" : {
+    "start" : 1625868984446,
+    "stop" : 1625868984446,
+    "duration" : 0
+  },
+  "status" : "unknown",
+  "severity" : "normal"
+}, {
+  "uid" : "76044c0258fc403c",
+  "name" : "All each page element are displayed (main page)",
+  "time" : {
+    "start" : 1626252540548,
+    "stop" : 1626252541469,
+    "duration" : 921
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9666216cd3f8d41c",
+  "name" : "User full name displays with",
+  "time" : {
+    "start" : 1626121680499,
+    "stop" : 1626121680500,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "7171c2edd96e6237",
+  "name" : "Getting all header rows of table with users`s planets",
+  "time" : {
+    "start" : 1626440167701,
+    "stop" : 1626440167808,
+    "duration" : 107
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5136d957f90922b2",
+  "name" : "All each page element are displayed || users page",
+  "time" : {
+    "start" : 1626440167829,
+    "stop" : 1626440172419,
+    "duration" : 4590
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "84af162efda0c412",
+  "name" : "Home page images displayed",
+  "time" : {
+    "start" : 1626440150420,
+    "stop" : 1626440150523,
+    "duration" : 103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b072f7376988bd51",
+  "name" : "Main table elements displayed",
+  "time" : {
+    "start" : 1625840116094,
+    "stop" : 1625840117573,
+    "duration" : 1479
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

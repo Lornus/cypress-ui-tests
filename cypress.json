@@ -1,0 +1,9 @@
+{
+  "baseUrl": "https://npplanets.herokuapp.com/",
+  "projectId": "5onrrb",
+  "viewportHeight": 1100,
+  "viewportWidth": 1000,
+  "integrationFolder":"cypress/tests/specs"
+
+}
+

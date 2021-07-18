@@ -1,0 +1,485 @@
+{
+  "0c904e03d8c8f8b9fed886b095a57665" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f9e6ded69dea732b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626251744589,
+        "stop" : 1626251745685,
+        "duration" : 1096
+      }
+    } ]
+  },
+  "f86db55a30d1d84a835f7e17f2c03ac1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "76044c0258fc403c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626252540548,
+        "stop" : 1626252541469,
+        "duration" : 921
+      }
+    } ]
+  },
+  "35f21c9920bac9c66f88edcb83a10a96" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 1,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "64ea1214f0ae9197",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1625868984446,
+        "stop" : 1625868984446,
+        "duration" : 0
+      }
+    } ]
+  },
+  "b7c75107075090812212ca4a2a1f5a92" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "90d0954c1629c18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440165580,
+        "stop" : 1626440166656,
+        "duration" : 1076
+      }
+    } ]
+  },
+  "4acb6974c36975cc0d020604c846cd54" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9666216cd3f8d41c",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1626121680499,
+        "stop" : 1626121680500,
+        "duration" : 1
+      }
+    } ]
+  },
+  "205cdfa877f2ef8a41250cb88b2edadd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "22465e6719f851b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440166661,
+        "stop" : 1626440167696,
+        "duration" : 1035
+      }
+    } ]
+  },
+  "8c68a5a8d9b1567921fd965cde10cb8c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a9f39b1e84e5519f",
+      "status" : "failed",
+      "statusDetails" : "Cannot read property 'length' of undefined",
+      "time" : {
+        "start" : 1625866976668,
+        "stop" : 1625866976670,
+        "duration" : 2
+      }
+    } ]
+  },
+  "48914dc57e9c8d14371db25948596de4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "56886e63b8c66f31",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625868121982,
+        "stop" : 1625868123658,
+        "duration" : 1676
+      }
+    } ]
+  },
+  "b7c10fa77c7603edc2f35f71716ad040" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3032f951c8943dd1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626252107570,
+        "stop" : 1626252108646,
+        "duration" : 1076
+      }
+    } ]
+  },
+  "fff2f40202fb031f37f436854362faa4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "81bc048bd50dee0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440164295,
+        "stop" : 1626440165573,
+        "duration" : 1278
+      }
+    } ]
+  },
+  "6cc5990532d2a700f09d8c88483bdf62" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bed2942971eb2067",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625840117620,
+        "stop" : 1625840118048,
+        "duration" : 428
+      }
+    } ]
+  },
+  "16dc1780f658313e6dc48cb3e56d329d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5136d957f90922b2",
+      "status" : "failed",
+      "statusDetails" : "Cypress command timeout of `4000ms` exceeded.",
+      "time" : {
+        "start" : 1626440167829,
+        "stop" : 1626440172419,
+        "duration" : 4590
+      }
+    } ]
+  },
+  "8b5958874fadf58b02112697187d4e46" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "84af162efda0c412",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440150420,
+        "stop" : 1626440150523,
+        "duration" : 103
+      }
+    } ]
+  },
+  "d3415cbcf6dcdecdde230c51322f8926" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9e7a21681517fa92",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626252563730,
+        "stop" : 1626252566093,
+        "duration" : 2363
+      }
+    } ]
+  },
+  "2da6bf377e7fed9cc8b9eb71c84e4eba" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3762b748fcd07e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440164119,
+        "stop" : 1626440164201,
+        "duration" : 82
+      }
+    } ]
+  },
+  "a96c4c68147ca0d0c1afd3a0e02d9d8f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8b75bdf461bdfabc",
+      "status" : "failed",
+      "statusDetails" : "Cypress command timeout of `4000ms` exceeded.",
+      "time" : {
+        "start" : 1626440145791,
+        "stop" : 1626440150416,
+        "duration" : 4625
+      }
+    } ]
+  },
+  "e44ee885379447a953a218e9f57db69b" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d579673245482108",
+      "status" : "failed",
+      "statusDetails" : "Cannot read property 'email' of undefined",
+      "time" : {
+        "start" : 1625764192259,
+        "stop" : 1625764192260,
+        "duration" : 1
+      }
+    } ]
+  },
+  "f9ed47fb13613b37bf484364b3135399" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2d9317ec4402c45c",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1626122424477,
+        "stop" : 1626122424479,
+        "duration" : 2
+      }
+    } ]
+  },
+  "aa14e120d1cbb1274db254be9a592d26" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7171c2edd96e6237",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440167701,
+        "stop" : 1626440167808,
+        "duration" : 107
+      }
+    } ]
+  },
+  "83799d85bfdc6c4f9fa0964b86f968b8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b072f7376988bd51",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625840116094,
+        "stop" : 1625840117573,
+        "duration" : 1479
+      }
+    } ]
+  },
+  "7f16001e7a9145931cf9b867231c9bcb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f93e3502d29078b9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626251755788,
+        "stop" : 1626251756823,
+        "duration" : 1035
+      }
+    } ]
+  },
+  "859e807e202a6b24a91a8577626876a0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d175bc160b2272fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440164245,
+        "stop" : 1626440164290,
+        "duration" : 45
+      }
+    } ]
+  },
+  "1e5c5942cb01da94ea33a224a47e99e3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "804c6dbeae690707",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626440150532,
+        "stop" : 1626440150575,
+        "duration" : 43
+      }
+    } ]
+  },
+  "81f9438bf9bf4514b0d406f9847af5ad" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6b3212f31118c5ff",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625868083975,
+        "stop" : 1625868083978,
+        "duration" : 3
+      }
+    } ]
+  },
+  "e5ffdd846b9e607b1e77ecae975264d4" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bc299eca263bea7c",
+      "status" : "failed",
+      "statusDetails" : "Cypress command timeout of `4000ms` exceeded.",
+      "time" : {
+        "start" : 1626440141191,
+        "stop" : 1626440145784,
+        "duration" : 4593
+      }
+    } ]
+  }
+}

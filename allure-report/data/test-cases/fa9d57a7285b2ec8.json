@@ -1,0 +1,114 @@
+{
+  "uid" : "fa9d57a7285b2ec8",
+  "name" : "Main table elements displayed",
+  "fullName" : "Main table elements displayed",
+  "historyId" : "83799d85bfdc6c4f9fa0964b86f968b8",
+  "time" : {
+    "start" : 1625754388262,
+    "stop" : 1625754396195,
+    "duration" : 7933
+  },
+  "status" : "failed",
+  "statusMessage" : "Cypress command timeout of `4000ms` exceeded.",
+  "statusTrace" : "CypressError: Cypress command timeout of `4000ms` exceeded.\n    at cypressErr (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:154465:18)\n    at Object.errByPath (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:154534:10)\n    at https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:156276:29",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Cypress command timeout of `4000ms` exceeded.",
+    "statusTrace" : "CypressError: Cypress command timeout of `4000ms` exceeded.\n    at cypressErr (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:154465:18)\n    at Object.errByPath (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:154534:10)\n    at https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:156276:29",
+    "steps" : [ {
+      "name" : "visit (\"/\")",
+      "time" : {
+        "start" : 1625754388304,
+        "stop" : 1625754391518,
+        "duration" : 3214
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\"ul>li\")",
+      "time" : {
+        "start" : 1625754391518,
+        "stop" : 1625754391545,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "invoke (\"text\")",
+      "time" : {
+        "start" : 1625754391545,
+        "stop" : 1625754391559,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "8e4b55bb6bd889f2",
+      "name" : "home.page.test.js.mp4",
+      "source" : "8e4b55bb6bd889f2.mp4",
+      "type" : "video/mp4",
+      "size" : 237210
+    }, {
+      "uid" : "21640004faab3139",
+      "name" : "home.page.test.js:2021-07-08T14:26:35.628Z",
+      "source" : "21640004faab3139.png",
+      "type" : "image/png",
+      "size" : 435092
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "All elements on page displayed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fa9d57a7285b2ec8.json",
+  "parameterValues" : [ ]
+}

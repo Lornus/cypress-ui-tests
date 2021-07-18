@@ -1,0 +1,735 @@
+{
+  "uid" : "6b3212f31118c5ff",
+  "name" : "lllll",
+  "fullName" : "lllll",
+  "historyId" : "81f9438bf9bf4514b0d406f9847af5ad",
+  "time" : {
+    "start" : 1625868083975,
+    "stop" : 1625868083978,
+    "duration" : 3
+  },
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "Test ignored",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "46d6894d64d16a1d",
+      "name" : "users.page.test.js.mp4",
+      "source" : "46d6894d64d16a1d.mp4",
+      "type" : "video/mp4",
+      "size" : 328628
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "All elements on the users page displayed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f4396c9ea2ea789b",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625867914766,
+        "stop" : 1625867914768,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "93ed148bcef0477e",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625867802095,
+        "stop" : 1625867802096,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "76a99dbcd57c3ff4",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625867598161,
+        "stop" : 1625867598163,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "70c568d0ca2889dd",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625867588387,
+        "stop" : 1625867588393,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "aae75ddfbd665cbd",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625867327570,
+        "stop" : 1625867327572,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9dc702a92b946047",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625867191982,
+        "stop" : 1625867191986,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "69d53d8c2090dc47",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625866785937,
+        "stop" : 1625866785938,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "289d30b023f5d7cf",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625866007435,
+        "stop" : 1625866007438,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "314fdffe9eea19e8",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625865980633,
+        "stop" : 1625865980636,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "2bb3290be213f5ce",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625865408605,
+        "stop" : 1625865408608,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "f9dabb5663ce190a",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625865351394,
+        "stop" : 1625865351395,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "48ab4ca6ab47de15",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863902421,
+        "stop" : 1625863902422,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "15e04b7d7c5f81a5",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863891757,
+        "stop" : 1625863891758,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "229df2f27a1971ea",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863869790,
+        "stop" : 1625863869791,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "86ff7230b9ceefba",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863729532,
+        "stop" : 1625863729537,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "e308999e68850162",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863646749,
+        "stop" : 1625863646752,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "c3a3b167e5376c2f",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863620267,
+        "stop" : 1625863620268,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ce283fe829948136",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863581134,
+        "stop" : 1625863581136,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "dca569386c43a349",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863513766,
+        "stop" : 1625863513768,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d59c0983ddffa08a",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863486127,
+        "stop" : 1625863486130,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "497c603753fce6",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863473847,
+        "stop" : 1625863473849,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8a2df7b12bb627c1",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863425211,
+        "stop" : 1625863425213,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d50533a56e909d71",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863405144,
+        "stop" : 1625863405146,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "eb51de26d913998",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863311599,
+        "stop" : 1625863311601,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "86d5da65dc0081dc",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863270566,
+        "stop" : 1625863270568,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f4162f75411e650e",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863211631,
+        "stop" : 1625863211633,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "60ddf4270afeccbc",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863188644,
+        "stop" : 1625863188646,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9f95622fab5bfbf2",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863172255,
+        "stop" : 1625863172257,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "be40126a095123c8",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863144452,
+        "stop" : 1625863144453,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b775d7dfef37fac6",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863111278,
+        "stop" : 1625863111280,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f099dae1168f1061",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863063297,
+        "stop" : 1625863063299,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "cdf543dbeb14cb98",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625863023979,
+        "stop" : 1625863023981,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7234ffedfa2786e5",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625862993537,
+        "stop" : 1625862993539,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3ae5f5dedc03cccc",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625862955394,
+        "stop" : 1625862955395,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3caf9121f8696b29",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625862793076,
+        "stop" : 1625862793077,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4e800c2c28a9ec59",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625862779842,
+        "stop" : 1625862779843,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "24d2508ef2f5b25b",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625862729468,
+        "stop" : 1625862729470,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d8d08064b7f7a98d",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625861704637,
+        "stop" : 1625861704638,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8ba72bb5ac806346",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625861617848,
+        "stop" : 1625861617850,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6d4c31641727368d",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625861413193,
+        "stop" : 1625861413195,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "38294d77e22052f5",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625861281481,
+        "stop" : 1625861281483,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c4252a9e9a9b3c7b",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625861244569,
+        "stop" : 1625861244570,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "118ad21d840eef5a",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625861056215,
+        "stop" : 1625861056216,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8f30716dbc57a9a7",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625860948628,
+        "stop" : 1625860948630,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f857675c17dca807",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625860929948,
+        "stop" : 1625860935782,
+        "duration" : 5834
+      }
+    }, {
+      "uid" : "16c126e10b7f57f5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625860853597,
+        "stop" : 1625860859049,
+        "duration" : 5452
+      }
+    }, {
+      "uid" : "3f72567afc3f73da",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625860809358,
+        "stop" : 1625860809359,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5df726204f8dec94",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625860628612,
+        "stop" : 1625860628614,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c41e5a210df6097c",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625854728402,
+        "stop" : 1625854728405,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "32acf823821d0dc2",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625854681429,
+        "stop" : 1625854681430,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d5eaed23080bd1ec",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625854087251,
+        "stop" : 1625854087252,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ba173009709bfc40",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625854010363,
+        "stop" : 1625854010365,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f9911ffaeb02b25e",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625853793292,
+        "stop" : 1625853793293,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "192a00cfaa639305",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625853715741,
+        "stop" : 1625853715742,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3bd5cce5ba08b39d",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1625853634675,
+        "stop" : 1625853634677,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "12f2a24da0f64293",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: expected '<p.user_f>' to contain ' All Admin1\\'s planet'",
+      "time" : {
+        "start" : 1625853572245,
+        "stop" : 1625853577879,
+        "duration" : 5634
+      }
+    }, {
+      "uid" : "6f38c8e673428844",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: expected '<p.user_f>' to contain ' All Admin1\\'s planet'",
+      "time" : {
+        "start" : 1625853304053,
+        "stop" : 1625853309855,
+        "duration" : 5802
+      }
+    }, {
+      "uid" : "3d1b1145bee3ae68",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `.user_f`, but never found it.",
+      "time" : {
+        "start" : 1625853100912,
+        "stop" : 1625853108114,
+        "duration" : 7202
+      }
+    }, {
+      "uid" : "443388aed0725a51",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `.user_f`, but never found it.",
+      "time" : {
+        "start" : 1625853070156,
+        "stop" : 1625853077092,
+        "duration" : 6936
+      }
+    }, {
+      "uid" : "2957b25106f9b7d",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `.user_f`, but never found it.",
+      "time" : {
+        "start" : 1625853026316,
+        "stop" : 1625853033921,
+        "duration" : 7605
+      }
+    }, {
+      "uid" : "e78710d8a71b0e5b",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `pathname`, but never found it.",
+      "time" : {
+        "start" : 1625853004487,
+        "stop" : 1625853013006,
+        "duration" : 8519
+      }
+    }, {
+      "uid" : "7a24d1b259d08cae",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: expected '/users/6036a50333d65c355e25f050' to equal '/Admin1'",
+      "time" : {
+        "start" : 1625852965073,
+        "stop" : 1625852972223,
+        "duration" : 7150
+      }
+    }, {
+      "uid" : "7d41fdd26c3bc3f5",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: expected '/users/6036a50333d65c355e25f050' to equal '/admin'",
+      "time" : {
+        "start" : 1625852880959,
+        "stop" : 1625852888851,
+        "duration" : 7892
+      }
+    }, {
+      "uid" : "516378f0d959923",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find content: '/users/6036a50333d65c355e25f050' but never did.",
+      "time" : {
+        "start" : 1625852835448,
+        "stop" : 1625852841011,
+        "duration" : 5563
+      }
+    }, {
+      "uid" : "4668d35045f9d89",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: expected '/users/6036a50333d65c355e25f050' to equal '/admin'",
+      "time" : {
+        "start" : 1625852811400,
+        "stop" : 1625852818418,
+        "duration" : 7018
+      }
+    }, {
+      "uid" : "21631b37dcdcad7",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find content: 'users/6036a50333d65c355e25f050' but never did.",
+      "time" : {
+        "start" : 1625852789395,
+        "stop" : 1625852794966,
+        "duration" : 5571
+      }
+    }, {
+      "uid" : "ca765ec1cb8721eb",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: expected '/users/6036a50333d65c355e25f050' to equal '/admin'",
+      "time" : {
+        "start" : 1625852731990,
+        "stop" : 1625852739620,
+        "duration" : 7630
+      }
+    }, {
+      "uid" : "2cd9bbcaa6a00190",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find content: '/users/6036a50333d65c355e25f050' but never did.",
+      "time" : {
+        "start" : 1625852694691,
+        "stop" : 1625852700862,
+        "duration" : 6171
+      }
+    }, {
+      "uid" : "9e5db9485e3bb8f2",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find content: 'https://npplanets.herokuapp.com/users/6036a50333d65c355e25f050' but never did.",
+      "time" : {
+        "start" : 1625852644125,
+        "stop" : 1625852649941,
+        "duration" : 5816
+      }
+    }, {
+      "uid" : "aae9f65086a2c93f",
+      "status" : "failed",
+      "statusDetails" : "`cy.click()` failed because it requires a DOM element.\n\nThe subject received was:\n\n  > `<window>`\n\nThe previous command that ran was:\n\n  > `cy.visit()`",
+      "time" : {
+        "start" : 1625850824401,
+        "stop" : 1625850825064,
+        "duration" : 663
+      }
+    }, {
+      "uid" : "f8d2c2f296599bb7",
+      "status" : "failed",
+      "statusDetails" : "Syntax error, unrecognized expression: https://npplanets.herokuapp.com/users/6036a50333d65c355e25f050",
+      "time" : {
+        "start" : 1625850805550,
+        "stop" : 1625850806163,
+        "duration" : 613
+      }
+    }, {
+      "uid" : "8b7227818b9657f8",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find content: 'https://npplanets.herokuapp.com/users/6036a50333d65c355e25f050' but never did.",
+      "time" : {
+        "start" : 1625850700098,
+        "stop" : 1625850705171,
+        "duration" : 5073
+      }
+    }, {
+      "uid" : "31af2354b1922554",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find content: '/users/6036a50333d65c355e25f050' but never did.",
+      "time" : {
+        "start" : 1625850658936,
+        "stop" : 1625850664077,
+        "duration" : 5141
+      }
+    }, {
+      "uid" : "35b2fe24de23b592",
+      "status" : "failed",
+      "statusDetails" : "Timed out retrying after 4000ms: Expected to find content: '/6036a50333d65c355e25f050' but never did.",
+      "time" : {
+        "start" : 1625850591860,
+        "stop" : 1625850596431,
+        "duration" : 4571
+      }
+    }, {
+      "uid" : "20e4e87884512796",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625850521179,
+        "stop" : 1625850522316,
+        "duration" : 1137
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6b3212f31118c5ff.json",
+  "parameterValues" : [ ]
+}

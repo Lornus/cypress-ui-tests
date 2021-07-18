@@ -1,0 +1,23 @@
+{
+  "name": "cpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress open --env allure=true",
+    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "test": "npm run cy:run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "chai": "^4.3.4",
+    "cypress": "^7.6.0",
+    "randomstring": "^1.2.1"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.8.4",
+    "allure-commandline": "^2.13.8"
+  }
+}
