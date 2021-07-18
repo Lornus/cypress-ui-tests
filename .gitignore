@@ -1,5 +1,7 @@
+/.idea/*
 /node_modules/*
-/cypress/.idea
-/cypress/videos
-/results
+/cypress/.idea/*
+/cypress/videos/*
+/results/*
 README.md
+.DS_Store
