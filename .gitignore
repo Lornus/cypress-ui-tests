@@ -3,5 +3,4 @@ Tests/node_modules/*
 Tests/cypress/.idea/*
 Tests/cypress/videos/*
 Tests/results/*
-Tests/README.md
 Tests/.DS_Store
