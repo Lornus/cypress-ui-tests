@@ -12,6 +12,11 @@ class PlanetsPage extends ElementsOnAllPages {
     searchFor = 'div >p + p'
     goButton = '.Goto'
     pageNumber = '[name = "page"]'
+    previousLinkPage = '.pagination > a:nth-of-type(1)'
+    currentPage = '.pagination > a:nth-of-type(2)'
+    nextLinkPage = '.pagination > a:nth-of-type(3)'
+    firstCreate = '.create'
+
 
 
     openUrls() {
@@ -36,11 +41,27 @@ class PlanetsPage extends ElementsOnAllPages {
     getFindButton() {
         return cy.get(this.findButton)
     }
-    getGoButton(){
+
+    getGoButton() {
         return cy.get(this.goButton)
     }
+
     getPageNumber() {
         return cy.get(this.pageNumber)
+    }
+
+    getPreviousLink() {
+        return cy.get(this.previousLinkPage)
+    }
+
+     getCurrentPageNumber() {
+        return cy.get(this.currentPage)
+    }
+    getNextLink() {
+        return cy.get(this.nextLinkPage)
+    }
+    getFirstCreateButton(){
+        return cy.get(this.firstCreate)
     }
 }
 

@@ -1,4 +1,5 @@
- class Copypasted {
+
+class Copypasted {
 
     async getMainText() {
         const mainText = await new Cypress.Promise((resolve) => {
@@ -36,6 +37,16 @@
         expect(this.checkLogoDisplayed().should('contain', 'logo'), 'Alt of logo ' +
             'must be "logo"')
 
+    }
+
+    clearSearchInput(){
+        cy.get('[type="text"]').clear()
+        cy.get('.find').click()
+    }
+
+    typeSearchValue(tString){
+        cy.get('[type="text"]').type(tString)
+        cy.get('.find').click()
     }
 }
 
