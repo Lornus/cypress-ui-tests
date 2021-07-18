@@ -1,7 +1,7 @@
 /.idea/*
-/node_modules/*
-/cypress/.idea/*
-/cypress/videos/*
-/results/*
-README.md
-.DS_Store
+Tests/node_modules/*
+Tests/cypress/.idea/*
+Tests/cypress/videos/*
+Tests/results/*
+Tests/README.md
+Tests/.DS_Store
