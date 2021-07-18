@@ -3,7 +3,9 @@
   "projectId": "5onrrb",
   "viewportHeight": 1100,
   "viewportWidth": 1000,
-  "integrationFolder":"cypress/tests/specs"
+  "integrationFolder":"cypress/tests/specs",
+
+
 
 }
 
