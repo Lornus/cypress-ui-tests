@@ -1,8 +1,9 @@
 # cypress-ui-tests
-This is repo for cv as a proof of my experience 
-Site under testing: https://npplanets.herokuapp.com/
-Site was written by me\n
-For running test 
+# This is repo for cv as a proof of my experience 
+# Site under testing: https://npplanets.herokuapp.com/     Site was written by me
+
+
+# For running test 
 1. clone repo 
 2. install node if you don't have 
 3. install cypress if ypu don't have
