@@ -1,5 +1,5 @@
-.node_modules/
-./cypress/.idea
-./cypress/videos
-.results
+/node_modules/
+/cypress/.idea
+/cypress/videos
+/results
 README.md
