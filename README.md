@@ -13,9 +13,9 @@ Site was written by me
 # For running test 
 1. clone repo 
 2. install node if you don't have 
-3. install cypress if ypu don't have
+3. install cypress if you don't have
 4. npm install && npm cit
 5. npm test 
-6. for see reporter(allure html): npm run report 
+6. to see reporter(allure html): npm run report 
 
 
