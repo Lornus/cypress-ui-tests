@@ -1,0 +1,109 @@
+{
+  "uid" : "81483319802585e6",
+  "name" : "Unnamed",
+  "fullName" : "",
+  "historyId" : "35f21c9920bac9c66f88edcb83a10a96",
+  "time" : {
+    "start" : 1625868984446,
+    "stop" : 1625868984446,
+    "duration" : 0
+  },
+  "status" : "unknown",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "unknown",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "397467d9cb1e4a9b",
+      "name" : "users.page.test.js.mp4",
+      "source" : "397467d9cb1e4a9b.mp4",
+      "type" : "video/mp4",
+      "size" : 328628
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "All elements on the users page displayed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f3fb981228f6e8c3",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1625868952633,
+        "stop" : 1625868952633,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2729b70337bc2f28",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1625868803651,
+        "stop" : 1625868803652,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c9c4b45bd8421042",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1625868665602,
+        "stop" : 1625868665604,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "fb9ac683b46c6a0c",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1625868506159,
+        "stop" : 1625868506160,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "671e3039b85f266a",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1625868354055,
+        "stop" : 1625868354055,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ea1ba961a2604f64",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1625868276811,
+        "stop" : 1625868276812,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "81483319802585e6.json",
+  "parameterValues" : [ ]
+}

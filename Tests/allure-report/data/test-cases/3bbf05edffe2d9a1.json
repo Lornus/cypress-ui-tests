@@ -1,0 +1,257 @@
+{
+  "uid" : "3bbf05edffe2d9a1",
+  "name" : "\"Next\" link disabled",
+  "fullName" : "\"Next\" link disabled",
+  "historyId" : "7539f227ce86d758c67f364bbd0a4974",
+  "time" : {
+    "start" : 1626643931628,
+    "stop" : 1626643935761,
+    "duration" : 4133
+  },
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 4000ms: You attempted to make a chai-jQuery assertion on an object that is neither a DOM object or a jQuery object.\n\nThe chai-jQuery assertion you used was:\n\n  > disabled\n\nThe invalid subject you asserted on was:\n\n  > undefined\n\nTo use chai-jQuery assertions your subject must be valid.\n\nThis can sometimes happen if a previous assertion changed the subject.",
+  "statusTrace" : "CypressError: Timed out retrying after 4000ms: You attempted to make a chai-jQuery assertion on an object that is neither a DOM object or a jQuery object.\n\nThe chai-jQuery assertion you used was:\n\n  > disabled\n\nThe invalid subject you asserted on was:\n\n  > undefined\n\nTo use chai-jQuery assertions your subject must be valid.\n\nThis can sometimes happen if a previous assertion changed the subject.\n    at Object.onInvalid (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:131866:17)\n    at assertDom (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:149846:26)\n    at assert (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:149852:5)\n    at Assertion.<anonymous> (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:149954:14)\n    at Assertion.propertyGetter (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:85320:29)\n    at Reflect.get (<anonymous>)\n    at Object.proxyGetter [as get] (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:86758:22)\n    at applyChainer (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:135733:25)\n    at https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:135791:16\n    at arrayReduce (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:26661:21)\n    at Function.reduce (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:35713:14)\n    at applyChainers (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:135768:24)\nFrom previous event:\n    at Context.shouldFn (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:135797:23)\n    at Context.should (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:135815:23)\n    at https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:131428:39\n    at assertions (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:131680:14)\nFrom previous event:\n    at $Cy.verifyUpcomingAssertions (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:131695:20)\n    at https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:136508:19\nFrom previous event:\n    at resolveValue (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:136507:38)\n    at tryFn (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:147263:21)\n    at whenStable (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:147301:12)\n    at https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:146793:16\nFrom Your Spec Code:\n    at Context.eval (https://npplanets.herokuapp.com/__cypress/tests?p=cypress/tests/specs/planets.page.test.js:37580:65)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "get (\"[name = \"page\"]\")",
+      "time" : {
+        "start" : 1626643926224,
+        "stop" : 1626643926254,
+        "duration" : 30
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "clear",
+      "time" : {
+        "start" : 1626643926254,
+        "stop" : 1626643926514,
+        "duration" : 260
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\".Goto\")",
+      "time" : {
+        "start" : 1626643926514,
+        "stop" : 1626643926527,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "click",
+      "time" : {
+        "start" : 1626643926527,
+        "stop" : 1626643926677,
+        "duration" : 150
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "--submitting form-- form sub",
+      "time" : {
+        "start" : 1626643926677,
+        "stop" : 1626643926677,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "--waiting for new page to load-- page load",
+      "time" : {
+        "start" : 1626643926677,
+        "stop" : 1626643926677,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Timed out retrying after 4000ms: You attempted to make a chai-jQuery assertion on an object that is neither a DOM object or a jQuery object.\n\nThe chai-jQuery assertion you used was:\n\n  > disabled\n\nThe invalid subject you asserted on was:\n\n  > undefined\n\nTo use chai-jQuery assertions your subject must be valid.\n\nThis can sometimes happen if a previous assertion changed the subject.",
+    "statusTrace" : "CypressError: Timed out retrying after 4000ms: You attempted to make a chai-jQuery assertion on an object that is neither a DOM object or a jQuery object.\n\nThe chai-jQuery assertion you used was:\n\n  > disabled\n\nThe invalid subject you asserted on was:\n\n  > undefined\n\nTo use chai-jQuery assertions your subject must be valid.\n\nThis can sometimes happen if a previous assertion changed the subject.\n    at Object.onInvalid (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:131866:17)\n    at assertDom (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:149846:26)\n    at assert (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:149852:5)\n    at Assertion.<anonymous> (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:149954:14)\n    at Assertion.propertyGetter (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:85320:29)\n    at Reflect.get (<anonymous>)\n    at Object.proxyGetter [as get] (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:86758:22)\n    at applyChainer (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:135733:25)\n    at https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:135791:16\n    at arrayReduce (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:26661:21)\n    at Function.reduce (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:35713:14)\n    at applyChainers (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:135768:24)\nFrom previous event:\n    at Context.shouldFn (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:135797:23)\n    at Context.should (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:135815:23)\n    at https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:131428:39\n    at assertions (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:131680:14)\nFrom previous event:\n    at $Cy.verifyUpcomingAssertions (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:131695:20)\n    at https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:136508:19\nFrom previous event:\n    at resolveValue (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:136507:38)\n    at tryFn (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:147263:21)\n    at whenStable (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:147301:12)\n    at https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:146793:16\nFrom Your Spec Code:\n    at Context.eval (https://npplanets.herokuapp.com/__cypress/tests?p=cypress/tests/specs/planets.page.test.js:37580:65)",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1626643931629,
+        "stop" : 1626643931687,
+        "duration" : 58
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "fixture (\"planets.page.fixture\")",
+        "time" : {
+          "start" : 1626643931685,
+          "stop" : 1626643931686,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"data\")",
+        "time" : {
+          "start" : 1626643931686,
+          "stop" : 1626643931686,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "get (\".pagination > a:nth-of-type(3)\")",
+      "time" : {
+        "start" : 1626643931694,
+        "stop" : 1626643931704,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "invoke (\"attr\"; \"\")",
+      "time" : {
+        "start" : 1626643931704,
+        "stop" : 1626643935761,
+        "duration" : 4057
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **undefined** to be **disabled** assert",
+      "time" : {
+        "start" : 1626643935761,
+        "stop" : 1626643935761,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "name" : "planets.page.test.js.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "All elements on the planets page displayed"
+  }, {
+    "name" : "suite",
+    "value" : "Pagination items works correctly"
+  }, {
+    "name" : "subSuite",
+    "value" : "Navigation links works"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3bbf05edffe2d9a1.json",
+  "parameterValues" : [ ]
+}

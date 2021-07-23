@@ -1,0 +1,62 @@
+{
+  "uid" : "c10ae0132ca5093a",
+  "name" : "\"before all\" hook for \"Main table elements displayed\"",
+  "fullName" : "\"before all\" hook for \"Main table elements displayed\"",
+  "historyId" : "9dcf9ba5cf39ddb55b04424599068451",
+  "time" : {
+    "start" : 1626530247375,
+    "stop" : 1626530247377,
+    "duration" : 2
+  },
+  "status" : "failed",
+  "statusMessage" : "App is not defined",
+  "statusTrace" : "ReferenceError: App is not defined\n    at Context.eval (https://npplanets.herokuapp.com/__cypress/tests?p=cypress/tests/specs/home.page.test.js:134:18)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "failed",
+    "statusMessage" : "App is not defined",
+    "statusTrace" : "ReferenceError: App is not defined\n    at Context.eval (https://npplanets.herokuapp.com/__cypress/tests?p=cypress/tests/specs/home.page.test.js:134:18)",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "All elements on the homepage displayed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b6a8a41063280ba3",
+      "status" : "failed",
+      "statusDetails" : "App is not defined",
+      "time" : {
+        "start" : 1626530222047,
+        "stop" : 1626530222051,
+        "duration" : 4
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c10ae0132ca5093a.json",
+  "parameterValues" : [ ]
+}

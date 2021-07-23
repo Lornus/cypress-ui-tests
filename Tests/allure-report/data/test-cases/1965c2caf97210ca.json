@@ -1,0 +1,486 @@
+{
+  "uid" : "1965c2caf97210ca",
+  "name" : "Page number displayed",
+  "fullName" : "Page number displayed",
+  "historyId" : "0f1417fac2bcd6a99b60c0c20f0418ac",
+  "time" : {
+    "start" : 1626639339618,
+    "stop" : 1626639340080,
+    "duration" : 462
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "get (\"[type=\"text\"]\")",
+      "time" : {
+        "start" : 1626639338949,
+        "stop" : 1626639338956,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "clear",
+      "time" : {
+        "start" : 1626639338956,
+        "stop" : 1626639339161,
+        "duration" : 205
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\".find\")",
+      "time" : {
+        "start" : 1626639339161,
+        "stop" : 1626639339167,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "click",
+      "time" : {
+        "start" : 1626639339167,
+        "stop" : 1626639339257,
+        "duration" : 90
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "--submitting form-- form sub",
+      "time" : {
+        "start" : 1626639339257,
+        "stop" : 1626639339257,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "--waiting for new page to load-- page load",
+      "time" : {
+        "start" : 1626639339257,
+        "stop" : 1626639339257,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1626639339987,
+        "stop" : 1626639339990,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "fixture (\"planets.page.fixture\")",
+        "time" : {
+          "start" : 1626639339987,
+          "stop" : 1626639339988,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"data\")",
+        "time" : {
+          "start" : 1626639339988,
+          "stop" : 1626639339988,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "get (\"[name = \"page\"]\")",
+      "time" : {
+        "start" : 1626639340043,
+        "stop" : 1626639340079,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **<input>** to be **visible** assert",
+      "time" : {
+        "start" : 1626639340078,
+        "stop" : 1626639340078,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "name" : "planets.page.test.js.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "All elements on the planets page displayed"
+  }, {
+    "name" : "suite",
+    "value" : "Page number works correctly"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "947f9d8465b01ed9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626639267050,
+        "stop" : 1626639267092,
+        "duration" : 42
+      }
+    }, {
+      "uid" : "51b2fa8dbbf9f3d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626639208958,
+        "stop" : 1626639208986,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "34528222922abfb3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626639161448,
+        "stop" : 1626639161493,
+        "duration" : 45
+      }
+    }, {
+      "uid" : "7f08b80d59783c34",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626639147366,
+        "stop" : 1626639147387,
+        "duration" : 21
+      }
+    }, {
+      "uid" : "6fc2f6a3b8988675",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626639130350,
+        "stop" : 1626639130480,
+        "duration" : 130
+      }
+    }, {
+      "uid" : "953ee32a4a11f6f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626627951249,
+        "stop" : 1626627951282,
+        "duration" : 33
+      }
+    }, {
+      "uid" : "6138b6dabc5b8c4f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626627935625,
+        "stop" : 1626627935666,
+        "duration" : 41
+      }
+    }, {
+      "uid" : "abd832b1856432f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626626230270,
+        "stop" : 1626626230301,
+        "duration" : 31
+      }
+    }, {
+      "uid" : "f88cb292eaddebd6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626625818107,
+        "stop" : 1626625818135,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "b5cff1e1d88cda55",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626625716327,
+        "stop" : 1626625716415,
+        "duration" : 88
+      }
+    }, {
+      "uid" : "230047966f723bac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626625359059,
+        "stop" : 1626625359124,
+        "duration" : 65
+      }
+    }, {
+      "uid" : "8682afa8f50154de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626625318057,
+        "stop" : 1626625318077,
+        "duration" : 20
+      }
+    }, {
+      "uid" : "120f870be9d3b9dc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626625242401,
+        "stop" : 1626625242419,
+        "duration" : 18
+      }
+    }, {
+      "uid" : "afe8da9383b28ae8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626625232979,
+        "stop" : 1626625233009,
+        "duration" : 30
+      }
+    }, {
+      "uid" : "44afe1be3825d9fb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626625177862,
+        "stop" : 1626625177884,
+        "duration" : 22
+      }
+    }, {
+      "uid" : "a3c33e77a79d49b2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626625060444,
+        "stop" : 1626625060502,
+        "duration" : 58
+      }
+    }, {
+      "uid" : "3ddcec99a28bb0ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626625021752,
+        "stop" : 1626625021793,
+        "duration" : 41
+      }
+    }, {
+      "uid" : "94dd9659cf8c3c37",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626624945270,
+        "stop" : 1626624945308,
+        "duration" : 38
+      }
+    }, {
+      "uid" : "711fb8573bbc6e6b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626624918739,
+        "stop" : 1626624918871,
+        "duration" : 132
+      }
+    }, {
+      "uid" : "545b16f8340131f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626624808631,
+        "stop" : 1626624808716,
+        "duration" : 85
+      }
+    }, {
+      "uid" : "5e6f9351f71aced1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626624794800,
+        "stop" : 1626624794882,
+        "duration" : 82
+      }
+    }, {
+      "uid" : "fca7c070a8ec0a9b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626624582330,
+        "stop" : 1626624582369,
+        "duration" : 39
+      }
+    }, {
+      "uid" : "e19cae029f6bd763",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626624554652,
+        "stop" : 1626624554693,
+        "duration" : 41
+      }
+    }, {
+      "uid" : "8d8521e500b9b00f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626624440151,
+        "stop" : 1626624440274,
+        "duration" : 123
+      }
+    }, {
+      "uid" : "b1e46b58314a4c49",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626624125118,
+        "stop" : 1626624125160,
+        "duration" : 42
+      }
+    }, {
+      "uid" : "75bbf526aa34dc12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626624098117,
+        "stop" : 1626624098235,
+        "duration" : 118
+      }
+    }, {
+      "uid" : "70a051f4207da0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626623654396,
+        "stop" : 1626623654508,
+        "duration" : 112
+      }
+    }, {
+      "uid" : "a4a5eb4077a019b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626623580485,
+        "stop" : 1626623580574,
+        "duration" : 89
+      }
+    }, {
+      "uid" : "cdfb57d605a54e0a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626623544036,
+        "stop" : 1626623544127,
+        "duration" : 91
+      }
+    }, {
+      "uid" : "fc0e77b425e82a3d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626623432886,
+        "stop" : 1626623432924,
+        "duration" : 38
+      }
+    }, {
+      "uid" : "ed15fddbfe5eb9c2",
+      "status" : "failed",
+      "statusDetails" : "You attempted to make a chai-jQuery assertion on an object that is neither a DOM object or a jQuery object.\n\nThe chai-jQuery assertion you used was:\n\n  > visible\n\nThe invalid subject you asserted on was:\n\n  > Object{5}\n\nTo use chai-jQuery assertions your subject must be valid.\n\nThis can sometimes happen if a previous assertion changed the subject.",
+      "time" : {
+        "start" : 1626623305865,
+        "stop" : 1626623306066,
+        "duration" : 201
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1965c2caf97210ca.json",
+  "parameterValues" : [ ]
+}

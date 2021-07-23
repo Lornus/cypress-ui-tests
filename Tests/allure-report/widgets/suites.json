@@ -1,26 +1,37 @@
 {
-  "total" : 5,
+  "total" : 8,
   "items" : [ {
+    "uid" : "9c4b0a8e66be66c85ba6df5945b0764d",
+    "name" : "All elements on the planets page displayed",
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 8,
+      "passed" : 53,
+      "unknown" : 2,
+      "total" : 66
+    }
+  }, {
     "uid" : "85b592cd9ef0472aae58947c63baafcb",
     "name" : "All elements on the homepage displayed",
     "statistic" : {
-      "failed" : 2,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 7,
       "unknown" : 0,
-      "total" : 7
+      "total" : 8
     }
   }, {
     "uid" : "499c5ca42942d4bf13f0f7c7ff467e19",
     "name" : "All elements on the users page displayed",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 3,
-      "passed" : 9,
+      "passed" : 12,
       "unknown" : 1,
-      "total" : 14
+      "total" : 16
     }
   }, {
     "uid" : "fc3b2e56e73b8e00fff47d83c580633f",

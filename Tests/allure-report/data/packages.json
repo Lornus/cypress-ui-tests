@@ -3,7 +3,7 @@
   "name" : "packages",
   "children" : [ {
     "name" : "\"before all\" hook: Getting data from fixture file  for \"Main table elements displayed\"",
-    "uid" : "d579673245482108",
+    "uid" : "13e796f54ee7448e",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "failed",
     "time" : {
@@ -16,7 +16,7 @@
     "parameters" : [ ]
   }, {
     "name" : "Main table elements displayed",
-    "uid" : "b072f7376988bd51",
+    "uid" : "49b00c9d22d4a7bd",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
@@ -29,7 +29,7 @@
     "parameters" : [ ]
   }, {
     "name" : "Non table elements displayed",
-    "uid" : "bed2942971eb2067",
+    "uid" : "92c885dda8c37812",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
@@ -42,7 +42,7 @@
     "parameters" : [ ]
   }, {
     "name" : "\"before all\" hook for \"\"Users\" button \"",
-    "uid" : "a9f39b1e84e5519f",
+    "uid" : "c5dd572d1f88c051",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "failed",
     "time" : {
@@ -55,7 +55,7 @@
     "parameters" : [ ]
   }, {
     "name" : "lllll",
-    "uid" : "6b3212f31118c5ff",
+    "uid" : "84501404602fe046",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "skipped",
     "time" : {
@@ -68,7 +68,7 @@
     "parameters" : [ ]
   }, {
     "name" : "\"Users\" button ",
-    "uid" : "56886e63b8c66f31",
+    "uid" : "e4b73f266437dffe",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
@@ -81,7 +81,7 @@
     "parameters" : [ ]
   }, {
     "name" : "Unnamed",
-    "uid" : "64ea1214f0ae9197",
+    "uid" : "81483319802585e6",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "unknown",
     "time" : {
@@ -94,7 +94,7 @@
     "parameters" : [ ]
   }, {
     "name" : "User full name displays with",
-    "uid" : "9666216cd3f8d41c",
+    "uid" : "7abaefc924dfac7c",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "skipped",
     "time" : {
@@ -107,7 +107,7 @@
     "parameters" : [ ]
   }, {
     "name" : "Login displays ",
-    "uid" : "2d9317ec4402c45c",
+    "uid" : "d4e18542c4f6f5ec",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "skipped",
     "time" : {
@@ -120,7 +120,7 @@
     "parameters" : [ ]
   }, {
     "name" : "Non table elements displayed",
-    "uid" : "f9e6ded69dea732b",
+    "uid" : "693e0270baaf8c6b",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
@@ -133,7 +133,7 @@
     "parameters" : [ ]
   }, {
     "name" : "All each page element are displayed",
-    "uid" : "f93e3502d29078b9",
+    "uid" : "55ebc5bc80148e8f",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
@@ -146,7 +146,7 @@
     "parameters" : [ ]
   }, {
     "name" : "Unnamed",
-    "uid" : "3032f951c8943dd1",
+    "uid" : "6e6d88616dfc9855",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
@@ -159,7 +159,7 @@
     "parameters" : [ ]
   }, {
     "name" : "All each page element are displayed (main page)",
-    "uid" : "76044c0258fc403c",
+    "uid" : "c38f09655284cef0",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
@@ -172,7 +172,7 @@
     "parameters" : [ ]
   }, {
     "name" : "All each page element are displayed (users page)",
-    "uid" : "9e7a21681517fa92",
+    "uid" : "a54014843019f65f",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
@@ -184,60 +184,8 @@
     "newFailed" : false,
     "parameters" : [ ]
   }, {
-    "name" : "Main table elements displayed",
-    "uid" : "bc299eca263bea7c",
-    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "failed",
-    "time" : {
-      "start" : 1626440141191,
-      "stop" : 1626440145784,
-      "duration" : 4593
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "All each page element are displayed || main page",
-    "uid" : "8b75bdf461bdfabc",
-    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "failed",
-    "time" : {
-      "start" : 1626440145791,
-      "stop" : 1626440150416,
-      "duration" : 4625
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Home page images displayed",
-    "uid" : "84af162efda0c412",
-    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
-    "time" : {
-      "start" : 1626440150420,
-      "stop" : 1626440150523,
-      "duration" : 103
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Text above images displayed",
-    "uid" : "804c6dbeae690707",
-    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
-    "time" : {
-      "start" : 1626440150532,
-      "stop" : 1626440150575,
-      "duration" : 43
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
     "name" : "\"Users\"  button displayed correctly",
-    "uid" : "3762b748fcd07e6",
+    "uid" : "cbd2929df15c1c81",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
@@ -249,79 +197,1054 @@
     "newFailed" : false,
     "parameters" : [ ]
   }, {
-    "name" : "Users table displays correctly",
-    "uid" : "d175bc160b2272fd",
+    "name" : "\"before all\" hook for \"Main table elements displayed\"",
+    "uid" : "c10ae0132ca5093a",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "failed",
+    "time" : {
+      "start" : 1626530247375,
+      "stop" : 1626530247377,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Unnamed",
+    "uid" : "9928022f9b41dd85",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "unknown",
+    "time" : {
+      "start" : 1626556594867,
+      "stop" : 1626556594868,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Second title \"Planets\" is displayed",
+    "uid" : "4afb8b6c4d76ae1e",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "failed",
+    "time" : {
+      "start" : 1626557112348,
+      "stop" : 1626557112369,
+      "duration" : 21
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Searching planets by name works correctly",
+    "uid" : "23a984067076e987",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
-      "start" : 1626440164245,
-      "stop" : 1626440164290,
+      "start" : 1626614202609,
+      "stop" : 1626614203569,
+      "duration" : 960
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Searching planets by name works correctly",
+    "uid" : "9f4dd03961b3254b",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626614565471,
+      "stop" : 1626614565475,
+      "duration" : 4
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Displaying searching string ",
+    "uid" : "387cece2f2e2ff28",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1626615138458,
+      "stop" : 1626615138460,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Button \"Got",
+    "uid" : "ba48021c833296fa",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1626615881444,
+      "stop" : 1626615881447,
+      "duration" : 3
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "On \"Go to\" clicked with empty ",
+    "uid" : "cc7ffa6523bc962e",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1626617331449,
+      "stop" : 1626617331451,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "On \"Go to\" clicked with empty page number values",
+    "uid" : "32e929e0cd00dbb2",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "failed",
+    "time" : {
+      "start" : 1626617873610,
+      "stop" : 1626617878378,
+      "duration" : 4768
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Button \"Go to\" displayed",
+    "uid" : "1eac0f3dfec2aa5a",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626619386165,
+      "stop" : 1626619386305,
+      "duration" : 140
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "On \"Go to\" clicked with empty page number values and empty search field",
+    "uid" : "be1938fdccf06785",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626619386314,
+      "stop" : 1626619387211,
+      "duration" : 897
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "On \"Go to\" clicked with empty page number values and non empty search field",
+    "uid" : "43962d628839b9b1",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626619387232,
+      "stop" : 1626619388281,
+      "duration" : 1049
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Button \"Go to\" displayed",
+    "uid" : "d5543d3025254075",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626619558885,
+      "stop" : 1626619558943,
+      "duration" : 58
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "On \"Go to\" clicked with empty page number values and empty search field",
+    "uid" : "1c4dbf41e6c4a566",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626619558953,
+      "stop" : 1626619559482,
+      "duration" : 529
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "On \"Go to\" clicked with empty page number values and non empty search field",
+    "uid" : "5c9b8415f482db30",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626619559499,
+      "stop" : 1626619559981,
+      "duration" : 482
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Page number ",
+    "uid" : "dc2768bfe4686f0d",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1626623143912,
+      "stop" : 1626623143914,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Page number should have css ",
+    "uid" : "3c7347bdb7248682",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1626623544132,
+      "stop" : 1626623544137,
+      "duration" : 5
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Page number should have attribute",
+    "uid" : "8512c4609cc49c02",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1626623580585,
+      "stop" : 1626623580587,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Page number should have correct attributes \"max\" and \"min\"",
+    "uid" : "8f1bc867fe9fb39d",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626624125166,
+      "stop" : 1626624125197,
+      "duration" : 31
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Changing",
+    "uid" : "d2fa24bafc8e8152",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1626624795042,
+      "stop" : 1626624795043,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Changing ",
+    "uid" : "516b3b8a1a7b52ca",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1626624808878,
+      "stop" : 1626624808881,
+      "duration" : 3
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Changing arrow value in page number",
+    "uid" : "4448837d974d89c1",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626625818217,
+      "stop" : 1626625818548,
+      "duration" : 331
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "\"before all\" hook for \"Changing arrow value in page number || Positive\"",
+    "uid" : "d2e2506527795d87",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "failed",
+    "time" : {
+      "start" : 1626626570934,
+      "stop" : 1626626570936,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Main table elements displayed",
+    "uid" : "d0e0651e87a18796",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639156261,
+      "stop" : 1626639156348,
+      "duration" : 87
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Home page images displayed",
+    "uid" : "33b24371b47d8e92",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639156383,
+      "stop" : 1626639156462,
+      "duration" : 79
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Text above images displayed",
+    "uid" : "22f8815240339da8",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639156465,
+      "stop" : 1626639156510,
       "duration" : 45
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
-    "name" : "Users info links work",
-    "uid" : "81bc048bd50dee0",
+    "name" : "All each page element are displayed || main page",
+    "uid" : "f4b8294105af3006",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
-      "start" : 1626440164295,
-      "stop" : 1626440165573,
-      "duration" : 1278
+      "start" : 1626639156512,
+      "stop" : 1626639156547,
+      "duration" : 35
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "\"Users\" button displayed correctly",
+    "uid" : "c002a75fc9b174d5",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639162959,
+      "stop" : 1626639163004,
+      "duration" : 45
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "\"Users online\" above users table is displayed",
+    "uid" : "9b49321424a9f9ab",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639163007,
+      "stop" : 1626639163039,
+      "duration" : 32
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Users table displays correctly",
+    "uid" : "3ddab8ee8d1281d7",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639163041,
+      "stop" : 1626639163079,
+      "duration" : 38
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Users info links work",
+    "uid" : "3ec003ca4e87417c",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639163083,
+      "stop" : 1626639164164,
+      "duration" : 1081
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "User full name displays with users planets",
-    "uid" : "90d0954c1629c18",
+    "uid" : "8992cb93dca089db",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
-      "start" : 1626440165580,
-      "stop" : 1626440166656,
-      "duration" : 1076
+      "start" : 1626639164176,
+      "stop" : 1626639165182,
+      "duration" : 1006
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Login displays in the info when a user was created",
-    "uid" : "22465e6719f851b",
+    "uid" : "b283bd7b97481c91",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
-      "start" : 1626440166661,
-      "stop" : 1626440167696,
-      "duration" : 1035
+      "start" : 1626639165194,
+      "stop" : 1626639166203,
+      "duration" : 1009
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Getting all header rows of table with users`s planets",
-    "uid" : "7171c2edd96e6237",
+    "uid" : "a87f673e66ff2d8c",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
-      "start" : 1626440167701,
-      "stop" : 1626440167808,
-      "duration" : 107
+      "start" : 1626639166206,
+      "stop" : 1626639166242,
+      "duration" : 36
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "All each page element are displayed || users page",
-    "uid" : "5136d957f90922b2",
+    "uid" : "7d8016fceb3b418e",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639166280,
+      "stop" : 1626639166333,
+      "duration" : 53
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Button \"Go to\" displayed",
+    "uid" : "7d9254a670aaf4bc",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639337093,
+      "stop" : 1626639337158,
+      "duration" : 65
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "On \"Go to\" clicked with empty page number values and empty search field",
+    "uid" : "3d941fa82a53efff",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639337166,
+      "stop" : 1626639338093,
+      "duration" : 927
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "On \"Go to\" clicked with empty page number values and non empty search field",
+    "uid" : "7c5dfa66eb49413c",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639338176,
+      "stop" : 1626639338890,
+      "duration" : 714
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Page number displayed",
+    "uid" : "1965c2caf97210ca",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639339618,
+      "stop" : 1626639340080,
+      "duration" : 462
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Page number should have correct attributes \"min\"",
+    "uid" : "dca0c618412f1a04",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639340090,
+      "stop" : 1626639340160,
+      "duration" : 70
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Page number should have correct attributes \"max\"",
+    "uid" : "fb948f501908cdd4",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639340169,
+      "stop" : 1626639340255,
+      "duration" : 86
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Changing arrow value in page number || Positive",
+    "uid" : "f3fd804a85bdcf7a",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639340258,
+      "stop" : 1626639341261,
+      "duration" : 1003
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Changing arrow value in page number || Negative",
+    "uid" : "643af174a27ea149",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639341300,
+      "stop" : 1626639341871,
+      "duration" : 571
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Unnamed",
+    "uid" : "9ce0ee56d5207e49",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "unknown",
+    "time" : {
+      "start" : 1626639539518,
+      "stop" : 1626639539520,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "\"Previous\" link works",
+    "uid" : "3fda7eccea61e23",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626639608526,
+      "stop" : 1626639608564,
+      "duration" : 38
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "\"Previous\" link displayed",
+    "uid" : "4638c23d266b37e4",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626644138814,
+      "stop" : 1626644138834,
+      "duration" : 20
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "\"Next\" link displayed",
+    "uid" : "fe82e3c6a56569de",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626644138837,
+      "stop" : 1626644138875,
+      "duration" : 38
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "\"Previous\" link disabled",
+    "uid" : "b8aea83068d29a55",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626644138881,
+      "stop" : 1626644138950,
+      "duration" : 69
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "\"Next\" link disabled",
+    "uid" : "42d113d65d1eb26f",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626644138970,
+      "stop" : 1626644139004,
+      "duration" : 34
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Button \"Create\" displayed on",
+    "uid" : "cf0c5c442a84e994",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626644809630,
+      "stop" : 1626644809674,
+      "duration" : 44
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Button \"Create\" displayed",
+    "uid" : "9babcaaa21d40d7f",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626644809678,
+      "stop" : 1626644809729,
+      "duration" : 51
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Button \"Create\" displayed on /planets/page&",
+    "uid" : "f5fe766781cdc412",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626644867997,
+      "stop" : 1626644868045,
+      "duration" : 48
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Button \"Create\" displayed on /planets/?name=&page=\"somePage\"",
+    "uid" : "c40cc4ad2eee19bc",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626645196128,
+      "stop" : 1626645196751,
+      "duration" : 623
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Button \"Create\" displayed on /planets endpoint",
+    "uid" : "92bc4c537622246d",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648624233,
+      "stop" : 1626648624274,
+      "duration" : 41
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Button \"Create\" displayed on /planets/?name=\"someName\"&page=",
+    "uid" : "9681523291874518",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648624291,
+      "stop" : 1626648624810,
+      "duration" : 519
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Button \"Create\" displayed on /planets/?name=\"someName\"&page=\"somePage\"",
+    "uid" : "f374b714941a6f07",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648624816,
+      "stop" : 1626648625907,
+      "duration" : 1091
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "An uncaught error was detected outside of a test",
+    "uid" : "308c4a37fe2bc14e",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "failed",
     "time" : {
-      "start" : 1626440167829,
-      "stop" : 1626440172419,
-      "duration" : 4590
+      "start" : 1626648857041,
+      "stop" : 1626648857048,
+      "duration" : 7
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "All each page element are displayed || planets page",
+    "uid" : "bc4abf906bb36078",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648915117,
+      "stop" : 1626648915316,
+      "duration" : 199
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Second title \"Planets\" above search placeholder is displayed",
+    "uid" : "efd6795d9d3e8500",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648915420,
+      "stop" : 1626648915636,
+      "duration" : 216
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Search placeholder displayed",
+    "uid" : "534ad03c83b07031",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648915653,
+      "stop" : 1626648915707,
+      "duration" : 54
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Clicked on search placeholder",
+    "uid" : "3b83950da19875ce",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648915709,
+      "stop" : 1626648915924,
+      "duration" : 215
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "\"Find\" button is displayed",
+    "uid" : "1e79166a32ca65da",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648915932,
+      "stop" : 1626648915995,
+      "duration" : 63
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Displaying searching string in \"Search for\"",
+    "uid" : "b8486cf6e5b77de7",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648915997,
+      "stop" : 1626648916499,
+      "duration" : 502
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Searching planets by random strings",
+    "uid" : "8a4827e9e7396b0a",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648916518,
+      "stop" : 1626648917633,
+      "duration" : 1115
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Searching planets with immediately clicks \"Find\" ",
+    "uid" : "1dcb929c63b6657a",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648917645,
+      "stop" : 1626648918213,
+      "duration" : 568
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Button \"Go to\" displayed",
+    "uid" : "b4b57fedd2fcc17c",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648918230,
+      "stop" : 1626648918296,
+      "duration" : 66
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "On \"Go to\" clicked with empty page number values and empty search field",
+    "uid" : "216ab654cfb0d6e1",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648918318,
+      "stop" : 1626648919338,
+      "duration" : 1020
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "On \"Go to\" clicked with empty page number values and non empty search field",
+    "uid" : "c3deed7fff9592b6",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648919353,
+      "stop" : 1626648919894,
+      "duration" : 541
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Page number displayed",
+    "uid" : "67d44233c5c2c793",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648920513,
+      "stop" : 1626648920540,
+      "duration" : 27
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Page number should have correct attributes \"min\"",
+    "uid" : "b2fc83ba375182b7",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648920550,
+      "stop" : 1626648920591,
+      "duration" : 41
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Page number should have correct attributes \"max\"",
+    "uid" : "10be19fc90c430af",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648920599,
+      "stop" : 1626648920650,
+      "duration" : 51
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Changing arrow value in page number || Positive",
+    "uid" : "7f65850c62102223",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648920653,
+      "stop" : 1626648921222,
+      "duration" : 569
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Changing arrow value in page number || Negative",
+    "uid" : "75e942a47100f366",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648921232,
+      "stop" : 1626648921616,
+      "duration" : 384
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "\"Previous\" link displayed",
+    "uid" : "f3758658a7630a5c",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648922091,
+      "stop" : 1626648922122,
+      "duration" : 31
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "\"Next\" link displayed",
+    "uid" : "ba275fe8fcdf9650",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648922129,
+      "stop" : 1626648922189,
+      "duration" : 60
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "\"Previous\" link disabled",
+    "uid" : "6b805a312480495",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648922196,
+      "stop" : 1626648922225,
+      "duration" : 29
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "\"Next\" link disabled",
+    "uid" : "3fe8430cecf06973",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648922228,
+      "stop" : 1626648922267,
+      "duration" : 39
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Button \"Create\" displayed on /planets endpoint",
+    "uid" : "84187da2db53bf95",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648922273,
+      "stop" : 1626648922319,
+      "duration" : 46
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Button \"Create\" displayed on /planets/?name=\"someName\"&page=",
+    "uid" : "b951d8a48a527a09",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648922321,
+      "stop" : 1626648922851,
+      "duration" : 530
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Button \"Create\" displayed on /planets/?name=\"someName\"&page=\"somePage\"",
+    "uid" : "42d4f1e51f899e46",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648922861,
+      "stop" : 1626648923986,
+      "duration" : 1125
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Unnamed",
+    "uid" : "43af51c5239c3079",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626648923995,
+      "stop" : 1626648924042,
+      "duration" : 47
     },
     "flaky" : false,
     "newFailed" : false,

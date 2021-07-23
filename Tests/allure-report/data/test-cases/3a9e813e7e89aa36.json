@@ -1,0 +1,231 @@
+{
+  "uid" : "3a9e813e7e89aa36",
+  "name" : "Searching planets by name works correctly",
+  "fullName" : "Searching planets by name works correctly",
+  "historyId" : "0579f7bbd32a68bea71d0dc20f00105c",
+  "time" : {
+    "start" : 1626564032077,
+    "stop" : 1626564032257,
+    "duration" : 180
+  },
+  "status" : "failed",
+  "statusMessage" : "You attempted to make a chai-jQuery assertion on an object that is neither a DOM object or a jQuery object.\n\nThe chai-jQuery assertion you used was:\n\n  > text\n\nThe invalid subject you asserted on was:\n\n  > Mercurys2\n\nTo use chai-jQuery assertions your subject must be valid.\n\nThis can sometimes happen if a previous assertion changed the subject.",
+  "statusTrace" : "CypressError: You attempted to make a chai-jQuery assertion on an object that is neither a DOM object or a jQuery object.\n\nThe chai-jQuery assertion you used was:\n\n  > text\n\nThe invalid subject you asserted on was:\n\n  > Mercurys2\n\nTo use chai-jQuery assertions your subject must be valid.\n\nThis can sometimes happen if a previous assertion changed the subject.\n    at Object.onInvalid (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:131866:17)\n    at assertDom (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:149846:26)\n    at Proxy.<anonymous> (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:149912:5)\n    at Proxy.methodWrapper (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:85240:25)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "visit (\"/planets\")",
+      "time" : {
+        "start" : 1626564031361,
+        "stop" : 1626564032076,
+        "duration" : 715
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "You attempted to make a chai-jQuery assertion on an object that is neither a DOM object or a jQuery object.\n\nThe chai-jQuery assertion you used was:\n\n  > text\n\nThe invalid subject you asserted on was:\n\n  > Mercurys2\n\nTo use chai-jQuery assertions your subject must be valid.\n\nThis can sometimes happen if a previous assertion changed the subject.",
+    "statusTrace" : "CypressError: You attempted to make a chai-jQuery assertion on an object that is neither a DOM object or a jQuery object.\n\nThe chai-jQuery assertion you used was:\n\n  > text\n\nThe invalid subject you asserted on was:\n\n  > Mercurys2\n\nTo use chai-jQuery assertions your subject must be valid.\n\nThis can sometimes happen if a previous assertion changed the subject.\n    at Object.onInvalid (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:131866:17)\n    at assertDom (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:149846:26)\n    at Proxy.<anonymous> (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:149912:5)\n    at Proxy.methodWrapper (https://npplanets.herokuapp.com/__cypress/runner/cypress_runner.js:85240:25)",
+    "steps" : [ {
+      "name" : "get (\"[type=\"text\"]\")",
+      "time" : {
+        "start" : 1626564032121,
+        "stop" : 1626564032256,
+        "duration" : 135
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get (\"td>a\")",
+        "time" : {
+          "start" : 1626564032168,
+          "stop" : 1626564032193,
+          "duration" : 25
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "invoke (\"text\")",
+        "time" : {
+          "start" : 1626564032194,
+          "stop" : 1626564032210,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "log (\"Huylusha\"; \"Mercurys2\")",
+        "time" : {
+          "start" : 1626564032213,
+          "stop" : 1626564032218,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "get (\"td>a\")",
+        "time" : {
+          "start" : 1626564032218,
+          "stop" : 1626564032230,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "invoke (\"text\")",
+        "time" : {
+          "start" : 1626564032230,
+          "stop" : 1626564032241,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **Mercurys2** to have text **Mercurys2** assert",
+        "time" : {
+          "start" : 1626564032255,
+          "stop" : 1626564032255,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "log (\"Huylusha\"; \"Mercurys2\")",
+      "time" : {
+        "start" : 1626564032258,
+        "stop" : 1626564032262,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "type (\"rerum\")",
+      "time" : {
+        "start" : 1626564032262,
+        "stop" : 1626564032315,
+        "duration" : 53
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "name" : "planets.page.test.js.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "All elements on the planets page displayed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3a9e813e7e89aa36.json",
+  "parameterValues" : [ ]
+}

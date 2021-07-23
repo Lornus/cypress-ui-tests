@@ -1,0 +1,86 @@
+{
+  "uid" : "4d83c85ba76c595",
+  "name" : "All each page element are displayed || main page",
+  "fullName" : "All each page element are displayed || main page",
+  "historyId" : "a96c4c68147ca0d0c1afd3a0e02d9d8f",
+  "time" : {
+    "start" : 1626556273028,
+    "stop" : 1626556273055,
+    "duration" : 27
+  },
+  "status" : "failed",
+  "statusMessage" : "App.fromCopypastedFile.DefoltElementsTested is not a function",
+  "statusTrace" : "TypeError: App.fromCopypastedFile.DefoltElementsTested is not a function\n    at Context.eval (https://npplanets.herokuapp.com/__cypress/tests?p=cypress/tests/specs/home.page.test.js:115:34)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "visit (\"/\")",
+      "time" : {
+        "start" : 1626556272031,
+        "stop" : 1626556272848,
+        "duration" : 817
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "App.fromCopypastedFile.DefoltElementsTested is not a function",
+    "statusTrace" : "TypeError: App.fromCopypastedFile.DefoltElementsTested is not a function\n    at Context.eval (https://npplanets.herokuapp.com/__cypress/tests?p=cypress/tests/specs/home.page.test.js:115:34)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "name" : "All Integration Specs.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "All elements on the homepage displayed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4d83c85ba76c595.json",
+  "parameterValues" : [ ]
+}

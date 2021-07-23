@@ -1,0 +1,67 @@
+{
+  "uid" : "7481b6f6593ebb17",
+  "name" : "\"before all\" hook: Getting data from fixture file  for \"Main table elements displayed\"",
+  "fullName" : "\"before all\" hook: Getting data from fixture file  for \"Main table elements displayed\"",
+  "historyId" : "e44ee885379447a953a218e9f57db69b",
+  "time" : {
+    "start" : 1625763984372,
+    "stop" : 1625763984373,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "statusMessage" : "A fixture file could not be found at any of the following paths:\n\n> fixtures/example\n> fixtures/example{{extension}}\n\nCypress looked for these file extensions at the provided path:\n\n> .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.",
+  "statusTrace" : "Error: A fixture file could not be found at any of the following paths:\n\n> fixtures/example\n> fixtures/example{{extension}}\n\nCypress looked for these file extensions at the provided path:\n\n> .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.\n    at get (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/lib/errors.js:988:15)\n    at Object.throwErr [as throw] (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/lib/errors.js:1006:9)\n    at Object.<anonymous> (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/lib/fixture.js:63:23)\n    at Object.tryCatcher (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/bluebird/js/release/promise.js:547:31)\n    at Promise._settlePromise (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/bluebird/js/release/promise.js:604:18)\n    at Promise._settlePromise0 (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/bluebird/js/release/promise.js:649:10)\n    at Promise._settlePromises (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/bluebird/js/release/promise.js:729:18)\n    at Promise._fulfill (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/bluebird/js/release/promise.js:673:18)\n    at /Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/bluebird/js/release/nodeback.js:42:21\n    at f (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/once/once.js:25:25)\n    at Glob.<anonymous> (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/glob/glob.js:151:7)\n    at Glob.emit (events.js:315:20)\n    at Glob._finish (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/glob/glob.js:197:8)\n    at done (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/glob/glob.js:182:14)\n    at Glob._processSimple2 (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/glob/glob.js:688:12)\n    at /Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/glob/glob.js:676:10\n    at Glob._stat2 (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/glob/glob.js:772:12)\n    at lstatcb_ (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/glob/glob.js:764:12)\n    at RES (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/inflight/inflight.js:31:16)\n    at f (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/once/once.js:25:25)\n    at callback (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/graceful-fs/polyfills.js:289:20)\n    at FSReqCallback.oncomplete (fs.js:183:21)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "failed",
+    "statusMessage" : "A fixture file could not be found at any of the following paths:\n\n> fixtures/example\n> fixtures/example{{extension}}\n\nCypress looked for these file extensions at the provided path:\n\n> .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.",
+    "statusTrace" : "Error: A fixture file could not be found at any of the following paths:\n\n> fixtures/example\n> fixtures/example{{extension}}\n\nCypress looked for these file extensions at the provided path:\n\n> .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.\n    at get (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/lib/errors.js:988:15)\n    at Object.throwErr [as throw] (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/lib/errors.js:1006:9)\n    at Object.<anonymous> (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/lib/fixture.js:63:23)\n    at Object.tryCatcher (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/bluebird/js/release/promise.js:547:31)\n    at Promise._settlePromise (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/bluebird/js/release/promise.js:604:18)\n    at Promise._settlePromise0 (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/bluebird/js/release/promise.js:649:10)\n    at Promise._settlePromises (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/bluebird/js/release/promise.js:729:18)\n    at Promise._fulfill (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/bluebird/js/release/promise.js:673:18)\n    at /Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/bluebird/js/release/nodeback.js:42:21\n    at f (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/once/once.js:25:25)\n    at Glob.<anonymous> (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/glob/glob.js:151:7)\n    at Glob.emit (events.js:315:20)\n    at Glob._finish (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/glob/glob.js:197:8)\n    at done (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/glob/glob.js:182:14)\n    at Glob._processSimple2 (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/glob/glob.js:688:12)\n    at /Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/glob/glob.js:676:10\n    at Glob._stat2 (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/glob/glob.js:772:12)\n    at lstatcb_ (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/glob/glob.js:764:12)\n    at RES (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/inflight/inflight.js:31:16)\n    at f (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/once/once.js:25:25)\n    at callback (/Users/macbook/Library/Caches/Cypress/7.6.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/graceful-fs/polyfills.js:289:20)\n    at FSReqCallback.oncomplete (fs.js:183:21)\n",
+    "steps" : [ {
+      "name" : "fixture (\"../../fixtures/example\")",
+      "time" : {
+        "start" : 1625763984348
+      },
+      "status" : "unknown",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7481b6f6593ebb17.json",
+  "parameterValues" : [ ]
+}

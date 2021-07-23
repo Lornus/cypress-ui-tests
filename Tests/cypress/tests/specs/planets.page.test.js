@@ -1,7 +1,7 @@
 /// <reference type ="cypress" />
 const randomString = require("randomstring")
 
-const tString = randomString.generate({length: 1, charset: 'ABCMEQKmercu'})
+const tString = randomString.generate({length: 1, charset: 'ymercu'})
 
 
 describe("All elements on the planets page displayed", function () {
@@ -17,7 +17,7 @@ describe("All elements on the planets page displayed", function () {
 
     it('All each page element are displayed || planets page', async function () {
 
-        await App.repeatableMethods.DefoltElementsTested()
+        await App.repeatableMethods.DefaultElementsTested()
 
     })
 
@@ -72,12 +72,20 @@ describe("All elements on the planets page displayed", function () {
             })
         })
 
-        it('Searching planets with immediately clicks "Find" ', function () {
+        it.only('Searching planets with immediately clicks "Find" ', async function () {
             App.repeatableMethods.clearSearchInput()
+            if(expect(App.planetsPage.getNextLink().should('not.be.enabled'))) {
 
-            expect(cy.get(App.planetsPage.planetFromTable).should('have.text', this.data.planetsName),
-                'In table must be name of planet if even first letter is similar')
+                cy.get(App.planetsPage.planetFromTable)
+                    .then(($els) => {
+                        const kk = Cypress.$.makeArray($els).map((el) => el.innerText)
 
+                        return (
+                            kk.join('')
+                        )
+                    })
+                    .should('contain', await App.planetsPage.getLinksFromTable())
+            }
         })
     })
 
@@ -138,60 +146,53 @@ describe("All elements on the planets page displayed", function () {
             })
 
             it('Changing arrow value in page number || Positive', function () {
-                const arrowLimit = '1'
-                App.planetsPage.getPageNumber().type(arrowLimit).trigger('change')
-                App.planetsPage.getGoButton().click()
-                expect(cy.url().should('contain', `?name=&page=${arrowLimit}`), `url must contain is such case ' +
-            '"?name=&page=${arrowLimit}"`)
-
-            })
-
-            it('Changing arrow value in page number || Negative', function () {
-                const arrowLimit = '3'
-                App.planetsPage.getPageNumber().type(arrowLimit).trigger('change')
-                App.planetsPage.getGoButton().click()
-                expect(cy.url().should('contain', `?name=&page=1`), `url must contain is such case ' +
-            '"?name=&page="`)
+                const arrowLimit = ['1', '2']
+                arrowLimit.map(pages => {
+                    App.planetsPage.getPageNumber().type(pages).trigger('change')
+                    App.planetsPage.getGoButton().click()
+                    expect(cy.url().should('contain', `?name=&page=${pages}`), `url must contain is such case ' +
+            '"?name=&page=${pages}"`)
+                })
             })
         })
 
         describe('Navigation links works correctly', function () {
-            before(function (){
+            before(function () {
                 App.planetsPage.getPageNumber().clear()
                 App.planetsPage.getGoButton().click()
             })
 
-            it('"Previous" link displayed',  function () {
+            it('"Previous" link displayed', function () {
 
-                expect(App.planetsPage.getPreviousLink().should('be.visible'),'Whatever ' +
+                expect(App.planetsPage.getPreviousLink().should('be.visible'), 'Whatever ' +
                     'link have class disable on enabled link must be visible')
             })
 
-            it('"Next" link displayed',  function () {
+            it('"Next" link displayed', function () {
 
-                expect(App.planetsPage.getNextLink().should('be.visible'),'Whatever ' +
+                expect(App.planetsPage.getNextLink().should('be.visible'), 'Whatever ' +
                     'link have class disable on enabled link must be visible')
             })
 
 
-            it('"Previous" link disabled',  function () {
+            it('"Previous" link disabled', function () {
 
                 expect(App.planetsPage.getPreviousLink().should('not.be.enabled'),
                     'As there is only 1 page link must be disabled :(')
             })
 
-            it('"Next" link disabled',  function () {
+            it('"Next" link disabled', function () {
 
                 expect(App.planetsPage.getNextLink()
-                            .should('not.be.enabled'),
+                        .should('not.be.enabled'),
                     'As there is only 1 page link must be disabled :(')
             })
         })
 
     })
-    describe('Button "Create" on planet`s page works correctly', function (){
-        it('Button "Create" displayed on /planets endpoint', function (){
-            expect(App.planetsPage.getFirstCreateButton()
+    describe('Button "Create" on planet`s page works correctly', function () {
+        it('Button "Create" displayed on /planets endpoint', function () {
+            expect(App.planetsPage.getCreateButton()
                     .should('be.enabled')
                     .and('be.visible'),
                 'Button "Create" must be displayed and enabled ' +
@@ -199,11 +200,11 @@ describe("All elements on the planets page displayed", function () {
         })
 
         it('Button "Create" displayed on /' +
-            'planets/?name="someName"&page=', function (){
+            'planets/?name="someName"&page=', function () {
             App.repeatableMethods.typeSearchValue(tString)
 
 
-            expect(App.planetsPage.getFirstCreateButton()
+            expect(App.planetsPage.getCreateButton()
                     .should('be.enabled')
                     .and('be.visible'),
                 'Button "Create" must be displayed and enabled ' +
@@ -213,14 +214,14 @@ describe("All elements on the planets page displayed", function () {
         })
 
         it('Button "Create" displayed on /' +
-            'planets/?name="someName"&page="somePage"', function (){
+            'planets/?name="someName"&page="somePage"', function () {
             App.repeatableMethods.clearSearchInput()
 
             const arrowLimit = '1'
             App.planetsPage.getPageNumber().type(arrowLimit).trigger('change')
             App.planetsPage.getGoButton().click()
 
-            expect(App.planetsPage.getFirstCreateButton()
+            expect(App.planetsPage.getCreateButton()
                     .should('be.enabled')
                     .and('be.visible'),
                 'Button "Create" must be displayed and enabled ' +
@@ -228,8 +229,87 @@ describe("All elements on the planets page displayed", function () {
         })
 
     })
-    describe('On /new? endpoint planet creates',function (){
-        it('', function (){
+    describe('On /new? endpoint planet can be created', function () {
+        before(function () {
+            App.planetsPage.getCreateButton().click()
+
+        })
+
+        describe('Elements on /new? endpoint displayed correctly', function () {
+
+            it('Default elements are displayed correctly', async function () {
+                await App.repeatableMethods.DefaultElementsTested()
+
+            })
+
+            it('Text type fields displayed correctly', function () {
+
+                const typeString = [App.planetsPage.enterName, App.planetsPage.enterDiscoverer]
+                typeString.map(element => {
+                    expect(cy.get(element).should('be.visible')
+                        .and('be.enabled')
+                        .invoke("attr", 'type')
+                        .should('eq', 'text'), 'Field to enter name must be visible' +
+                        'enabled and have type name')
+
+                })
+
+            })
+
+            it('"Sats" field displayed correctly', function () {
+
+                expect(App.planetsPage.getEnterSatsField().should('be.visible')
+                        .and('be.enabled')
+                        .invoke("attr", 'max')
+                        .should('eq', '10000000000'),
+                    'Field to enter sats must be visible' +
+                    'enabled and have max attr 10000000000')
+
+                expect(App.planetsPage.getEnterSatsField().should('be.visible')
+                        .and('be.enabled')
+                        .invoke("attr", 'min')
+                        .should('eq', '0'),
+                    'Field to enter sats must be visible' +
+                    'enabled and have min attr 0')
+
+            })
+
+            it('"Mass" field displayed correctly', function () {
+
+                expect(App.planetsPage.getEnterMassField().should('be.visible')
+                        .and('be.enabled')
+                        .invoke("attr", 'max')
+                        .should('eq', '100000000000'),
+                    'Field to enter sats must be visible' +
+                    'enabled and have max attr 10000000000')
+
+
+                expect(App.planetsPage.getEnterMassField().should('be.visible')
+                        .and('be.enabled')
+                        .invoke("attr", 'min')
+                        .should('eq', '1500000'),
+                    'Field to enter sats must be visible' +
+                    'enabled and have min attr 1500000')
+
+            })
+            it('All input fields are required', function () {
+                const typeString = [App.planetsPage.enterName, App.planetsPage.enterDiscoverer,
+                    App.planetsPage.enterSats, App.planetsPage.enterSats]
+                typeString.map(element => {
+                    expect(cy.get(element)
+                            .should('have.attr', 'required'),
+                        'All input fields must be required')
+                })
+            })
+            it.skip('get text from label', async function () {
+                const text = await new Cypress.Promise((resolve => {
+                        cy.get(App.planetsPage.getBrowserPhotoField()
+                            .invoke('text')
+                            .then(txt => resolve(txt.toString()))
+                        )
+                    }
+                ))
+            })
 
         })
     })

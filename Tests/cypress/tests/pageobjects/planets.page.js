@@ -15,8 +15,12 @@ class PlanetsPage extends ElementsOnAllPages {
     previousLinkPage = '.pagination > a:nth-of-type(1)'
     currentPage = '.pagination > a:nth-of-type(2)'
     nextLinkPage = '.pagination > a:nth-of-type(3)'
-    firstCreate = '.create'
-
+    createButton = '.create'
+    enterName = 'br  + input:nth-of-type(1)'
+    enterDiscoverer = 'br  + input:nth-of-type(2)'
+    enterSats = 'br  + input:nth-of-type(3)'
+    enterMass = 'br  + input:nth-of-type(4)'
+    enterBrowsePhoto = 'br  + input:nth-of-type(5)'
 
 
     openUrls() {
@@ -60,8 +64,33 @@ class PlanetsPage extends ElementsOnAllPages {
     getNextLink() {
         return cy.get(this.nextLinkPage)
     }
-    getFirstCreateButton(){
-        return cy.get(this.firstCreate)
+    getCreateButton(){
+        return cy.get(this.createButton)
+    }
+
+    getEnterNameField(){
+        return cy.get(this.enterName)
+    }
+    getEnterDiscovererField(){
+        return cy.get(this.enterDiscoverer)
+    }
+    getEnterSatsField(){
+        return cy.get(this.enterSats)
+    }
+    getEnterMassField(){
+        return cy.get(this.enterMass)
+    }
+    getBrowserPhotoField(){
+        return cy.get(this.enterBrowsePhoto)
+    }
+
+    async getLinksFromTable(){
+        const promises = await new Cypress.Promise((resolve) => {
+            cy.get(App.planetsPage.planetFromTable)
+                .invoke('text')
+                .then(txt => resolve(txt.toString()))
+        })
+        return promises
     }
 }
 

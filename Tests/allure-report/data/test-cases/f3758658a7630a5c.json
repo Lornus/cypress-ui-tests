@@ -1,0 +1,366 @@
+{
+  "uid" : "f3758658a7630a5c",
+  "name" : "\"Previous\" link displayed",
+  "fullName" : "\"Previous\" link displayed",
+  "historyId" : "b04df49952209040a4b745ab4d0efb42",
+  "time" : {
+    "start" : 1626648922091,
+    "stop" : 1626648922122,
+    "duration" : 31
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "get (\"[name = \"page\"]\")",
+      "time" : {
+        "start" : 1626648921635,
+        "stop" : 1626648921651,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "clear",
+      "time" : {
+        "start" : 1626648921651,
+        "stop" : 1626648921741,
+        "duration" : 90
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\".Goto\")",
+      "time" : {
+        "start" : 1626648921741,
+        "stop" : 1626648921746,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "click",
+      "time" : {
+        "start" : 1626648921746,
+        "stop" : 1626648921854,
+        "duration" : 108
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "--submitting form-- form sub",
+      "time" : {
+        "start" : 1626648921854,
+        "stop" : 1626648921854,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "--waiting for new page to load-- page load",
+      "time" : {
+        "start" : 1626648921854,
+        "stop" : 1626648921854,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1626648922105,
+        "stop" : 1626648922107,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "fixture (\"planets.page.fixture\")",
+        "time" : {
+          "start" : 1626648922106,
+          "stop" : 1626648922107,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"data\")",
+        "time" : {
+          "start" : 1626648922107,
+          "stop" : 1626648922107,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "get (\".pagination > a:nth-of-type(1)\")",
+      "time" : {
+        "start" : 1626648922110,
+        "stop" : 1626648922122,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **<a.disabled_link>** to be **visible** assert",
+      "time" : {
+        "start" : 1626648922122,
+        "stop" : 1626648922122,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "name" : "planets.page.test.js.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "All elements on the planets page displayed"
+  }, {
+    "name" : "suite",
+    "value" : "Pagination items works correctly"
+  }, {
+    "name" : "subSuite",
+    "value" : "Navigation links works correctly"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e8d449b1b4a29daf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626648731852,
+        "stop" : 1626648731904,
+        "duration" : 52
+      }
+    }, {
+      "uid" : "4b5e05bb068d65e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626648624084,
+        "stop" : 1626648624110,
+        "duration" : 26
+      }
+    }, {
+      "uid" : "7ce327c1d1c40243",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626648612289,
+        "stop" : 1626648612398,
+        "duration" : 109
+      }
+    }, {
+      "uid" : "2a758b0a60152bfb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626648598685,
+        "stop" : 1626648598711,
+        "duration" : 26
+      }
+    }, {
+      "uid" : "6458423d4dca77",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626648587041,
+        "stop" : 1626648587068,
+        "duration" : 27
+      }
+    }, {
+      "uid" : "c67838b2be83b840",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626648539462,
+        "stop" : 1626648539490,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "f51c42b33db333c5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626648519476,
+        "stop" : 1626648519616,
+        "duration" : 140
+      }
+    }, {
+      "uid" : "cd5c652625bb5ce4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626646957892,
+        "stop" : 1626646957924,
+        "duration" : 32
+      }
+    }, {
+      "uid" : "929feef5c74cc00d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626646459842,
+        "stop" : 1626646459973,
+        "duration" : 131
+      }
+    }, {
+      "uid" : "30b8fa1c1629c8a6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626645405767,
+        "stop" : 1626645405798,
+        "duration" : 31
+      }
+    }, {
+      "uid" : "b5fbd4f59ce944d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626645283019,
+        "stop" : 1626645283055,
+        "duration" : 36
+      }
+    }, {
+      "uid" : "c026b470683bcad5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626645194991,
+        "stop" : 1626645195020,
+        "duration" : 29
+      }
+    }, {
+      "uid" : "7ce994b81fc4be51",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626645100437,
+        "stop" : 1626645100467,
+        "duration" : 30
+      }
+    }, {
+      "uid" : "811d731648369089",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626644928885,
+        "stop" : 1626644928935,
+        "duration" : 50
+      }
+    }, {
+      "uid" : "8df029a44a487c2d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626644867762,
+        "stop" : 1626644867792,
+        "duration" : 30
+      }
+    }, {
+      "uid" : "13f7a740fa4db7c5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626644809362,
+        "stop" : 1626644809397,
+        "duration" : 35
+      }
+    }, {
+      "uid" : "8525328715055824",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626644735638,
+        "stop" : 1626644735774,
+        "duration" : 136
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f3758658a7630a5c.json",
+  "parameterValues" : [ ]
+}

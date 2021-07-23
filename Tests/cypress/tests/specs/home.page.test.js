@@ -1,4 +1,3 @@
-/// <reference type ="cypress" />
 
 
 describe("All elements on the homepage displayed", function ()  {
@@ -32,7 +31,7 @@ describe("All elements on the homepage displayed", function ()  {
 
     it('All each page element are displayed || main page', async function ()  {
 
-        await App.repeatableMethods.DefoltElementsTested()
+        await App.repeatableMethods.DefaultElementsTested()
 
     })
 

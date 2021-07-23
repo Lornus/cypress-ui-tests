@@ -26,7 +26,7 @@ class Copypasted {
         return checked
     }
 
-    async DefoltElementsTested() {
+    async DefaultElementsTested() {
 
         expect(await this.getMainText()).to.equal('Planets',
             'Main text must be: "Planets"')

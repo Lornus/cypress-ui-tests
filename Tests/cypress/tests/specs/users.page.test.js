@@ -74,7 +74,7 @@ describe("All elements on the users page displayed", function () {
 
     it('All each page element are displayed || users page', async function () {
 
-        await App.repeatableMethods.DefoltElementsTested()
+        await App.repeatableMethods.DefaultElementsTested()
 
 
     })

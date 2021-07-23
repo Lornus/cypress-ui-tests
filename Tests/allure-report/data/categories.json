@@ -7,7 +7,7 @@
       "name" : "Cannot read property 'email' of undefined",
       "children" : [ {
         "name" : "\"before all\" hook: Getting data from fixture file  for \"Main table elements displayed\"",
-        "uid" : "d579673245482108",
+        "uid" : "13e796f54ee7448e",
         "parentUid" : "cb0eb6e1d8d3c8a3dafc91243bc1a187",
         "status" : "failed",
         "time" : {
@@ -24,7 +24,7 @@
       "name" : "Cannot read property 'length' of undefined",
       "children" : [ {
         "name" : "\"before all\" hook for \"\"Users\" button \"",
-        "uid" : "a9f39b1e84e5519f",
+        "uid" : "c5dd572d1f88c051",
         "parentUid" : "ee4745155dad17ab9df3b611b39096ef",
         "status" : "failed",
         "time" : {
@@ -38,48 +38,90 @@
       } ],
       "uid" : "ee4745155dad17ab9df3b611b39096ef"
     }, {
-      "name" : "Cypress command timeout of `4000ms` exceeded.",
+      "name" : "App is not defined",
       "children" : [ {
-        "name" : "Main table elements displayed",
-        "uid" : "bc299eca263bea7c",
-        "parentUid" : "056a949133b5647271575ce8bcbcf0d6",
+        "name" : "\"before all\" hook for \"Main table elements displayed\"",
+        "uid" : "c10ae0132ca5093a",
+        "parentUid" : "1cd8bcc59577ffd74bdb03ddb4613d73",
         "status" : "failed",
         "time" : {
-          "start" : 1626440141191,
-          "stop" : 1626440145784,
-          "duration" : 4593
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "All each page element are displayed || main page",
-        "uid" : "8b75bdf461bdfabc",
-        "parentUid" : "056a949133b5647271575ce8bcbcf0d6",
-        "status" : "failed",
-        "time" : {
-          "start" : 1626440145791,
-          "stop" : 1626440150416,
-          "duration" : 4625
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "All each page element are displayed || users page",
-        "uid" : "5136d957f90922b2",
-        "parentUid" : "056a949133b5647271575ce8bcbcf0d6",
-        "status" : "failed",
-        "time" : {
-          "start" : 1626440167829,
-          "stop" : 1626440172419,
-          "duration" : 4590
+          "start" : 1626530247375,
+          "stop" : 1626530247377,
+          "duration" : 2
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "056a949133b5647271575ce8bcbcf0d6"
+      "uid" : "1cd8bcc59577ffd74bdb03ddb4613d73"
+    }, {
+      "name" : "Cannot read property 'equal' of undefined",
+      "children" : [ {
+        "name" : "Second title \"Planets\" is displayed",
+        "uid" : "4afb8b6c4d76ae1e",
+        "parentUid" : "7fa27cbef785a31a63b1bb7eec9ba2a0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1626557112348,
+          "stop" : 1626557112369,
+          "duration" : 21
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7fa27cbef785a31a63b1bb7eec9ba2a0"
+    }, {
+      "name" : "Timed out retrying after 4000ms: expected 'https://npplanets.herokuapp.com/planets?name=m&page=' to include '?name=&page='",
+      "children" : [ {
+        "name" : "On \"Go to\" clicked with empty page number values",
+        "uid" : "32e929e0cd00dbb2",
+        "parentUid" : "aad96948186b8f7784950ca5dbb7e369",
+        "status" : "failed",
+        "time" : {
+          "start" : 1626617873610,
+          "stop" : 1626617878378,
+          "duration" : 4768
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "aad96948186b8f7784950ca5dbb7e369"
+    }, {
+      "name" : "`cy.type()` failed because it targeted a disabled element.\n\nThe element typed into was:\n\n  > <input type=\"text\" name=\"name\" value=\"\">\n\nEnsure the element does not have an attribute named `disabled` before typing into it.",
+      "children" : [ {
+        "name" : "\"before all\" hook for \"Changing arrow value in page number || Positive\"",
+        "uid" : "d2e2506527795d87",
+        "parentUid" : "9d4bd7cc4ad7c23c9c19ab6ff65be5b8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1626626570934,
+          "stop" : 1626626570936,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9d4bd7cc4ad7c23c9c19ab6ff65be5b8"
+    }, {
+      "name" : "The following error originated from your test code, not from Cypress.\n\n  > Suite \"All elements on the planets page displayed On /new? \" was defined but no callback was supplied. Supply a callback or explicitly skip the suite.\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.",
+      "children" : [ {
+        "name" : "An uncaught error was detected outside of a test",
+        "uid" : "308c4a37fe2bc14e",
+        "parentUid" : "0230daeb009393e71572c8ad27c24d6b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1626648857041,
+          "stop" : 1626648857048,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0230daeb009393e71572c8ad27c24d6b"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]

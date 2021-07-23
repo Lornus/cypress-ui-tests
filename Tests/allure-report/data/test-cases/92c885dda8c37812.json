@@ -1,0 +1,573 @@
+{
+  "uid" : "92c885dda8c37812",
+  "name" : "Non table elements displayed",
+  "fullName" : "Non table elements displayed",
+  "historyId" : "6cc5990532d2a700f09d8c88483bdf62",
+  "time" : {
+    "start" : 1625840117620,
+    "stop" : 1625840118048,
+    "duration" : 428
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1625840117620,
+        "stop" : 1625840117643,
+        "duration" : 23
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "fixture (\"example\")",
+        "time" : {
+          "start" : 1625840117642,
+          "stop" : 1625840117642,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"data\")",
+        "time" : {
+          "start" : 1625840117642,
+          "stop" : 1625840117643,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "visit (\"/\")",
+      "time" : {
+        "start" : 1625840117647,
+        "stop" : 1625840117954,
+        "duration" : 307
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\"h1\")",
+      "time" : {
+        "start" : 1625840117954,
+        "stop" : 1625840117958,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "invoke (\"text\")",
+      "time" : {
+        "start" : 1625840117958,
+        "stop" : 1625840117964,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\".logo\")",
+      "time" : {
+        "start" : 1625840117968,
+        "stop" : 1625840117982,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **<img.logo>** to be **visible** assert",
+      "time" : {
+        "start" : 1625840117982,
+        "stop" : 1625840117982,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "invoke (\"attr\"; \"alt\")",
+      "time" : {
+        "start" : 1625840117982,
+        "stop" : 1625840117988,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **logo** to equal **logo** assert",
+      "time" : {
+        "start" : 1625840117988,
+        "stop" : 1625840117988,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\".home_text\")",
+      "time" : {
+        "start" : 1625840117988,
+        "stop" : 1625840117993,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **<p.home_text>** to have text **See amazing views of planets on our site for free!** assert",
+      "time" : {
+        "start" : 1625840117993,
+        "stop" : 1625840117993,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\".home_images>img\")",
+      "time" : {
+        "start" : 1625840117993,
+        "stop" : 1625840118004,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **[ <img.photo1>, 3 more... ]** to be **visible** assert",
+      "time" : {
+        "start" : 1625840118004,
+        "stop" : 1625840118004,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\".footer\")",
+      "time" : {
+        "start" : 1625840118004,
+        "stop" : 1625840118007,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "invoke (\"text\")",
+      "time" : {
+        "start" : 1625840118007,
+        "stop" : 1625840118010,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get (\".footer\")",
+      "time" : {
+        "start" : 1625840118048,
+        "stop" : 1625840118058,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **<div.footer>** to have text **\uD83D\uDD1E\uD83D\uDD1EPlanets\uD83D\uDD1E\uD83D\uDD1E** assert",
+      "time" : {
+        "start" : 1625840118058,
+        "stop" : 1625840118058,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **Planets** to equal **Planets** assert",
+      "time" : {
+        "start" : 1625840118058,
+        "stop" : 1625840118058,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "589788d31db3d7d4",
+      "name" : "home.page.test.js.mp4",
+      "source" : "589788d31db3d7d4.mp4",
+      "type" : "video/mp4",
+      "size" : 237210
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 19,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "All elements on page displayed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "31f910199ff7b55b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625839966213,
+        "stop" : 1625839967797,
+        "duration" : 1584
+      }
+    }, {
+      "uid" : "9d4da6ad5ac8cee3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625839779054,
+        "stop" : 1625839780472,
+        "duration" : 1418
+      }
+    }, {
+      "uid" : "43eb0e510d7ef109",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625780324045,
+        "stop" : 1625780326100,
+        "duration" : 2055
+      }
+    }, {
+      "uid" : "d7138ad486a7b15a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625780246601,
+        "stop" : 1625780247965,
+        "duration" : 1364
+      }
+    }, {
+      "uid" : "94cde4b8a38c45b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625780116820,
+        "stop" : 1625780118174,
+        "duration" : 1354
+      }
+    }, {
+      "uid" : "67acb3bdcaaa6b20",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625779996902,
+        "stop" : 1625779998264,
+        "duration" : 1362
+      }
+    }, {
+      "uid" : "1db4f31249cab84d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625779965097,
+        "stop" : 1625779966611,
+        "duration" : 1514
+      }
+    }, {
+      "uid" : "430a27242252b5b4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625779934158,
+        "stop" : 1625779935618,
+        "duration" : 1460
+      }
+    }, {
+      "uid" : "b7896987a503721b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625779677379,
+        "stop" : 1625779678934,
+        "duration" : 1555
+      }
+    }, {
+      "uid" : "90addc21ce375eb3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625779310374,
+        "stop" : 1625779311999,
+        "duration" : 1625
+      }
+    }, {
+      "uid" : "24abbf11e6c4659",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625779289804,
+        "stop" : 1625779291256,
+        "duration" : 1452
+      }
+    }, {
+      "uid" : "7f2b445f40fa1bac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625779266249,
+        "stop" : 1625779267653,
+        "duration" : 1404
+      }
+    }, {
+      "uid" : "5618e5c400e21eb5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625779117037,
+        "stop" : 1625779119243,
+        "duration" : 2206
+      }
+    }, {
+      "uid" : "eb4c102f4927747c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625778935771,
+        "stop" : 1625778937179,
+        "duration" : 1408
+      }
+    }, {
+      "uid" : "5f2a08d491a0f9a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625778908090,
+        "stop" : 1625778909502,
+        "duration" : 1412
+      }
+    }, {
+      "uid" : "fc096639955580e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625778691189,
+        "stop" : 1625778692614,
+        "duration" : 1425
+      }
+    }, {
+      "uid" : "a10a77f16db78743",
+      "status" : "failed",
+      "statusDetails" : "expected 'Planets' to equal 'Planet222'",
+      "time" : {
+        "start" : 1625778675010,
+        "stop" : 1625778676354,
+        "duration" : 1344
+      }
+    }, {
+      "uid" : "fac171f2e33b1c05",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625778449110,
+        "stop" : 1625778450640,
+        "duration" : 1530
+      }
+    }, {
+      "uid" : "bc40d39ee8acb258",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625778404708,
+        "stop" : 1625778406286,
+        "duration" : 1578
+      }
+    }, {
+      "uid" : "3644089e2417cac3",
+      "status" : "failed",
+      "statusDetails" : "Cypress command timeout of `4000ms` exceeded.",
+      "time" : {
+        "start" : 1625778352722,
+        "stop" : 1625778362058,
+        "duration" : 9336
+      }
+    }, {
+      "uid" : "381dfef9dcd267cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625778310670,
+        "stop" : 1625778312049,
+        "duration" : 1379
+      }
+    }, {
+      "uid" : "11da5637046d18b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625778294130,
+        "stop" : 1625778295601,
+        "duration" : 1471
+      }
+    }, {
+      "uid" : "b3037664058d078d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625778244065,
+        "stop" : 1625778245509,
+        "duration" : 1444
+      }
+    }, {
+      "uid" : "90c2c6e8ae551a13",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625778217137,
+        "stop" : 1625778218612,
+        "duration" : 1475
+      }
+    }, {
+      "uid" : "a13971f593cee39f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625752595735,
+        "stop" : 1625752596214,
+        "duration" : 479
+      }
+    }, {
+      "uid" : "f84ff98323050754",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625752192026,
+        "stop" : 1625752192473,
+        "duration" : 447
+      }
+    }, {
+      "uid" : "4299ecc396476b20",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625751908621,
+        "stop" : 1625751909045,
+        "duration" : 424
+      }
+    }, {
+      "uid" : "625c7b27a6969d17",
+      "status" : "failed",
+      "statusDetails" : "Cypress command timeout of `4000ms` exceeded.",
+      "time" : {
+        "start" : 1625751562797,
+        "stop" : 1625751567870,
+        "duration" : 5073
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "92c885dda8c37812.json",
+  "parameterValues" : [ ]
+}

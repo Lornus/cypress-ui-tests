@@ -1,25 +1,35 @@
 [ {
-  "uid" : "3762b748fcd07e6",
-  "name" : "\"Users\"  button displayed correctly",
+  "uid" : "3ec003ca4e87417c",
+  "name" : "Users info links work",
   "time" : {
-    "start" : 1626440164119,
-    "stop" : 1626440164201,
-    "duration" : 82
+    "start" : 1626639163083,
+    "stop" : 1626639164164,
+    "duration" : 1081
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f9e6ded69dea732b",
-  "name" : "Non table elements displayed",
+  "uid" : "b8aea83068d29a55",
+  "name" : "\"Previous\" link disabled",
   "time" : {
-    "start" : 1626251744589,
-    "stop" : 1626251745685,
-    "duration" : 1096
+    "start" : 1626644138881,
+    "stop" : 1626644138950,
+    "duration" : 69
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f93e3502d29078b9",
+  "uid" : "3fda7eccea61e23",
+  "name" : "\"Previous\" link works",
+  "time" : {
+    "start" : 1626639608526,
+    "stop" : 1626639608564,
+    "duration" : 38
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "55ebc5bc80148e8f",
   "name" : "All each page element are displayed",
   "time" : {
     "start" : 1626251755788,
@@ -29,177 +39,67 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "bed2942971eb2067",
-  "name" : "Non table elements displayed",
+  "uid" : "f3fd804a85bdcf7a",
+  "name" : "Changing arrow value in page number || Positive",
   "time" : {
-    "start" : 1625840117620,
-    "stop" : 1625840118048,
-    "duration" : 428
+    "start" : 1626639340258,
+    "stop" : 1626639341261,
+    "duration" : 1003
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9e7a21681517fa92",
-  "name" : "All each page element are displayed (users page)",
+  "uid" : "42d4f1e51f899e46",
+  "name" : "Button \"Create\" displayed on /planets/?name=\"someName\"&page=\"somePage\"",
   "time" : {
-    "start" : 1626252563730,
-    "stop" : 1626252566093,
-    "duration" : 2363
+    "start" : 1626648922861,
+    "stop" : 1626648923986,
+    "duration" : 1125
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "90d0954c1629c18",
-  "name" : "User full name displays with users planets",
+  "uid" : "cc7ffa6523bc962e",
+  "name" : "On \"Go to\" clicked with empty ",
   "time" : {
-    "start" : 1626440165580,
-    "stop" : 1626440166656,
-    "duration" : 1076
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5136d957f90922b2",
-  "name" : "All each page element are displayed || users page",
-  "time" : {
-    "start" : 1626440167829,
-    "stop" : 1626440172419,
-    "duration" : 4590
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "84af162efda0c412",
-  "name" : "Home page images displayed",
-  "time" : {
-    "start" : 1626440150420,
-    "stop" : 1626440150523,
-    "duration" : 103
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9666216cd3f8d41c",
-  "name" : "User full name displays with",
-  "time" : {
-    "start" : 1626121680499,
-    "stop" : 1626121680500,
-    "duration" : 1
+    "start" : 1626617331449,
+    "stop" : 1626617331451,
+    "duration" : 2
   },
   "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "7171c2edd96e6237",
-  "name" : "Getting all header rows of table with users`s planets",
+  "uid" : "cbd2929df15c1c81",
+  "name" : "\"Users\"  button displayed correctly",
   "time" : {
-    "start" : 1626440167701,
-    "stop" : 1626440167808,
-    "duration" : 107
+    "start" : 1626440164119,
+    "stop" : 1626440164201,
+    "duration" : 82
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b072f7376988bd51",
-  "name" : "Main table elements displayed",
+  "uid" : "7c5dfa66eb49413c",
+  "name" : "On \"Go to\" clicked with empty page number values and non empty search field",
   "time" : {
-    "start" : 1625840116094,
-    "stop" : 1625840117573,
-    "duration" : 1479
+    "start" : 1626639338176,
+    "stop" : 1626639338890,
+    "duration" : 714
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "56886e63b8c66f31",
-  "name" : "\"Users\" button ",
+  "uid" : "9f4dd03961b3254b",
+  "name" : "Searching planets by name works correctly",
   "time" : {
-    "start" : 1625868121982,
-    "stop" : 1625868123658,
-    "duration" : 1676
+    "start" : 1626614565471,
+    "stop" : 1626614565475,
+    "duration" : 4
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6b3212f31118c5ff",
-  "name" : "lllll",
-  "time" : {
-    "start" : 1625868083975,
-    "stop" : 1625868083978,
-    "duration" : 3
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "3032f951c8943dd1",
-  "name" : "Unnamed",
-  "time" : {
-    "start" : 1626252107570,
-    "stop" : 1626252108646,
-    "duration" : 1076
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8b75bdf461bdfabc",
-  "name" : "All each page element are displayed || main page",
-  "time" : {
-    "start" : 1626440145791,
-    "stop" : 1626440150416,
-    "duration" : 4625
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "804c6dbeae690707",
-  "name" : "Text above images displayed",
-  "time" : {
-    "start" : 1626440150532,
-    "stop" : 1626440150575,
-    "duration" : 43
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "76044c0258fc403c",
-  "name" : "All each page element are displayed (main page)",
-  "time" : {
-    "start" : 1626252540548,
-    "stop" : 1626252541469,
-    "duration" : 921
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "64ea1214f0ae9197",
-  "name" : "Unnamed",
-  "time" : {
-    "start" : 1625868984446,
-    "stop" : 1625868984446,
-    "duration" : 0
-  },
-  "status" : "unknown",
-  "severity" : "normal"
-}, {
-  "uid" : "81bc048bd50dee0",
-  "name" : "Users info links work",
-  "time" : {
-    "start" : 1626440164295,
-    "stop" : 1626440165573,
-    "duration" : 1278
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bc299eca263bea7c",
-  "name" : "Main table elements displayed",
-  "time" : {
-    "start" : 1626440141191,
-    "stop" : 1626440145784,
-    "duration" : 4593
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "2d9317ec4402c45c",
+  "uid" : "d4e18542c4f6f5ec",
   "name" : "Login displays ",
   "time" : {
     "start" : 1626122424477,
@@ -209,7 +109,277 @@
   "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "a9f39b1e84e5519f",
+  "uid" : "b2fc83ba375182b7",
+  "name" : "Page number should have correct attributes \"min\"",
+  "time" : {
+    "start" : 1626648920550,
+    "stop" : 1626648920591,
+    "duration" : 41
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4b8294105af3006",
+  "name" : "All each page element are displayed || main page",
+  "time" : {
+    "start" : 1626639156512,
+    "stop" : 1626639156547,
+    "duration" : 35
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d2fa24bafc8e8152",
+  "name" : "Changing",
+  "time" : {
+    "start" : 1626624795042,
+    "stop" : 1626624795043,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "42d113d65d1eb26f",
+  "name" : "\"Next\" link disabled",
+  "time" : {
+    "start" : 1626644138970,
+    "stop" : 1626644139004,
+    "duration" : 34
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "84501404602fe046",
+  "name" : "lllll",
+  "time" : {
+    "start" : 1625868083975,
+    "stop" : 1625868083978,
+    "duration" : 3
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "d2e2506527795d87",
+  "name" : "\"before all\" hook for \"Changing arrow value in page number || Positive\"",
+  "time" : {
+    "start" : 1626626570934,
+    "stop" : 1626626570936,
+    "duration" : 2
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "216ab654cfb0d6e1",
+  "name" : "On \"Go to\" clicked with empty page number values and empty search field",
+  "time" : {
+    "start" : 1626648918318,
+    "stop" : 1626648919338,
+    "duration" : 1020
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1965c2caf97210ca",
+  "name" : "Page number displayed",
+  "time" : {
+    "start" : 1626639339618,
+    "stop" : 1626639340080,
+    "duration" : 462
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf0c5c442a84e994",
+  "name" : "Button \"Create\" displayed on",
+  "time" : {
+    "start" : 1626644809630,
+    "stop" : 1626644809674,
+    "duration" : 44
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "23a984067076e987",
+  "name" : "Searching planets by name works correctly",
+  "time" : {
+    "start" : 1626614202609,
+    "stop" : 1626614203569,
+    "duration" : 960
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8512c4609cc49c02",
+  "name" : "Page number should have attribute",
+  "time" : {
+    "start" : 1626623580585,
+    "stop" : 1626623580587,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "9babcaaa21d40d7f",
+  "name" : "Button \"Create\" displayed",
+  "time" : {
+    "start" : 1626644809678,
+    "stop" : 1626644809729,
+    "duration" : 51
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7f65850c62102223",
+  "name" : "Changing arrow value in page number || Positive",
+  "time" : {
+    "start" : 1626648920653,
+    "stop" : 1626648921222,
+    "duration" : 569
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c38f09655284cef0",
+  "name" : "All each page element are displayed (main page)",
+  "time" : {
+    "start" : 1626252540548,
+    "stop" : 1626252541469,
+    "duration" : 921
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "84187da2db53bf95",
+  "name" : "Button \"Create\" displayed on /planets endpoint",
+  "time" : {
+    "start" : 1626648922273,
+    "stop" : 1626648922319,
+    "duration" : 46
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b4b57fedd2fcc17c",
+  "name" : "Button \"Go to\" displayed",
+  "time" : {
+    "start" : 1626648918230,
+    "stop" : 1626648918296,
+    "duration" : 66
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92bc4c537622246d",
+  "name" : "Button \"Create\" displayed on /planets endpoint",
+  "time" : {
+    "start" : 1626648624233,
+    "stop" : 1626648624274,
+    "duration" : 41
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d5543d3025254075",
+  "name" : "Button \"Go to\" displayed",
+  "time" : {
+    "start" : 1626619558885,
+    "stop" : 1626619558943,
+    "duration" : 58
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9b49321424a9f9ab",
+  "name" : "\"Users online\" above users table is displayed",
+  "time" : {
+    "start" : 1626639163007,
+    "stop" : 1626639163039,
+    "duration" : 32
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "387cece2f2e2ff28",
+  "name" : "Displaying searching string ",
+  "time" : {
+    "start" : 1626615138458,
+    "stop" : 1626615138460,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "1eac0f3dfec2aa5a",
+  "name" : "Button \"Go to\" displayed",
+  "time" : {
+    "start" : 1626619386165,
+    "stop" : 1626619386305,
+    "duration" : 140
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba275fe8fcdf9650",
+  "name" : "\"Next\" link displayed",
+  "time" : {
+    "start" : 1626648922129,
+    "stop" : 1626648922189,
+    "duration" : 60
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4afb8b6c4d76ae1e",
+  "name" : "Second title \"Planets\" is displayed",
+  "time" : {
+    "start" : 1626557112348,
+    "stop" : 1626557112369,
+    "duration" : 21
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "be1938fdccf06785",
+  "name" : "On \"Go to\" clicked with empty page number values and empty search field",
+  "time" : {
+    "start" : 1626619386314,
+    "stop" : 1626619387211,
+    "duration" : 897
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "643af174a27ea149",
+  "name" : "Changing arrow value in page number || Negative",
+  "time" : {
+    "start" : 1626639341300,
+    "stop" : 1626639341871,
+    "duration" : 571
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33b24371b47d8e92",
+  "name" : "Home page images displayed",
+  "time" : {
+    "start" : 1626639156383,
+    "stop" : 1626639156462,
+    "duration" : 79
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d941fa82a53efff",
+  "name" : "On \"Go to\" clicked with empty page number values and empty search field",
+  "time" : {
+    "start" : 1626639337166,
+    "stop" : 1626639338093,
+    "duration" : 927
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c5dd572d1f88c051",
   "name" : "\"before all\" hook for \"\"Users\" button \"",
   "time" : {
     "start" : 1625866976668,
@@ -219,17 +389,467 @@
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "22465e6719f851b",
-  "name" : "Login displays in the info when a user was created",
+  "uid" : "c3deed7fff9592b6",
+  "name" : "On \"Go to\" clicked with empty page number values and non empty search field",
   "time" : {
-    "start" : 1626440166661,
-    "stop" : 1626440167696,
-    "duration" : 1035
+    "start" : 1626648919353,
+    "stop" : 1626648919894,
+    "duration" : 541
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d579673245482108",
+  "uid" : "ba48021c833296fa",
+  "name" : "Button \"Got",
+  "time" : {
+    "start" : 1626615881444,
+    "stop" : 1626615881447,
+    "duration" : 3
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f3758658a7630a5c",
+  "name" : "\"Previous\" link displayed",
+  "time" : {
+    "start" : 1626648922091,
+    "stop" : 1626648922122,
+    "duration" : 31
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "32e929e0cd00dbb2",
+  "name" : "On \"Go to\" clicked with empty page number values",
+  "time" : {
+    "start" : 1626617873610,
+    "stop" : 1626617878378,
+    "duration" : 4768
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9ce0ee56d5207e49",
+  "name" : "Unnamed",
+  "time" : {
+    "start" : 1626639539518,
+    "stop" : 1626639539520,
+    "duration" : 2
+  },
+  "status" : "unknown",
+  "severity" : "normal"
+}, {
+  "uid" : "9928022f9b41dd85",
+  "name" : "Unnamed",
+  "time" : {
+    "start" : 1626556594867,
+    "stop" : 1626556594868,
+    "duration" : 1
+  },
+  "status" : "unknown",
+  "severity" : "normal"
+}, {
+  "uid" : "6e6d88616dfc9855",
+  "name" : "Unnamed",
+  "time" : {
+    "start" : 1626252107570,
+    "stop" : 1626252108646,
+    "duration" : 1076
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6b805a312480495",
+  "name" : "\"Previous\" link disabled",
+  "time" : {
+    "start" : 1626648922196,
+    "stop" : 1626648922225,
+    "duration" : 29
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc2768bfe4686f0d",
+  "name" : "Page number ",
+  "time" : {
+    "start" : 1626623143912,
+    "stop" : 1626623143914,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "b8486cf6e5b77de7",
+  "name" : "Displaying searching string in \"Search for\"",
+  "time" : {
+    "start" : 1626648915997,
+    "stop" : 1626648916499,
+    "duration" : 502
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b283bd7b97481c91",
+  "name" : "Login displays in the info when a user was created",
+  "time" : {
+    "start" : 1626639165194,
+    "stop" : 1626639166203,
+    "duration" : 1009
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "516b3b8a1a7b52ca",
+  "name" : "Changing ",
+  "time" : {
+    "start" : 1626624808878,
+    "stop" : 1626624808881,
+    "duration" : 3
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "4638c23d266b37e4",
+  "name" : "\"Previous\" link displayed",
+  "time" : {
+    "start" : 1626644138814,
+    "stop" : 1626644138834,
+    "duration" : 20
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b951d8a48a527a09",
+  "name" : "Button \"Create\" displayed on /planets/?name=\"someName\"&page=",
+  "time" : {
+    "start" : 1626648922321,
+    "stop" : 1626648922851,
+    "duration" : 530
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a54014843019f65f",
+  "name" : "All each page element are displayed (users page)",
+  "time" : {
+    "start" : 1626252563730,
+    "stop" : 1626252566093,
+    "duration" : 2363
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe82e3c6a56569de",
+  "name" : "\"Next\" link displayed",
+  "time" : {
+    "start" : 1626644138837,
+    "stop" : 1626644138875,
+    "duration" : 38
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b83950da19875ce",
+  "name" : "Clicked on search placeholder",
+  "time" : {
+    "start" : 1626648915709,
+    "stop" : 1626648915924,
+    "duration" : 215
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3fe8430cecf06973",
+  "name" : "\"Next\" link disabled",
+  "time" : {
+    "start" : 1626648922228,
+    "stop" : 1626648922267,
+    "duration" : 39
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb948f501908cdd4",
+  "name" : "Page number should have correct attributes \"max\"",
+  "time" : {
+    "start" : 1626639340169,
+    "stop" : 1626639340255,
+    "duration" : 86
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c002a75fc9b174d5",
+  "name" : "\"Users\" button displayed correctly",
+  "time" : {
+    "start" : 1626639162959,
+    "stop" : 1626639163004,
+    "duration" : 45
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d0e0651e87a18796",
+  "name" : "Main table elements displayed",
+  "time" : {
+    "start" : 1626639156261,
+    "stop" : 1626639156348,
+    "duration" : 87
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9681523291874518",
+  "name" : "Button \"Create\" displayed on /planets/?name=\"someName\"&page=",
+  "time" : {
+    "start" : 1626648624291,
+    "stop" : 1626648624810,
+    "duration" : 519
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a87f673e66ff2d8c",
+  "name" : "Getting all header rows of table with users`s planets",
+  "time" : {
+    "start" : 1626639166206,
+    "stop" : 1626639166242,
+    "duration" : 36
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "693e0270baaf8c6b",
+  "name" : "Non table elements displayed",
+  "time" : {
+    "start" : 1626251744589,
+    "stop" : 1626251745685,
+    "duration" : 1096
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "43962d628839b9b1",
+  "name" : "On \"Go to\" clicked with empty page number values and non empty search field",
+  "time" : {
+    "start" : 1626619387232,
+    "stop" : 1626619388281,
+    "duration" : 1049
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "43af51c5239c3079",
+  "name" : "Unnamed",
+  "time" : {
+    "start" : 1626648923995,
+    "stop" : 1626648924042,
+    "duration" : 47
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4448837d974d89c1",
+  "name" : "Changing arrow value in page number",
+  "time" : {
+    "start" : 1626625818217,
+    "stop" : 1626625818548,
+    "duration" : 331
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3c7347bdb7248682",
+  "name" : "Page number should have css ",
+  "time" : {
+    "start" : 1626623544132,
+    "stop" : 1626623544137,
+    "duration" : 5
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "1dcb929c63b6657a",
+  "name" : "Searching planets with immediately clicks \"Find\" ",
+  "time" : {
+    "start" : 1626648917645,
+    "stop" : 1626648918213,
+    "duration" : 568
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8992cb93dca089db",
+  "name" : "User full name displays with users planets",
+  "time" : {
+    "start" : 1626639164176,
+    "stop" : 1626639165182,
+    "duration" : 1006
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f374b714941a6f07",
+  "name" : "Button \"Create\" displayed on /planets/?name=\"someName\"&page=\"somePage\"",
+  "time" : {
+    "start" : 1626648624816,
+    "stop" : 1626648625907,
+    "duration" : 1091
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "308c4a37fe2bc14e",
+  "name" : "An uncaught error was detected outside of a test",
+  "time" : {
+    "start" : 1626648857041,
+    "stop" : 1626648857048,
+    "duration" : 7
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "81483319802585e6",
+  "name" : "Unnamed",
+  "time" : {
+    "start" : 1625868984446,
+    "stop" : 1625868984446,
+    "duration" : 0
+  },
+  "status" : "unknown",
+  "severity" : "normal"
+}, {
+  "uid" : "efd6795d9d3e8500",
+  "name" : "Second title \"Planets\" above search placeholder is displayed",
+  "time" : {
+    "start" : 1626648915420,
+    "stop" : 1626648915636,
+    "duration" : 216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "534ad03c83b07031",
+  "name" : "Search placeholder displayed",
+  "time" : {
+    "start" : 1626648915653,
+    "stop" : 1626648915707,
+    "duration" : 54
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c10ae0132ca5093a",
+  "name" : "\"before all\" hook for \"Main table elements displayed\"",
+  "time" : {
+    "start" : 1626530247375,
+    "stop" : 1626530247377,
+    "duration" : 2
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c40cc4ad2eee19bc",
+  "name" : "Button \"Create\" displayed on /planets/?name=&page=\"somePage\"",
+  "time" : {
+    "start" : 1626645196128,
+    "stop" : 1626645196751,
+    "duration" : 623
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49b00c9d22d4a7bd",
+  "name" : "Main table elements displayed",
+  "time" : {
+    "start" : 1625840116094,
+    "stop" : 1625840117573,
+    "duration" : 1479
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1c4dbf41e6c4a566",
+  "name" : "On \"Go to\" clicked with empty page number values and empty search field",
+  "time" : {
+    "start" : 1626619558953,
+    "stop" : 1626619559482,
+    "duration" : 529
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75e942a47100f366",
+  "name" : "Changing arrow value in page number || Negative",
+  "time" : {
+    "start" : 1626648921232,
+    "stop" : 1626648921616,
+    "duration" : 384
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7abaefc924dfac7c",
+  "name" : "User full name displays with",
+  "time" : {
+    "start" : 1626121680499,
+    "stop" : 1626121680500,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "7d9254a670aaf4bc",
+  "name" : "Button \"Go to\" displayed",
+  "time" : {
+    "start" : 1626639337093,
+    "stop" : 1626639337158,
+    "duration" : 65
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e79166a32ca65da",
+  "name" : "\"Find\" button is displayed",
+  "time" : {
+    "start" : 1626648915932,
+    "stop" : 1626648915995,
+    "duration" : 63
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f1bc867fe9fb39d",
+  "name" : "Page number should have correct attributes \"max\" and \"min\"",
+  "time" : {
+    "start" : 1626624125166,
+    "stop" : 1626624125197,
+    "duration" : 31
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7d8016fceb3b418e",
+  "name" : "All each page element are displayed || users page",
+  "time" : {
+    "start" : 1626639166280,
+    "stop" : 1626639166333,
+    "duration" : 53
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a4827e9e7396b0a",
+  "name" : "Searching planets by random strings",
+  "time" : {
+    "start" : 1626648916518,
+    "stop" : 1626648917633,
+    "duration" : 1115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "13e796f54ee7448e",
   "name" : "\"before all\" hook: Getting data from fixture file  for \"Main table elements displayed\"",
   "time" : {
     "start" : 1625764192259,
@@ -239,12 +859,102 @@
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "d175bc160b2272fd",
+  "uid" : "bc4abf906bb36078",
+  "name" : "All each page element are displayed || planets page",
+  "time" : {
+    "start" : 1626648915117,
+    "stop" : 1626648915316,
+    "duration" : 199
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3ddab8ee8d1281d7",
   "name" : "Users table displays correctly",
   "time" : {
-    "start" : 1626440164245,
-    "stop" : 1626440164290,
+    "start" : 1626639163041,
+    "stop" : 1626639163079,
+    "duration" : 38
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f5fe766781cdc412",
+  "name" : "Button \"Create\" displayed on /planets/page&",
+  "time" : {
+    "start" : 1626644867997,
+    "stop" : 1626644868045,
+    "duration" : 48
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "67d44233c5c2c793",
+  "name" : "Page number displayed",
+  "time" : {
+    "start" : 1626648920513,
+    "stop" : 1626648920540,
+    "duration" : 27
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22f8815240339da8",
+  "name" : "Text above images displayed",
+  "time" : {
+    "start" : 1626639156465,
+    "stop" : 1626639156510,
     "duration" : 45
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92c885dda8c37812",
+  "name" : "Non table elements displayed",
+  "time" : {
+    "start" : 1625840117620,
+    "stop" : 1625840118048,
+    "duration" : 428
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dca0c618412f1a04",
+  "name" : "Page number should have correct attributes \"min\"",
+  "time" : {
+    "start" : 1626639340090,
+    "stop" : 1626639340160,
+    "duration" : 70
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4b73f266437dffe",
+  "name" : "\"Users\" button ",
+  "time" : {
+    "start" : 1625868121982,
+    "stop" : 1625868123658,
+    "duration" : 1676
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5c9b8415f482db30",
+  "name" : "On \"Go to\" clicked with empty page number values and non empty search field",
+  "time" : {
+    "start" : 1626619559499,
+    "stop" : 1626619559981,
+    "duration" : 482
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "10be19fc90c430af",
+  "name" : "Page number should have correct attributes \"max\"",
+  "time" : {
+    "start" : 1626648920599,
+    "stop" : 1626648920650,
+    "duration" : 51
   },
   "status" : "passed",
   "severity" : "normal"
