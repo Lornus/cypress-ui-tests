@@ -8,12 +8,14 @@ Tests/.DS_Store
 /Tests/allure-results/
 /Tests/allure-report/
 /Tests/cypress/screenshots/
+
 # User-specific stuff:
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/dictionaries
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
+
 
 # Sensitive or high-churn files:
 .idea/dataSources.ids
