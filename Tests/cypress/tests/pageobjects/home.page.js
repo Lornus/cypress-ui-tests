@@ -1,6 +1,6 @@
-import {ElementsOnAllPages} from './elements.on.all.pages'
+import {BaseMethods} from './base.methods'
 
-class HomePage extends ElementsOnAllPages {
+class HomePage extends BaseMethods {
 
     mainHomePageLink = '/'
     tableRows = 'ul>li'

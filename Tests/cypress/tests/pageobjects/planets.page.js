@@ -1,6 +1,6 @@
-import {ElementsOnAllPages} from './elements.on.all.pages'
+import {BaseMethods} from './base.methods'
 
-class PlanetsPage extends ElementsOnAllPages {
+class PlanetsPage extends BaseMethods {
 
     planetsPageUrl = '/planets'
     mainText = 'body>h1'
@@ -16,11 +16,11 @@ class PlanetsPage extends ElementsOnAllPages {
     currentPage = '.pagination > a:nth-of-type(2)'
     nextLinkPage = '.pagination > a:nth-of-type(3)'
     createButton = '.create'
-    enterName = 'br  + input:nth-of-type(1)'
-    enterDiscoverer = 'br  + input:nth-of-type(2)'
-    enterSats = 'br  + input:nth-of-type(3)'
-    enterMass = 'br  + input:nth-of-type(4)'
-    enterBrowsePhoto = 'br  + input:nth-of-type(5)'
+    enterName = '[name="name"]'
+    enterDiscoverer = '[name="discoverer"]'
+    enterSats = '[name="sat"]'
+    enterMass = '[name="mass"]'
+    fileUploader = '.photo'
 
 
     openUrls() {
@@ -58,33 +58,36 @@ class PlanetsPage extends ElementsOnAllPages {
         return cy.get(this.previousLinkPage)
     }
 
-     getCurrentPageNumber() {
+    getCurrentPageNumber() {
         return cy.get(this.currentPage)
     }
+
     getNextLink() {
         return cy.get(this.nextLinkPage)
     }
-    getCreateButton(){
+
+    getCreateButton() {
         return cy.get(this.createButton)
     }
 
-    getEnterNameField(){
+    getEnterNameField() {
         return cy.get(this.enterName)
     }
-    getEnterDiscovererField(){
+
+    getEnterDiscovererField() {
         return cy.get(this.enterDiscoverer)
     }
-    getEnterSatsField(){
+
+    getEnterSatsField() {
         return cy.get(this.enterSats)
     }
-    getEnterMassField(){
+
+    getEnterMassField() {
         return cy.get(this.enterMass)
     }
-    getBrowserPhotoField(){
-        return cy.get(this.enterBrowsePhoto)
-    }
 
-    async getLinksFromTable(){
+    
+    async getLinksFromTable() {
         const promises = await new Cypress.Promise((resolve) => {
             cy.get(App.planetsPage.planetFromTable)
                 .invoke('text')
@@ -92,6 +95,11 @@ class PlanetsPage extends ElementsOnAllPages {
         })
         return promises
     }
+
+    getFileUploader(){
+        return cy.get('.photo')
+    }
+
 }
 
 module.exports = new PlanetsPage()

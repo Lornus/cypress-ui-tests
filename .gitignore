@@ -1,6 +1,10 @@
-/.idea/*
 Tests/node_modules/*
 Tests/cypress/.idea/*
 Tests/cypress/videos/*
 Tests/results/*
 Tests/.DS_Store
+/Tests/cypress/buffer.js
+/.idea/
+/Tests/allure-results/
+/Tests/allure-report/
+/Tests/cypress/screenshots/

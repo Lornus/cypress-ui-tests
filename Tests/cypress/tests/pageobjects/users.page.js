@@ -1,7 +1,7 @@
 /// <reference type ="cypress" />
-import {ElementsOnAllPages} from './elements.on.all.pages'
+import {BaseMethods} from './base.methods'
 
-class UsersPage extends ElementsOnAllPages {
+class UsersPage extends BaseMethods {
 
     userUrl = '/users'
     usersBtn = 'ul>li>a:nth-of-type(1)'

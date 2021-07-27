@@ -1,4 +1,4 @@
-export class ElementsOnAllPages {
+export class BaseMethods {
 
     openUrls(path) {
         cy.visit(path)

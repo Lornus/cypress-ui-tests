@@ -18,6 +18,8 @@ import './commands'
 import '@shelex/cypress-allure-plugin'
 import './globalHooks'
 import './copypasted.commands'
+import 'cypress-file-upload';
+
 
 
 // Alternatively you can use CommonJS syntax:

@@ -1,4 +1,3 @@
-/// <reference type ="cypress" />
 
 describe("All elements on the users page displayed", function () {
 

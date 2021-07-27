@@ -3,7 +3,7 @@ class Copypasted {
 
     async getMainText() {
         const mainText = await new Cypress.Promise((resolve) => {
-            cy.get('div>h1')
+            cy.get('div>img+h1')
                 .invoke('text')
                 .then(txt => resolve(txt.toString()))
         })
