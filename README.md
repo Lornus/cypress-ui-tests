@@ -5,7 +5,7 @@ Site was written by me
 # Test stack: 
 1. node: v14.17.0
 2. Cypress package version: 7.6.0
-3. mochaJs
+3. MochaJs
 4. Allure reporter
 5. chai
 
