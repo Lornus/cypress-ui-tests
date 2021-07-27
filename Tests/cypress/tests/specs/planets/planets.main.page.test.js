@@ -10,7 +10,7 @@ async function writePlanetsToJsonArray() { //call it only if there is new planet
 }
 
 beforeEach(function () {
-    cy.fixture('all.planets.fixture').as('planets')
+    cy.fixture('planets.fixtures/all.planets.fixture').as('planets')
 })
 
 

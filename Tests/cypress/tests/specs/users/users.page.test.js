@@ -6,7 +6,7 @@ describe("All elements on the users page displayed", function () {
     })
 
     beforeEach(function () {
-        cy.fixture('users.page.fixture').as('data')
+        cy.fixture('users.fixtures/users.page.fixture').as('data')
     })
 
     it('"Users" button displayed correctly', function () {
