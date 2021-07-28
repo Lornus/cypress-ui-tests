@@ -22,14 +22,4 @@ describe('Create planet negative test || only mass is empty', function () {
             })
         });
     })
-
-    describe('On planet page must be required elements', function () {
-
-        it('All each page element are displayed || on new planet page', async function () {
-
-            await App.repeatableMethods.DefaultElementsTested();
-
-        })
-
-    })
 })

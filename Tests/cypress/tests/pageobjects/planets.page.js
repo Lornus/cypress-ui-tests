@@ -21,7 +21,7 @@ class PlanetsPage extends BaseMethods {
     enterSats = '[name="sat"]'
     enterMass = '[name="mass"]'
     fileUploader = '.photo'
-
+    updateButton = '[value = "Update planet"]'
 
     openUrls() {
         super.openUrls(this.planetsPageUrl);

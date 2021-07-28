@@ -19,7 +19,7 @@ beforeEach(function () {
 })
 
 
-describe('Of main planets page test || "/planets" endpoint', function (){
+describe('Of main planets page test || "/planets" endpoint', function () {
     describe("All elements on the planets page displayed", function () {
         before(() => {
             App.planetsPage.openUrls()
@@ -190,7 +190,7 @@ describe('Of main planets page test || "/planets" endpoint', function (){
                 })
 
 
-                it('Go to next pages via "Next>>" if they are',  function () {
+                it('Go to next pages via "Next>>" if they are', function () {
 
                     if (!(Boolean(expect(cy.get(App.planetsPage.nextLinkPage)
                         .should('not.be.disabled'))))) {
@@ -206,7 +206,10 @@ describe('Of main planets page test || "/planets" endpoint', function (){
                             expect(cy.get(App.planetsPage.table)
                                 .should('be.visible'), 'On each page must be visible' +
                                 ' table with created planets')
-                            expect(App.planetsPage.getPreviousLink().should('not.be.disabled'), "Wow no")
+                            expect(App.planetsPage.getPreviousLink().should('not.be.disabled'),
+                                "Previous link mustn't br disabled if we are on any next ")
+                            expect(App.planetsPage.getCreateButton().should('be.enabled'),
+                                'On each page create button must be enabled')
                         }
                     }
                     expect(App.planetsPage.getNextLink()
