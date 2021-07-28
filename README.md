@@ -16,6 +16,7 @@ Site was written by me
 3. install cypress if you don't have
 4. npm install && npm cit
 5. npm test 
-6. to see reporter(allure html): npm run report 
+6. to see reporter in package.json file change cy:run to "cy:run": "cypress run --env allure=true" 
+7. npm run report 
 
 
