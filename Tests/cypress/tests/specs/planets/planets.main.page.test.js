@@ -2,10 +2,15 @@ const randomString = require("randomstring")
 
 const tString = randomString.generate({length: 1, charset: 'mw'})
 
-async function writePlanetsToJsonArray() { //call it only if there is new planets or
+const pages = [1, 2] //amount of pages with planets
+
+
+async function writePlanetsToJsonArray(path) {
+    //call it only if there is new planets or
     //each time make json file empty
 
-    cy.writeFile('../Tests/cypress/fixtures/all.planets.fixture.json', {"planets_on_page": await App.planetsPage.getLinksFromTable()},
+    path = '../Tests/cypress/fixtures/planets.fixtures/all.planets.fixture.json'
+    cy.writeFile(path, {"planets_on_page": await App.planetsPage.getLinksFromTable()},
         {flag: 'a+'})
 }
 
@@ -157,12 +162,11 @@ describe('Of main planets page test || "/planets" endpoint', function (){
 
 
                 it('Changing arrow value in page number', function () {
-                    const arrowLimit = ['1', '2', '3'] //amout of pages
-                    arrowLimit.map(pages => {
-                        App.planetsPage.getPageNumber().type(pages).trigger('change')
+                    pages.map(pagesArrow => {
+                        App.planetsPage.getPageNumber().type(pagesArrow).trigger('change')
                         App.planetsPage.getGoButton().click()
-                        expect(cy.url().should('contain', `?name=&page=${pages}`), `url must contain is such case ' +
-            '"?name=&page=${pages}"`)
+                        expect(cy.url().should('contain', `?name=&page=${pagesArrow}`), `url must contain is such case ' +
+            '"?name=&page=${pagesArrow}"`)
                     })
                 })
             })
@@ -186,7 +190,7 @@ describe('Of main planets page test || "/planets" endpoint', function (){
                 })
 
 
-                it('Go to next pages via "Next>>" if they are', function () {
+                it('Go to next pages via "Next>>" if they are',  function () {
 
                     if (!(Boolean(expect(cy.get(App.planetsPage.nextLinkPage)
                         .should('not.be.disabled'))))) {
@@ -194,7 +198,6 @@ describe('Of main planets page test || "/planets" endpoint', function (){
                             .should('be.disabled'), 'If there is only one page ' +
                             'next link must be disabled')
                     }
-                    const pages = [1, 2, 3] //amount of pages with planets
 
                     for (let i = 0; i < pages.length - 1; i++) {
                         if (Boolean(expect(App.planetsPage.getNextLink()
@@ -217,7 +220,6 @@ describe('Of main planets page test || "/planets" endpoint', function (){
                 })
 
                 it('Go to previous pages via "<<Previous" if they are', function () {
-                    const pages = [1, 2, 3] //amount of pages with planets
 
                     for (let i = 0; i < pages.length - 1; i++) {
                         if (Boolean(expect(App.planetsPage.getPreviousLink()

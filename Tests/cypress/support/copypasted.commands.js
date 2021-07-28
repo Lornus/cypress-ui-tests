@@ -1,3 +1,4 @@
+const randomString = require("randomstring");
 
 class Copypasted {
 
@@ -47,6 +48,20 @@ class Copypasted {
     typeSearchValue(tString){
         cy.get('[type="text"]').type(tString)
         cy.get('.find').click()
+    }cf4r
+
+    randomName(){
+        const rname = randomString.generate({length: 6, charset: 'ABCdefgjklmnte'});
+        return rname
+    }
+
+    randomSats(){
+        const planetSats = parseInt(Math.random() * 10000000000 + 0);
+        return planetSats
+    }
+    randomMass(){
+        const planetMass = parseInt(Math.random() * (100000000000 - 1500000) + 1500000);
+        return planetMass
     }
 }
 

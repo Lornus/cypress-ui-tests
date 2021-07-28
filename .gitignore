@@ -4,7 +4,7 @@ Tests/cypress/videos/*
 Tests/results/*
 Tests/.DS_Store
 /Tests/cypress/buffer.js
-/Tests/allure-results/
-/Tests/allure-report/
 /Tests/cypress/screenshots/
 .idea/*
+/Tests/allure-results/
+/Tests/allure-report/

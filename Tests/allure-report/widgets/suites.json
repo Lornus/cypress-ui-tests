@@ -1,15 +1,48 @@
 {
-  "total" : 8,
+  "total" : 12,
   "items" : [ {
     "uid" : "9c4b0a8e66be66c85ba6df5945b0764d",
     "name" : "All elements on the planets page displayed",
     "statistic" : {
-      "failed" : 3,
+      "failed" : 4,
       "broken" : 0,
-      "skipped" : 8,
-      "passed" : 53,
+      "skipped" : 9,
+      "passed" : 62,
       "unknown" : 2,
-      "total" : 66
+      "total" : 77
+    }
+  }, {
+    "uid" : "5424c0123ff122167f439f4fa6ac6279",
+    "name" : "HomePage ui tests",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "ca1cb00df39609baad6cef772e1b14c3",
+    "name" : "Of main planets page test || \"/planets\" endpoint",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 20,
+      "unknown" : 0,
+      "total" : 21
+    }
+  }, {
+    "uid" : "499c5ca42942d4bf13f0f7c7ff467e19",
+    "name" : "All elements on the users page displayed",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 3,
+      "passed" : 11,
+      "unknown" : 1,
+      "total" : 16
     }
   }, {
     "uid" : "85b592cd9ef0472aae58947c63baafcb",
@@ -23,15 +56,26 @@
       "total" : 8
     }
   }, {
-    "uid" : "499c5ca42942d4bf13f0f7c7ff467e19",
-    "name" : "All elements on the users page displayed",
+    "uid" : "bcffd3b575aa3719b852385096c957dc",
+    "name" : "Of creation page tests || \"/new?\" endpoint",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
-      "skipped" : 3,
-      "passed" : 12,
-      "unknown" : 1,
-      "total" : 16
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "bfac1d5bae23d0245fa2093079a39899",
+    "name" : "Create planet positive tests",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 5
     }
   }, {
     "uid" : "fc3b2e56e73b8e00fff47d83c580633f",
