@@ -40,29 +40,99 @@ class Copypasted {
 
     }
 
-    clearSearchInput(){
+    clearSearchInput() {
         cy.get('[type="text"]').clear()
         cy.get('.find').click()
     }
 
-    typeSearchValue(tString){
+    typeSearchValue(tString) {
         cy.get('[type="text"]').type(tString)
         cy.get('.find').click()
-    }cf4r
-
-    randomName(){
-        const rname = randomString.generate({length: 6, charset: 'ABCdefgjklmnte'});
-        return rname
     }
 
-    randomSats(){
-        const planetSats = parseInt(Math.random() * 10000000000 + 0);
-        return planetSats
+    checkPlanetButtons() {
+        it("Buttons on created planet's page are displayed", function () {
+
+            expect(cy.get('[value="Add race"]').should('be.visible')
+                .and('be.enabled'))
+
+            expect(cy.get('[value="Delete race"]').should('be.visible')
+                .and('be.enabled'))
+
+            expect(cy.get('[value="Update planet"]').should('be.visible')
+                .and('be.enabled'))
+
+            expect(cy.get('[value="Delete planet"]').should('be.visible')
+                .and('be.enabled'))
+
+            expect(cy.get('[value="Update planet photo"]').should('be.visible')
+                .and('be.enabled'))
+
+        })
     }
-    randomMass(){
-        const planetMass = parseInt(Math.random() * (100000000000 - 1500000) + 1500000);
-        return planetMass
+
+    checkNewPlanetAddedToBd(planet) {
+
+        App.planetsPage.openUrls();
+        App.planetsPage.getSearchPlaceHolder().type(planet);
+        App.planetsPage.getFindButton().click();
+        expect(cy.get(App.planetsPage.planetFromTable).should('contain', planet));
     }
+
+
+    checkPropertiesDisplayed(name, discoverer, sats, mass) {
+
+        expect(cy.get('.planet_ > h1').should('have.text', 'Planet'),
+            'Above planet name must be h1 "Planet"');
+
+        expect(cy.get('.planet_images').invoke('attr', 'alt').should('eq',
+            '*Planet picture',
+            'Alt of picture must be "*Planet picture"')
+        );
+
+        expect(cy.get('.planet_images').and('be.visible'),
+            'Image of planet must be visible');
+
+
+        expect(cy.get('.add>p:nth-child(1)').should('contain', `Planet: ${name}`),
+            `On new page must be field: Planet: ${name}`);
+
+        expect(cy.get('.add>p:nth-child(2)').should('contain', `Discoverer: ${discoverer}`),
+            `On new page must be field: Discoverer: ${discoverer}`);
+
+        expect(cy.get('.add>p:nth-child(3)').should('contain', `Sat's: ${sats}`),
+            `On new page must be field: Sat's: : ${sats}`);
+
+        expect(cy.get('.add>p:nth-child(4)').should('contain', `Mass: ${mass}`),
+            `On new page must be field: Mass: : ${mass}`);
+
+        expect(cy.get('.p_races').should('have.text', 'Races who live on planet'));
+
+    }
+
+    RandomData = {
+        planetName: randomString.generate({length: 6, charset: 'ABCdefgjklmnte'}),
+        planetDiscoverer: randomString.generate({length: 6, charset: 'ABCdefgjklmnte'}),
+        planetSats: parseInt(Math.random() * 10000000000 + 0),
+        planetMass: parseInt(Math.random() * (100000000000 - 1500000) + 1500000)
+    }
+
+    enterAllRequiredFields() {
+        App.planetsPage.getEnterNameField().type(this.RandomData.planetName);
+        App.planetsPage.getEnterDiscovererField().type(this.RandomData.planetDiscoverer);
+
+        App.planetsPage.getEnterSatsField().type(this.RandomData.planetSats).trigger('change');
+        App.planetsPage.getEnterMassField().type(this.RandomData.planetMass).trigger('change');
+    }
+
+    clearAllRequiredFields() {
+        App.planetsPage.getEnterNameField().clear()
+        App.planetsPage.getEnterDiscovererField().clear()
+
+        App.planetsPage.getEnterSatsField().clear()
+        App.planetsPage.getEnterMassField().clear()
+    }
+
 }
 
- module.exports = new Copypasted()
+module.exports = new Copypasted()

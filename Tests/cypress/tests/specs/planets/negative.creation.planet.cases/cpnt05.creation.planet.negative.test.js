@@ -1,4 +1,4 @@
-describe('Create planet negative test || mass and sats fields getting negative input', function () {
+describe('Create planet negative test || sats field getting negative input', function () {
     before(function () {
         App.planetsPage.openUrls();
         App.planetsPage.getCreateButton().click();
@@ -10,17 +10,17 @@ describe('Create planet negative test || mass and sats fields getting negative i
         it(`Input negative amount of sat's and mass`, function () {
 
 
-            App.planetsPage.getEnterNameField().type(App.repeatableMethods.randomName());
-            App.planetsPage.getEnterDiscovererField().type(App.repeatableMethods.randomName());
+            App.planetsPage.getEnterNameField().type('tp');
+            App.planetsPage.getEnterDiscovererField().type('tp');
             App.planetsPage.getEnterSatsField().type(-5);
-            App.planetsPage.getEnterMassField().type(-10000000000);
+            App.planetsPage.getEnterMassField().type(App.repeatableMethods.RandomData.planetMass);
 
             App.planetsPage.getCreateButton().click();
         })
         describe('Expected behaviour', function () {
             it('After clicked on "Create" field "Mass" must be focused', function () {
                 expect(App.planetsPage.getEnterSatsField().should('be.focused'),
-                    'Field "Sats" must be focused as it`s earlier in dom than "Mass" field ');
+                    'Field "Sats" must be focused');
             })
         })
     })

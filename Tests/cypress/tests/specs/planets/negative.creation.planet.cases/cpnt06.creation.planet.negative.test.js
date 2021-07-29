@@ -1,4 +1,4 @@
-describe('Create planet negative test || mass field getting 0 input', function () {
+describe('Create planet negative test || mass field getting negative input', function () {
     before(function () {
         App.planetsPage.openUrls();
         App.planetsPage.getCreateButton().click();
@@ -9,10 +9,9 @@ describe('Create planet negative test || mass field getting 0 input', function (
 
         it(`Input 0 in mass`, function () {
 
-
-            App.planetsPage.getEnterNameField().type(App.repeatableMethods.randomName());
-            App.planetsPage.getEnterDiscovererField().type(App.repeatableMethods.randomName());
-            App.planetsPage.getEnterSatsField().type(App.repeatableMethods.randomSats());
+            App.planetsPage.getEnterNameField().type('tp');
+            App.planetsPage.getEnterDiscovererField().type('tp');
+            App.planetsPage.getEnterSatsField().type(App.repeatableMethods.RandomData.planetSats);
             App.planetsPage.getEnterMassField().type(0);
 
             App.planetsPage.getCreateButton().click();

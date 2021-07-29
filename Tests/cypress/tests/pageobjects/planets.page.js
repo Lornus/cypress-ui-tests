@@ -27,17 +27,6 @@ class PlanetsPage extends BaseMethods {
         super.openUrls(this.planetsPageUrl);
     }
 
-    async getMainText() {
-        const text = await new Cypress.Promise((resolve) => {
-            cy.get(this.mainText)
-                .invoke('text')
-                .then(txt => {
-                    resolve(txt.toString())
-                })
-        })
-        return text
-    }
-
     getSearchPlaceHolder() {
         return cy.get(this.searchPlaceHolder)
     }
@@ -86,14 +75,13 @@ class PlanetsPage extends BaseMethods {
         return cy.get(this.enterMass)
     }
 
-    
-    async getLinksFromTable() {
-        const promises = await new Cypress.Promise((resolve) => {
-            cy.get(App.planetsPage.planetFromTable)
+    async getTextFromLocator(locator) {
+        const text = await new Cypress.Promise((resolve) => {
+            cy.get(locator)
                 .invoke('text')
                 .then(txt => resolve(txt.toString()))
         })
-        return promises
+        return text
     }
 
     getFileUploader(){

@@ -8,3 +8,4 @@ Tests/.DS_Store
 .idea/*
 /Tests/allure-results/
 /Tests/allure-report/
+/Tests/buffer.js

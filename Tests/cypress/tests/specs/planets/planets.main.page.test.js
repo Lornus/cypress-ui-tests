@@ -10,7 +10,7 @@ async function writePlanetsToJsonArray(path) {
     //each time make json file empty
 
     path = '../Tests/cypress/fixtures/planets.fixtures/all.planets.fixture.json'
-    cy.writeFile(path, {"planets_on_page": await App.planetsPage.getLinksFromTable()},
+    cy.writeFile(path, {"planets_on_page": await App.planetsPage.getTextFromLocator(App.planetsPage.planetFromTable)},
         {flag: 'a+'})
 }
 
@@ -34,7 +34,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
 
         it('Second title "Planets" above search placeholder is displayed', async function () {
 
-            expect(await App.planetsPage.getMainText()).to.equal('Planets', 'Second title above' +
+            expect(await App.planetsPage.getTextFromLocator(App.planetsPage.mainText)).to.equal('Planets', 'Second title above' +
                 ' search placeholder must be "Planets"')
 
         })
@@ -106,7 +106,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                             stringElements
                         )
                     })
-                    .should('contain', await App.planetsPage.getLinksFromTable())
+                    .should('contain', await App.planetsPage.getTextFromLocator(App.planetsPage.planetFromTable))
             })
         })
 

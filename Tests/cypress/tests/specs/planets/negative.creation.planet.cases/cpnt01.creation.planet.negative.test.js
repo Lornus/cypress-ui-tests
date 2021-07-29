@@ -16,6 +16,6 @@ describe('Create planet negative test || all empty fields', function () {
                 expect(App.planetsPage.getEnterNameField().should('be.focused'),
                     'Field "Name" must be focused');
             })
-        });
+        })
     })
 })
