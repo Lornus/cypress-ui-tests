@@ -1,1 +1,0 @@
-{"uuid":"80dac926-23f2-483c-ac19-f889c9709d31","children":["6f2bb39c-3eef-4046-865c-0cde04d27fe2","2386c5f8-69bb-481d-8e33-fdd11b839250"],"befores":[],"afters":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[]}],"name":"All elements on the planets page displayed Searching planets by name works correctly"}
