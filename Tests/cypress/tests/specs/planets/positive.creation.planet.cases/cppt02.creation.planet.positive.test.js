@@ -1,6 +1,4 @@
-const filePath = 'planets.fixtures/media/upload.test.file.json';
-
-describe('Create planet positive test || all required data + json file upload', function () {
+describe('Create planet positive test || all required data + no uploading file', function () {
     before('Go to the creation page', function () {
         App.planetsPage.openUrls();
         App.planetsPage.getCreateButton().click();
@@ -11,12 +9,9 @@ describe('Create planet positive test || all required data + json file upload', 
         cy.get('[value="Delete planet"]').click()
     })
 
-    it('Creation planet with all correct inputs and any file added', function () {
+    it('Creation planet with all correct required inputs', function () {
 
         App.repeatableMethods.enterAllRequiredFields()
-
-        App.planetsPage.getFileUploader().attachFile(filePath);
-        App.planetsPage.getFileUploader().click();
 
         App.planetsPage.getCreateButton().click();
     })
@@ -35,7 +30,7 @@ describe('Create planet positive test || all required data + json file upload', 
 
         describe('New planet added to BD', function () {
             it("New planet is existing in table", function () {
-                const randomData =  App.repeatableMethods.RandomData
+                const randomData = App.repeatableMethods.RandomData
 
                 App.repeatableMethods.checkNewPlanetAddedToBd(randomData.planetName);
             })

@@ -1,4 +1,4 @@
-describe('Update planet negative test || All required data empty', function () {
+describe('Update planet`s required fields negative test || All required data empty', function () {
     before('Click on test planet for updating', function () {
         App.planetsPage.openUrls()
         cy.get(App.planetsPage.planetFromTable)

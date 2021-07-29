@@ -1,4 +1,4 @@
-describe('Update planet positive test || Left all data originally', function () {
+describe('Update planet`s required fields positive test || Left all data originally', function () {
     before('Click on test planet for updating', function () {
         App.planetsPage.openUrls()
 

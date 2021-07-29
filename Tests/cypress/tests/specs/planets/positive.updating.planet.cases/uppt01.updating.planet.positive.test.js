@@ -1,4 +1,4 @@
-describe('Update planet positive test || All required data entered correctly', function () {
+describe('Update planet`s required fields positive test || All required data entered correctly', function () {
     before('Click on test planet for updating', function () {
         App.planetsPage.openUrls()
         cy.get(App.planetsPage.planetFromTable)

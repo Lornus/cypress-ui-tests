@@ -1,4 +1,4 @@
-describe('Update planet negative test || "Mass" amount is negative ', function () {
+describe('Update planet`s required fields negative test || "Mass" amount is negative ', function () {
     before('Click on test planet for updating', function () {
         App.planetsPage.openUrls()
         cy.get(App.planetsPage.planetFromTable)
@@ -21,7 +21,7 @@ describe('Update planet negative test || "Mass" amount is negative ', function (
         cy.get(App.planetsPage.updateButton).click()
     })
     describe('Expected behaviour', function () {
-        it('After clicked on "Create" "Sat" field must be focused and must be warning', function () {
+        it('After clicked on "Create" "Mass" field must be focused and must be warning', function () {
             expect(App.planetsPage.getEnterMassField().should('be.focused'),
                 '"Mass" field must be focused');
         })
