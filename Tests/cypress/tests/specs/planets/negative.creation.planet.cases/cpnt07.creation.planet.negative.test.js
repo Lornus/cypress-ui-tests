@@ -4,12 +4,8 @@ describe('Create planet negative test || all required data + json file upload', 
     before('Go to the creation page', function () {
         App.planetsPage.openUrls();
         App.planetsPage.getCreateButton().click();
+    })
 
-    })
-    after('Deleting new planet', function () {
-        cy.get(App.planetsPage.planetFromTable).click()
-        cy.get('[value="Delete planet"]').click()
-    })
 
     it('Creation planet with all correct inputs and any file added', function () {
 
@@ -29,6 +25,7 @@ describe('Create planet negative test || all required data + json file upload', 
                 'with non valid file format must be warning and "Choose file" must be focused')
 
         })
+
 
     })
 })

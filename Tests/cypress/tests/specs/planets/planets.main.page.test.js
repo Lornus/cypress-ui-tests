@@ -2,7 +2,10 @@ const randomString = require("randomstring")
 
 const tString = randomString.generate({length: 1, charset: 'mw'})
 
-const pages = [1, 2] //amount of pages with planets
+async function LastPage() {
+    return ((await App.planetsPage.getTextFromLocator('.page')).slice(2, 3))
+
+}
 
 
 async function writePlanetsToJsonArray(path) {
@@ -76,7 +79,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
 
 
                 if (listOfPlanets.includes(tString)) {
-                    expect(cy.get('td>a')
+                    expect(cy.get(App.planetsPage.planetFromTable)
                         .then(($els) => {
                             const elementsArray = Cypress.$.makeArray($els).map((el) => el.innerText);
                             const stringElements = elementsArray.join('');
@@ -162,7 +165,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
 
 
                 it('Changing arrow value in page number', function () {
-                    pages.map(pagesArrow => {
+                    App.repeatableMethods.pages.map(pagesArrow => {
                         App.planetsPage.getPageNumber().type(pagesArrow).trigger('change')
                         App.planetsPage.getGoButton().click()
                         expect(cy.url().should('contain', `?name=&page=${pagesArrow}`), `url must contain is such case ' +
@@ -199,7 +202,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                             'next link must be disabled')
                     }
 
-                    for (let i = 0; i < pages.length - 1; i++) {
+                    for (let i = 0; i < App.repeatableMethods.pages.length - 1; i++) {
                         if (Boolean(expect(App.planetsPage.getNextLink()
                             .should('not.be.disabled')))) {
                             App.planetsPage.getNextLink().click()
@@ -216,7 +219,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                         .should('not.be.enabled'), 'On the last page next ' +
                         'link must be disabled')
 
-                    expect(cy.url().should('contain', `page=${pages[pages.length - 1]}`), 'in utl ' +
+                    expect(cy.url().should('contain', `page=${App.repeatableMethods.pages[App.repeatableMethods.pages.length - 1]}`), 'in utl ' +
                         'must be number of last page')
 
 
@@ -224,7 +227,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
 
                 it('Go to previous pages via "<<Previous" if they are', function () {
 
-                    for (let i = 0; i < pages.length - 1; i++) {
+                    for (let i = 0; i < App.repeatableMethods.pages.length - 1; i++) {
                         if (Boolean(expect(App.planetsPage.getPreviousLink()
                             .should('not.be.disabled')))) {
                             App.planetsPage.getPreviousLink().click()
@@ -234,10 +237,8 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                         .should('not.be.enabled'), 'On the first page previous ' +
                         'link must be disabled')
 
-                    expect(cy.url().should('contain', `page=${pages[pages.indexOf(1)]}`), 'in utl ' +
+                    expect(cy.url().should('contain', `page=${App.repeatableMethods.pages[App.repeatableMethods.pages.indexOf(1)]}`), 'in utl ' +
                         'must be number of last page')
-
-
                 })
             })
         })

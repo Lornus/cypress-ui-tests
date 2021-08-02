@@ -1,6 +1,11 @@
 const randomString = require("randomstring");
 
+
 class Copypasted {
+
+    get pages() {
+        return [1, 2]
+    }
 
     async getMainText() {
         const mainText = await new Cypress.Promise((resolve) => {
@@ -76,7 +81,7 @@ class Copypasted {
         App.planetsPage.openUrls();
         App.planetsPage.getSearchPlaceHolder().type(planet);
         App.planetsPage.getFindButton().click();
-        expect(cy.get(App.planetsPage.planetFromTable).should('contain', planet));
+        //expect(cy.get(App.planetsPage.planetFromTable).should('contain', planet));
     }
 
 
@@ -133,6 +138,31 @@ class Copypasted {
         App.planetsPage.getEnterMassField().clear()
     }
 
+    clickingOnNextLink() {
+        for (let i = 0; i < this.pages - 1; i++) {
+            if (Boolean(expect(App.planetsPage.getNextLink()
+                .should('not.be.disabled')))) {
+                App.planetsPage.getNextLink().click()
+                expect(cy.get(App.planetsPage.table)
+                    .should('be.visible'), 'On each page must be visible' +
+                    ' table with created planets')
+            }
+        }
+    }
+
+    clickingOnPlanetFromTable(equals) {
+
+        cy.get(App.planetsPage.planetFromTable)
+            .eq(equals)
+            .click()
+    }
+
+    returnRowOfTable(){
+        const beforeDeleting = cy.get("td")
+            .find("a")
+            .then(row =>
+                row);
+    }
 }
 
 module.exports = new Copypasted()

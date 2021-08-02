@@ -4,10 +4,6 @@ describe('Create planet positive test || all required data + no uploading file',
         App.planetsPage.getCreateButton().click();
 
     })
-    after('Deleting new planet', function () {
-        cy.get(App.planetsPage.planetFromTable).click()
-        cy.get('[value="Delete planet"]').click()
-    })
 
     it('Creation planet with all correct required inputs', function () {
 
