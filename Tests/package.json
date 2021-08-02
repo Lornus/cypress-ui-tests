@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:run": "cypress open --env allure=true",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --env allure=true",
     "report": "allure generate allure-results --clean -o allure-report && allure open allure-report",
-    "test": "npm run cy:run"
+    "usual:test": "npm run cy:open",
+    "reporter:test": "npm run cy:run"
   },
   "author": "",
   "license": "ISC",

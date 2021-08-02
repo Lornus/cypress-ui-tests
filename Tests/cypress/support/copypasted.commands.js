@@ -4,8 +4,16 @@ const randomString = require("randomstring");
 class Copypasted {
 
     get pages() {
-        return [1, 2]
+        return [1, 2,3]
     }
+
+    RandomData = {
+        planetName: randomString.generate({length: 6, charset: 'ABCdefgjklmnte'}),
+        planetDiscoverer: randomString.generate({length: 6, charset: 'ABCdefgjklmnte'}),
+        planetSats: parseInt(Math.random() * 10000000000 + 0),
+        planetMass: parseInt(Math.random() * (100000000000 - 1500000) + 1500000)
+    }
+
 
     async getMainText() {
         const mainText = await new Cypress.Promise((resolve) => {
@@ -81,7 +89,6 @@ class Copypasted {
         App.planetsPage.openUrls();
         App.planetsPage.getSearchPlaceHolder().type(planet);
         App.planetsPage.getFindButton().click();
-        //expect(cy.get(App.planetsPage.planetFromTable).should('contain', planet));
     }
 
 
@@ -113,13 +120,6 @@ class Copypasted {
 
         expect(cy.get('.p_races').should('have.text', 'Races who live on planet'));
 
-    }
-
-    RandomData = {
-        planetName: randomString.generate({length: 6, charset: 'ABCdefgjklmnte'}),
-        planetDiscoverer: randomString.generate({length: 6, charset: 'ABCdefgjklmnte'}),
-        planetSats: parseInt(Math.random() * 10000000000 + 0),
-        planetMass: parseInt(Math.random() * (100000000000 - 1500000) + 1500000)
     }
 
     enterAllRequiredFields() {
@@ -157,11 +157,12 @@ class Copypasted {
             .click()
     }
 
-    returnRowOfTable(){
-        const beforeDeleting = cy.get("td")
+    returnRowOfTable() {
+        const row = cy.get("td")
             .find("a")
             .then(row =>
                 row);
+        return row
     }
 }
 
