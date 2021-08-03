@@ -15,10 +15,8 @@ describe('Update planet`s required fields negative test || All required data emp
         App.repeatableMethods.clearAllRequiredFields()
         cy.get(App.planetsPage.updateButton).click()
     })
-    describe('Expected behaviour', function () {
-        it('After clicked on "Create" "Name" field must be focused and must be warning', function () {
-            expect(App.planetsPage.getEnterNameField().should('be.focused'),
-                'Field "Name" must be focused');
-        })
+    it('After clicked on "Create" "Name" field is focused with warning', function () {
+        expect(App.planetsPage.getEnterNameField().should('be.focused'),
+            'Field "Name" must be focused');
     })
 })

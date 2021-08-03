@@ -4,7 +4,7 @@ const randomString = require("randomstring");
 class Copypasted {
 
     get pages() {
-        return [1, 2,3]
+        return [1, 2, 3]
     }
 
     RandomData = {
@@ -163,6 +163,49 @@ class Copypasted {
             .then(row =>
                 row);
         return row
+    }
+
+    checkMaxSatsProperty() {
+        return (expect(App.planetsPage.getEnterSatsField().should('be.visible')
+                    .and('be.enabled')
+                    .invoke("attr", 'max')
+                    .should('eq', '10000000000'),
+                'Field to enter sats must be visible' +
+                'enabled and have max attr 10000000000')
+        )
+    }
+
+    checkMinSatsProperty() {
+        return (expect(App.planetsPage.getEnterSatsField().should('be.visible')
+                    .and('be.enabled')
+                    .invoke("attr", 'min')
+                    .should('eq', '0'),
+                'Field to enter sats must be visible' +
+                'enabled and have min attr 0')
+        )
+
+    }
+
+    checkMaxMassProperty() {
+        return (
+            expect(App.planetsPage.getEnterMassField().should('be.visible')
+                    .and('be.enabled')
+                    .invoke("attr", 'max')
+                    .should('eq', '100000000000'),
+                'Field to enter sats must be visible' +
+                'enabled and have max attr 10000000000')
+        )
+    }
+
+    checkMinMassProperty() {
+        return (
+            expect(App.planetsPage.getEnterMassField().should('be.visible')
+                    .and('be.enabled')
+                    .invoke("attr", 'min')
+                    .should('eq', '1500000'),
+                'Field to enter sats must be visible' +
+                'enabled and have min attr 1500000')
+        )
     }
 }
 

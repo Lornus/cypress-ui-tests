@@ -8,6 +8,7 @@ describe('Of creation page tests || "/new?" endpoint', function () {
         it('All each page element are displayed || on planets creation page', async function () {
 
             await App.repeatableMethods.DefaultElementsTested()
+            cy.wait(5000)
 
         })
 
@@ -19,45 +20,26 @@ describe('Of creation page tests || "/new?" endpoint', function () {
                     .and('be.enabled')
                     .invoke("attr", 'type')
                     .should('eq', 'text'), 'Field to enter name must be visible' +
-                                                                 'enabled and have type name')
+                    'enabled and have type name')
 
             });
         })
 
         it('"Sats" field displayed correctly', function () {
 
-            expect(App.planetsPage.getEnterSatsField().should('be.visible')
-                    .and('be.enabled')
-                    .invoke("attr", 'max')
-                    .should('eq', '10000000000'),
-                'Field to enter sats must be visible' +
-                         'enabled and have max attr 10000000000');
+            App.repeatableMethods.checkMaxSatsProperty()
 
-            expect(App.planetsPage.getEnterSatsField().should('be.visible')
-                    .and('be.enabled')
-                    .invoke("attr", 'min')
-                    .should('eq', '0'),
-                'Field to enter sats must be visible' +
-                         'enabled and have min attr 0');
+            App.repeatableMethods.checkMinSatsProperty()
+
+            App.repeatableMethods.clearAllRequiredFields()
 
         })
 
         it('"Mass" field displayed correctly', function () {
 
-            expect(App.planetsPage.getEnterMassField().should('be.visible')
-                    .and('be.enabled')
-                    .invoke("attr", 'max')
-                    .should('eq', '100000000000'),
-                'Field to enter sats must be visible' +
-                         'enabled and have max attr 10000000000');
+            App.repeatableMethods.checkMaxMassProperty()
 
-
-            expect(App.planetsPage.getEnterMassField().should('be.visible')
-                    .and('be.enabled')
-                    .invoke("attr", 'min')
-                    .should('eq', '1500000'),
-                'Field to enter sats must be visible' +
-                         'enabled and have min attr 1500000');
+            App.repeatableMethods.checkMinMassProperty()
 
         })
 

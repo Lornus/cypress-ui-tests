@@ -2,11 +2,6 @@ const randomString = require("randomstring")
 
 const tString = randomString.generate({length: 1, charset: 'mw'})
 
-async function LastPage() {
-    return ((await App.planetsPage.getTextFromLocator('.page')).slice(2, 3))
-
-}
-
 
 async function writePlanetsToJsonArray(path) {
     //call it only if there is new planets or
@@ -135,14 +130,14 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                     App.repeatableMethods.clearSearchInput()
                     App.planetsPage.getGoButton().click()
                     expect(cy.url().should('contain', `?name=&page=`), `url must contain is such case ' +
-            '"?name=&page="`)
+                                                                                               '"?name=&page="`)
                 })
 
                 it('On "Go to" clicked with empty page number values and non empty search field', function () {
                     App.repeatableMethods.typeSearchValue(tString)
 
                     expect(cy.url().should('contain', `?name=${tString}&page=`), `url must contain is such case ' +
-            '"?name=${tString}&page="`)
+                                                                                                        '"?name=${tString}&page="`)
                 })
 
             })
@@ -169,7 +164,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                         App.planetsPage.getPageNumber().type(pagesArrow).trigger('change')
                         App.planetsPage.getGoButton().click()
                         expect(cy.url().should('contain', `?name=&page=${pagesArrow}`), `url must contain is such case ' +
-            '"?name=&page=${pagesArrow}"`)
+                                                                                                                '"?name=&page=${pagesArrow}"`)
                     })
                 })
             })
@@ -206,11 +201,14 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                         if (Boolean(expect(App.planetsPage.getNextLink()
                             .should('not.be.disabled')))) {
                             App.planetsPage.getNextLink().click()
+
                             expect(cy.get(App.planetsPage.table)
                                 .should('be.visible'), 'On each page must be visible' +
-                                ' table with created planets')
+                                '                                        table with created planets')
+
                             expect(App.planetsPage.getPreviousLink().should('not.be.disabled'),
                                 "Previous link mustn't br disabled if we are on any next ")
+
                             expect(App.planetsPage.getCreateButton().should('be.enabled'),
                                 'On each page create button must be enabled')
                         }

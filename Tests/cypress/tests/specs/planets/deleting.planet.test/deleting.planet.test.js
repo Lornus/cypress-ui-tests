@@ -4,8 +4,8 @@ describe('Deleting planet test', function () {
         App.planetsPage.openUrls()
     })
 
-    it('Delete planet from the last page' +
-        '|| there is more than 1 planet to delete on page', function () {
+    it("Delete planet from the last page " +
+        "|| there is more than 1 planet to delete on page", function () {
 
         App.repeatableMethods.clickingOnNextLink()
         const beforeDeleting = App.repeatableMethods.returnRowOfTable()

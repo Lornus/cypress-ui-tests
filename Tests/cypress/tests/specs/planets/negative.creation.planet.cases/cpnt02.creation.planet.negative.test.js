@@ -5,19 +5,13 @@ describe('Create planet negative test || name non empty', function () {
 
     })
 
-    describe('Create planet with empty data', function () {
+    it('Create planet with entered name and with no file', function () {
 
-        it(`Creation planet with only name non empty input and without any file added`, function () {
-
-            App.planetsPage.getEnterNameField().type('tp')
-            App.planetsPage.getCreateButton().click();
-        })
-        describe('Expected behaviour', function () {
-            it('After clicked on "Create" field "Discoverer" must be focused', function () {
-                expect(App.planetsPage.getEnterDiscovererField().should('be.focused'),
-                    'Field "Discoverer" must be focused');
-            })
-        });
+        App.planetsPage.getEnterNameField().type(App.repeatableMethods.RandomData.planetName);
+        App.planetsPage.getCreateButton().click();
     })
-
+    it('After clicked on "Create" field "Discoverer" must be focused with warning', function () {
+        expect(App.planetsPage.getEnterDiscovererField().should('be.focused'),
+            'Field "Discoverer" must be focused');
+    })
 })

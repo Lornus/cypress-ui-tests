@@ -19,13 +19,11 @@ describe('Update planet`s required fields positive test || All required data ent
         cy.get(App.planetsPage.updateButton).click()
     })
 
-    describe('Expected result after updating', function () {
-        it('Updating properties of planet displayed', function () {
-            const randomData = App.repeatableMethods.RandomData
+    it('Updating properties of planet displayed', function () {
+        const randomData = App.repeatableMethods.RandomData
 
-            App.repeatableMethods.checkPropertiesDisplayed(randomData.planetName, randomData.planetDiscoverer,
-                randomData.planetSats, randomData.planetMass);
-            App.repeatableMethods.checkPlanetButtons();
-        })
+        App.repeatableMethods.checkPropertiesDisplayed(randomData.planetName, randomData.planetDiscoverer,
+            randomData.planetSats, randomData.planetMass);
+        App.repeatableMethods.checkPlanetButtons();
     })
 })
