@@ -84,8 +84,9 @@ class PlanetsPage extends BaseMethods {
         return text
     }
 
-    getFileUploader(){
-        return cy.get('.photo')
+    getFileUploader() {
+      return cy.get('.photo')
+
     }
 
 }
