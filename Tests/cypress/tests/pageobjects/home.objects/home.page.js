@@ -1,4 +1,4 @@
-import {BaseMethods} from './base.methods'
+import {BaseMethods} from '../base.methods'
 
 class HomePage extends BaseMethods {
 

@@ -1,4 +1,4 @@
-const filePath = 'planets.fixtures/media/test.page.png';
+const filePath = 'media/test.page.png';
 
 describe('Create planet positive test || all required data + png file uploaded', function () {
     before('Go to the creation page', function () {
@@ -11,10 +11,10 @@ describe('Create planet positive test || all required data + png file uploaded',
 
     it('Create planet with all correct inputs and png file added', function () {
 
-        App.repeatableMethods.enterAllRequiredFields()
+        App.repeatableMethods.enterAllPlanetsRequiredFields()
 
-        App.planetsPage.getFileUploader().attachFile(filePath);
-        App.planetsPage.getFileUploader().click();
+        App.repeatableMethods.getFileUploader().attachFile(filePath);
+        App.repeatableMethods.getFileUploader().click();
 
         App.planetsPage.getCreateButton().click();
     })
@@ -23,7 +23,7 @@ describe('Create planet positive test || all required data + png file uploaded',
 
         const randomData = App.repeatableMethods.RandomData
 
-        App.repeatableMethods.checkPropertiesDisplayed(randomData.planetName, randomData.planetDiscoverer,
+        App.repeatableMethods.checkPlanetPropertiesDisplayed(randomData.planetName, randomData.planetDiscoverer,
             randomData.planetSats, randomData.planetMass);
         App.repeatableMethods.checkPlanetButtons();
 

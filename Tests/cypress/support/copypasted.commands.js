@@ -3,15 +3,25 @@ const randomString = require("randomstring");
 
 class Copypasted {
 
-    get pages() {
-        return [1, 2, 3, 4]
+    get planetPages() {
+        return [1, 2, 3, 4, 5]
+    }
+
+    get racePages() {
+        return [1, 2]
     }
 
     RandomData = {
         planetName: randomString.generate({length: 6, charset: 'ABCdefgjklmnte'}),
         planetDiscoverer: randomString.generate({length: 6, charset: 'ABCdefgjklmnte'}),
         planetSats: parseInt(Math.random() * 10000000000 + 0),
-        planetMass: parseInt(Math.random() * (100000000000 - 1500000) + 1500000)
+        planetMass: parseInt(Math.random() * (100000000000 - 1500000) + 1500000),
+
+        raceName: randomString.generate({length: 6, charset: 'ABCdefgjklmnte'}),
+        raceStrength: parseInt(Math.random() * 20 + 0),
+        raceIntellect: parseInt(Math.random() * 25 + 0),
+        raceDexterity: parseInt(Math.random() * 22 + 0),
+
     }
 
 
@@ -93,7 +103,7 @@ class Copypasted {
     }
 
 
-    checkPropertiesDisplayed(name, discoverer, sats, mass) {
+    checkPlanetPropertiesDisplayed(name, discoverer, sats, mass) {
 
         expect(cy.get('.planet_ > h1').should('have.text', 'Planet'),
             'Above planet name must be h1 "Planet"');
@@ -123,7 +133,7 @@ class Copypasted {
 
     }
 
-    enterAllRequiredFields() {
+    enterAllPlanetsRequiredFields() {
         App.planetsPage.getEnterNameField().type(this.RandomData.planetName);
         App.planetsPage.getEnterDiscovererField().type(this.RandomData.planetDiscoverer);
 
@@ -131,7 +141,7 @@ class Copypasted {
         App.planetsPage.getEnterMassField().type(this.RandomData.planetMass).trigger('change');
     }
 
-    clearAllRequiredFields() {
+    clearAllPlanetsRequiredFields() {
         App.planetsPage.getEnterNameField().clear()
         App.planetsPage.getEnterDiscovererField().clear()
 
@@ -139,22 +149,22 @@ class Copypasted {
         App.planetsPage.getEnterMassField().clear()
     }
 
-    clickingOnNextLink() {
-        for (let i = 0; i < this.pages - 1; i++) {
-            if (Boolean(expect(App.planetsPage.getNextLink()
+    clickingOnNextLink(pages, entity) {
+        for (let i = 0; i < pages - 1; i++) {
+            if (Boolean(expect(cy.get('pagination > a:nth-of-type(3)')
                 .should('not.be.disabled')))) {
-                App.planetsPage.getNextLink().click()
-                expect(cy.get(App.planetsPage.table)
-                    .should('be.visible'), 'On each page must be visible' +
-                    ' table with created planets')
+                cy.get('pagination > a:nth-of-type(3)').click()
+                expect(cy.get('tbody')
+                    .should('be.visible'), `On each page must be visible' +
+                    ' table with created ${entity}`)
             }
         }
     }
 
-    clickingOnPlanetFromTable(equals) {
+    clickingOnLinkFromTable(linkIndex) {
 
-        cy.get(App.planetsPage.planetFromTable)
-            .eq(equals)
+        cy.get('td>a')
+            .eq(linkIndex)
             .click()
     }
 
@@ -165,6 +175,20 @@ class Copypasted {
                 row);
         if (!row) cy.log("Row can't be find")
         return row
+    }
+
+    async getTextFromLocator(locator) {
+        const text = await new Cypress.Promise((resolve) => {
+            cy.get(locator)
+                .invoke('text')
+                .then(txt => resolve(txt.toString()))
+        })
+        return text
+    }
+
+    getFileUploader() {
+        return cy.get('.photo')
+
     }
 
     checkMaxSatsProperty() {

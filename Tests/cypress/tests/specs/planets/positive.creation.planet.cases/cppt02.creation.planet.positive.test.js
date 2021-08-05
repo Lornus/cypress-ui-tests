@@ -7,7 +7,7 @@ describe('Create planet positive test || all required data + no uploading file',
 
     it('Create planet with all correct required inputs', function () {
 
-        App.repeatableMethods.enterAllRequiredFields()
+        App.repeatableMethods.enterAllPlanetsRequiredFields()
 
         App.planetsPage.getCreateButton().click();
     })
@@ -16,7 +16,7 @@ describe('Create planet positive test || all required data + no uploading file',
 
         const randomData = App.repeatableMethods.RandomData
 
-        App.repeatableMethods.checkPropertiesDisplayed(randomData.planetName, randomData.planetDiscoverer,
+        App.repeatableMethods.checkPlanetPropertiesDisplayed(randomData.planetName, randomData.planetDiscoverer,
             randomData.planetSats, randomData.planetMass);
         App.repeatableMethods.checkPlanetButtons();
 

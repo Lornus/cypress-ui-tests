@@ -1,6 +1,6 @@
-import {BaseMethods} from './base.methods'
+import {BaseMethods} from '../base.methods'
 
-class PlanetsPage extends BaseMethods {
+class PlanetsPages extends BaseMethods {
 
     planetsPageUrl = '/planets'
     mainText = 'body>h1'
@@ -75,20 +75,7 @@ class PlanetsPage extends BaseMethods {
         return cy.get(this.enterMass)
     }
 
-    async getTextFromLocator(locator) {
-        const text = await new Cypress.Promise((resolve) => {
-            cy.get(locator)
-                .invoke('text')
-                .then(txt => resolve(txt.toString()))
-        })
-        return text
-    }
-
-    getFileUploader() {
-      return cy.get('.photo')
-
-    }
 
 }
 
-module.exports = new PlanetsPage()
+module.exports = new PlanetsPages()

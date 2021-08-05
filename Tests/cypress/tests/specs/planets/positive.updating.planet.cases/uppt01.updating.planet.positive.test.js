@@ -12,9 +12,9 @@ describe('Update planet`s required fields positive test || All required data ent
 
     it('Enter all required data', function () {
 
-        App.repeatableMethods.clearAllRequiredFields()
+        App.repeatableMethods.clearAllPlanetsRequiredFields()
 
-        App.repeatableMethods.enterAllRequiredFields()
+        App.repeatableMethods.enterAllPlanetsRequiredFields()
 
         cy.get(App.planetsPage.updateButton).click()
     })
@@ -22,7 +22,7 @@ describe('Update planet`s required fields positive test || All required data ent
     it('Updating properties of planet displayed', function () {
         const randomData = App.repeatableMethods.RandomData
 
-        App.repeatableMethods.checkPropertiesDisplayed(randomData.planetName, randomData.planetDiscoverer,
+        App.repeatableMethods.checkPlanetPropertiesDisplayed(randomData.planetName, randomData.planetDiscoverer,
             randomData.planetSats, randomData.planetMass);
         App.repeatableMethods.checkPlanetButtons();
     })

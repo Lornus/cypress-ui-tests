@@ -1,4 +1,3 @@
-
 describe('Deleting planet test', function () {
     before(function () {
         App.planetsPage.openUrls()
@@ -7,14 +6,15 @@ describe('Deleting planet test', function () {
     it("Delete planet from the last page " +
         "|| there is more than 1 planet to delete on page", function () {
 
-        App.repeatableMethods.clickingOnNextLink()
+        const entity = "planets"
+        App.repeatableMethods.clickingOnNextLink(App.repeatableMethods.planetPages, entity)
         const beforeDeleting = App.repeatableMethods.returnRowOfTable()
 
-        App.repeatableMethods.clickingOnPlanetFromTable(0)
+        App.repeatableMethods.clickingOnLinkFromTable(0)
 
         cy.get('[value="Delete planet"]').click()
 
-        App.repeatableMethods.clickingOnNextLink()
+        App.repeatableMethods.clickingOnNextLink(App.repeatableMethods.planetPages, entity)
 
         const afterDeleting = App.repeatableMethods.returnRowOfTable()
 

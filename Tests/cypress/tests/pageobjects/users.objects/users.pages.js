@@ -1,7 +1,6 @@
-/// <reference type ="cypress" />
-import {BaseMethods} from './base.methods'
+import {BaseMethods} from '../base.methods'
 
-class UsersPage extends BaseMethods {
+class UsersPages extends BaseMethods {
 
     userUrl = '/users'
     usersBtn = 'ul>li>a:nth-of-type(1)'
@@ -37,4 +36,4 @@ class UsersPage extends BaseMethods {
     }
 }
 
-module.exports = new UsersPage()
+module.exports = new UsersPages()

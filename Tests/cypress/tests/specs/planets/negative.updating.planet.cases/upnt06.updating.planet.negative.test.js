@@ -12,7 +12,7 @@ describe('Update planet`s required fields negative test || "Sat" amount is negat
 
     it('Click on "Update planet" button', function () {
 
-        App.repeatableMethods.clearAllRequiredFields()
+        App.repeatableMethods.clearAllPlanetsRequiredFields()
         App.planetsPage.getEnterNameField().type(App.repeatableMethods.RandomData.planetName);
         App.planetsPage.getEnterDiscovererField().type(App.repeatableMethods.RandomData.planetDiscoverer);
         App.planetsPage.getEnterSatsField(2).type(-5);
