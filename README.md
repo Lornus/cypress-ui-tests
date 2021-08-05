@@ -12,11 +12,9 @@ Site was written by me
 
 # For running test 
 1. clone repo 
-2. install node if you don't have 
-3. install cypress if you don't have
-4. npm install && npm cit
-5. npm test 
-6. to see reporter in package.json file change cy:run to "cy:run": "cypress run --env allure=true" 
-7. npm run report 
+2. npm install 
+3. npm run cy-studio:test for launching test in cypress studio
+4. npm run cl:test for launching test in terminal 
+5. npm run report for seeing allure report
 
 
