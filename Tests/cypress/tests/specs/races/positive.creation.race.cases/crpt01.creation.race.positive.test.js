@@ -1,15 +1,15 @@
-describe('Creation race positive test || all required data filled', function () {
+describe('Creation race positive test || \t\n' +
+    'Creation race with all required data filled correctly (name, strength, intellect, dexterity)', function () {
     before(function () {
         App.racePage.openUrls();
         App.racePage.getCreateButton().click();
     })
 
     it('Enter all required fields correctly', function () {
-        cy.get('[name="name"]').type(App.repeatableMethods.RandomData.raceName);
-        cy.get('[name="strength"]').type(App.repeatableMethods.RandomData.raceStrength);
-        cy.get('[name="intellect"]').type(App.repeatableMethods.RandomData.raceIntellect);
-        cy.get('[name="dexterity"]').type(App.repeatableMethods.RandomData.raceDexterity);
+        App.repeatableMethods.enterAllRequiredRaceFields();
         App.racePage.getCreateButton().click();
+
+
     })
     it('After creation race can be found by name', async function () {
         App.racePage.openUrls();

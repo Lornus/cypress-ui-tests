@@ -239,6 +239,12 @@ class Copypasted {
 
         return checkMin
     }
+    enterAllRequiredRaceFields() {
+        cy.get('[name="name"]').type(App.repeatableMethods.RandomData.raceName);
+        cy.get('[name="strength"]').type(App.repeatableMethods.RandomData.raceStrength);
+        cy.get('[name="intellect"]').type(App.repeatableMethods.RandomData.raceIntellect);
+        cy.get('[name="dexterity"]').type(App.repeatableMethods.RandomData.raceDexterity);
+    }
 }
 
 module.exports = new Copypasted()
