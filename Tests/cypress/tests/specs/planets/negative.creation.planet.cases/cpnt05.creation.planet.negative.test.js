@@ -1,4 +1,4 @@
-describe('Create planet negative test || sats and mass fields getting negative input', function () {
+describe('Create planet negative test || sats field getting negative input', function () {
     before(function () {
         App.planetsPage.openUrls();
         App.planetsPage.getCreateButton().click();
@@ -6,7 +6,7 @@ describe('Create planet negative test || sats and mass fields getting negative i
     })
 
 
-    it('Create planet with negative mass and sats amount', function () {
+    it('Create planet with negative sats amount', function () {
         App.planetsPage.getEnterNameField().type(App.repeatableMethods.RandomData.planetName);
         App.planetsPage.getEnterDiscovererField().type(App.repeatableMethods.RandomData.planetDiscoverer);
         App.planetsPage.getEnterSatsField().type(-5);
@@ -15,7 +15,7 @@ describe('Create planet negative test || sats and mass fields getting negative i
         App.planetsPage.getCreateButton().click();
     })
 
-    it('After clicked on "Create" field "Mass" is focused with warning', function () {
+    it('After clicked on "Create" field "Sats" is focused with warning', function () {
         expect(App.planetsPage.getEnterSatsField().should('be.focused'),
             'Field "Sats" must be focused');
     })
