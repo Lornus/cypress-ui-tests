@@ -9,7 +9,6 @@ Site was written by me
 4. Allure reporter
 5. chai
 
-
 # For running test 
 1. clone repo 
 2. npm install 
