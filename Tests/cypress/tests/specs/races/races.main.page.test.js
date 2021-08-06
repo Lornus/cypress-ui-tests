@@ -43,7 +43,7 @@ describe('Races main page test', function () {
         })
 
         it('Any name of race is clickable || At least one race existing', function () {
-            cy.get('td>a')
+            App.racePage.getAllLinksInTable()
                 .eq(0)
                 .should('not.be.disabled');
         })

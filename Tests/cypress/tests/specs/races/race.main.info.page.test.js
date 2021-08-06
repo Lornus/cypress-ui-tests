@@ -1,7 +1,7 @@
 describe('Main information race page', function () {
     before(function () {
         App.racePage.openUrls()
-        cy.get('td>a')
+        App.racePage.getAllLinksInTable()
             .eq(0)
             .click();
     })

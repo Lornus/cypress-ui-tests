@@ -6,6 +6,7 @@ class RacesPages extends BaseMethods {
     searchPlaceHolder = '[type="text"]';
     findButton = '.find';
     noRaces = 'tr>td';
+    allLinksInTable = 'td>a'
     table = 'tbody';
     firstColumnHeader = 'tr>th:nth-child(1)';
     secondColumnHeader = 'tr>th:nth-child(2)';
@@ -91,6 +92,9 @@ class RacesPages extends BaseMethods {
         return tableRow
     }
 
+    getAllLinksInTable(){
+       return cy.get('td>a')
+    }
 
 }
 
