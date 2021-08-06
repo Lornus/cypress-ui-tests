@@ -4,6 +4,7 @@ describe('Update race negative test || Intellect is negative', function () {
         App.racePage.getAllLinksInTable()
             .eq(1)
             .click();
+
         cy.get('[value="Update race"]').click();
     })
 
@@ -13,8 +14,9 @@ describe('Update race negative test || Intellect is negative', function () {
         cy.get('[name = "intellect"]').type(-1);
         cy.get('[name = "dexterity"]').type(App.repeatableMethods.RandomData.raceDexterity);
 
-        cy.get('.create').click()
+        cy.get('.create').click();
     })
+
     it('After clicking "Update" field "Intellect" is focused with a warning', function () {
         expect(cy.get('[name = "intellect"]')
                 .should('be.focused'),

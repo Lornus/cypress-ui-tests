@@ -4,8 +4,9 @@ describe('Update race page test', function () {
         App.racePage.getAllLinksInTable()
             .eq(1)
             .click();
-        cy.get('[value="Update race"]').click();;
+        cy.get('[value="Update race"]').click();
     })
+
     describe('All required elements displayed', function () {
 
         it("On each page elements displayed || update race page", async function () {
@@ -21,6 +22,7 @@ describe('Update race page test', function () {
                     'All required fields must be displayed and enabled');
             })
         })
+
         it('Update button displayed', function () {
             expect(cy.get('.create')
                     .should('be.visible')

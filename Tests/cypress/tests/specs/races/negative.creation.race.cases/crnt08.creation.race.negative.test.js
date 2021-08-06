@@ -12,6 +12,7 @@ describe('Creation race positive test || Creation race with entering ' +
         App.repeatableMethods.getFileUploader().attachFile(filePath);
         App.racePage.getCreateButton().click();
     })
+
     it('Displayed warning about wrong file format and "Choose file" is focused', function () {
         expect(App.repeatableMethods.getFileUploader()
                 .should('be.focused'),

@@ -30,6 +30,7 @@ describe('Main information race page', function () {
                 .should('be.visible'));
         })
     })
+
     const buttons = [0, 1, 2]
     buttons.map(button => {
         it(`${button}'st button displayed and enabled`, function () {

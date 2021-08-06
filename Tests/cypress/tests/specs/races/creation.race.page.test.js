@@ -10,13 +10,16 @@ describe('Creation race page test', function () {
     const fields = ["name", "strength", "intellect", "dexterity"]
     fields.map(field => {
         it(`All required fields displayed || ${field}`, function () {
+
             expect(cy.get(`[name = ${field}]`)
                 .should('be.visible')
                 .and('be.enabled'),
                 'All required fields must be displayed and enabled');
         })
     })
+
     it('Photo uploader displayed and enabled', function (){
+
         expect(App.repeatableMethods.getFileUploader()
             .should('be.visible')
             .and('be.enabled'),
@@ -24,6 +27,7 @@ describe('Creation race page test', function () {
     })
 
     it('Create button displayed and enabled', function (){
+
         expect(App.racePage.getCreateButton()
                 .should('be.visible')
                 .and('be.enabled'),

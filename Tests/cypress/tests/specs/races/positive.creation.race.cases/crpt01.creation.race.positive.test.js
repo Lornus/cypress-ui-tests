@@ -15,6 +15,7 @@ describe('Creation race positive test || \t\n' +
         App.racePage.openUrls();
         App.racePage.getSearchPlaceHolder().type(App.repeatableMethods.RandomData.raceName);
         App.racePage.getFindButton().click();
+
         expect(await (await App.repeatableMethods.getTextFromLocator('td>a'))
             .includes(App.repeatableMethods.RandomData.raceName));
     })

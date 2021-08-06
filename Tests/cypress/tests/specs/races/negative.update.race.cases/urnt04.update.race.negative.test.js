@@ -4,6 +4,7 @@ describe('Update race negative test || Strength is negative', function () {
         App.racePage.getAllLinksInTable()
             .eq(1)
             .click();
+
         cy.get('[value="Update race"]').click();
     })
 
@@ -13,7 +14,7 @@ describe('Update race negative test || Strength is negative', function () {
         cy.get('[name = "intellect"]').type(App.repeatableMethods.RandomData.raceStrength);
         cy.get('[name = "dexterity"]').type(App.repeatableMethods.RandomData.raceDexterity);
 
-        cy.get('.create').click()
+        cy.get('.create').click();
     })
     it('After clicking "Update" field "Strength" is focused with a warning', function () {
         expect(cy.get('[name = "strength"]')

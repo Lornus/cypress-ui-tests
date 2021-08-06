@@ -7,6 +7,7 @@ describe('Creation race negative test || Creation race with entering only name a
     it('Enter name, strength and click on the "Create" button', function () {
         cy.get('[name = "name"]').type(App.repeatableMethods.RandomData.raceName);
         cy.get('[name = "strength"]').type(App.repeatableMethods.RandomData.raceStrength);
+
         App.racePage.getCreateButton().click();
     })
 

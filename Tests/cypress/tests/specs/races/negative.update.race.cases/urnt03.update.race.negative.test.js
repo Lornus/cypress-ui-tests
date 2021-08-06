@@ -4,6 +4,7 @@ describe('Update race negative test || Enter name, strength, intellect', functio
         App.racePage.getAllLinksInTable()
             .eq(1)
             .click();
+
         cy.get('[value="Update race"]').click();
     })
 
@@ -11,7 +12,8 @@ describe('Update race negative test || Enter name, strength, intellect', functio
         cy.get('[name = "name"]').type(App.repeatableMethods.RandomData.raceName);
         cy.get('[name = "strength"]').type(App.repeatableMethods.RandomData.raceStrength);
         cy.get('[name = "intellect"]').type(App.repeatableMethods.RandomData.raceStrength);
-        cy.get('.create').click()
+
+        cy.get('.create').click();
     })
     it('After clicking "Update" field "Dexterity" is focused with a warning', function () {
         expect(cy.get('[name = "dexterity"]')
