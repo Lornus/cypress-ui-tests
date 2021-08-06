@@ -123,6 +123,5 @@ describe('Races main page test', function () {
                     'When there is no races next must be disabled');
             }
         })
-
     })
 })

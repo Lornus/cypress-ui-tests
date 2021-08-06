@@ -9,10 +9,6 @@ describe('Update race page test', function () {
 
     describe('All required elements displayed', function () {
 
-        it("On each page elements displayed || update race page", async function () {
-            await App.repeatableMethods.DefaultElementsTested();
-        })
-
         const fields = ["name", "strength", "intellect", "dexterity"];
         fields.map(field => {
             it(`All required fields displayed || ${field}`, function () {
