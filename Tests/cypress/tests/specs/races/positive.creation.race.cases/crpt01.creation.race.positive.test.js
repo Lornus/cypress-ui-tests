@@ -11,6 +11,7 @@ describe('Creation race positive test || \t\n' +
 
 
     })
+
     it('After creation race can be found by name', async function () {
         App.racePage.openUrls();
         App.racePage.getSearchPlaceHolder().type(App.repeatableMethods.RandomData.raceName);

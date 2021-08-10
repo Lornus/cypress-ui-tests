@@ -56,8 +56,13 @@ describe('Deleting race from planet || planet has races to delete', function () 
     })
 
     it('Race is deleted from a planet', function () {
-        expect(cy.get('td>a')
-                .should('not.contain', existingRace)
-            , 'Race must be deleted from planet');
+        if (checkPlanetHasRace === true) {
+
+            expect(cy.get('td>a')
+                    .should('not.contain', existingRace)
+                , 'Race must be deleted from planet');
+        } else {
+            this.skip();
+        }
     })
 })

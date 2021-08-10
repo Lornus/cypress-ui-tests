@@ -3,7 +3,7 @@ describe('Adding race to a planet', function () {
     before(function () {
         App.racePage.openUrls();
         cy.get('td>a')
-            .eq(1)
+            .eq(0)
             .invoke('text')
             .then(elem => {
                     existingRace = elem.toString();
