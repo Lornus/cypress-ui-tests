@@ -3,22 +3,22 @@ describe('Update planet`s required fields negative test || "Name" field is empty
         App.planetsPage.openUrls()
         cy.get(App.planetsPage.planetFromTable)
             .eq(1)
-            .click()
+            .click();
 
         cy.get('[value="Update planet"]')
-            .click()
-
+            .click();
     })
 
     it('Click on "Update planet" button', function () {
 
-        App.repeatableMethods.clearAllPlanetsRequiredFields()
+        App.repeatableMethods.clearAllPlanetsRequiredFields();
         App.planetsPage.getEnterDiscovererField().type(App.repeatableMethods.RandomData.planetDiscoverer);
-        App.planetsPage.getEnterMassField(2).type(2)
-        App.planetsPage.getEnterSatsField().type(2)
+        App.planetsPage.getEnterMassField(2).type(2);
+        App.planetsPage.getEnterSatsField().type(2);
 
-        cy.get(App.planetsPage.updateButton).click()
+        cy.get(App.planetsPage.updateButton).click();
     })
+
     it('After clicked on "Create" "Name" field is focused with warning', function () {
         expect(App.planetsPage.getEnterNameField().should('be.focused'),
             'Field "Name" must be focused');

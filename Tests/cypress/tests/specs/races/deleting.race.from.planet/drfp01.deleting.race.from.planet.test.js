@@ -1,9 +1,9 @@
 describe('Deleting race from planet || planet has races to delete', function () {
     before(function () {
-        App.planetsPage.openUrls()
+        App.planetsPage.openUrls();
         App.racePage.getAllLinksInTable()
             .eq(0)
-            .click()
+            .click();
     })
 
     let checkPlanetHasRace = true;
@@ -14,13 +14,13 @@ describe('Deleting race from planet || planet has races to delete', function () 
         cy.get('td')
             .invoke('text')
             .then(text => {
-                text.toString()
+                text.toString();
             })
             .then(check => {
                 if (check === "There no races") {
-                    cy.log('NO RACES')
-                    checkPlanetHasRace = false
-                    return checkPlanetHasRace
+                    cy.log('NO RACES');
+                    checkPlanetHasRace = false;
+                    return checkPlanetHasRace;
                 }
             })
     })
@@ -31,17 +31,17 @@ describe('Deleting race from planet || planet has races to delete', function () 
                 .eq(0)
                 .invoke('text')
                 .then(elem => {
-                        existingRace = elem.toString()
+                        existingRace = elem.toString();
                     }
                 )
                 .then(() => {
                     cy.get('[value="Delete race"]')
                         .click()
                     cy.get('select')
-                        .select(existingRace)
+                        .select(existingRace);
                 })
         } else {
-            this.skip()
+            this.skip();
         }
     })
 
@@ -49,16 +49,15 @@ describe('Deleting race from planet || planet has races to delete', function () 
         if (checkPlanetHasRace === true) {
 
             cy.get('[value="Delete race"]')
-                .click()
+                .click();
         } else {
-            this.skip()
+            this.skip();
         }
     })
 
     it('Race is deleted from a planet', function () {
         expect(cy.get('td>a')
                 .should('not.contain', existingRace)
-            , 'Race must be deleted from planet')
+            , 'Race must be deleted from planet');
     })
-
 })

@@ -19,7 +19,7 @@ describe('Updating page test', function () {
         it('"Update planet" button is displayed correctly', function () {
             expect(cy.get(App.planetsPage.updateButton)
                     .should('be.enabled'),
-                '"Update button" must be enabled')
+                '"Update button" must be enabled');
         })
 
         describe('All input fields are displayed', function () {
@@ -32,24 +32,24 @@ describe('Updating page test', function () {
                         .and('be.enabled')
                         .invoke("attr", 'type')
                         .should('eq', 'text'), 'Field to enter name must be visible' +
-                        'enabled and have type name')
+                        'enabled and have type name');
 
-                });
+                })
             })
 
             it('"Sats" field displayed correctly', function () {
 
-                App.repeatableMethods.checkMaxSatsProperty()
+                App.repeatableMethods.checkMaxSatsProperty();
 
-                App.repeatableMethods.checkMinMassProperty()
+                App.repeatableMethods.checkMinMassProperty();
 
             })
 
             it('"Mass" field displayed correctly', function () {
 
-                App.repeatableMethods.checkMaxMassProperty()
+                App.repeatableMethods.checkMaxMassProperty();
 
-                App.repeatableMethods.checkMinMassProperty()
+                App.repeatableMethods.checkMinMassProperty();
 
             })
         })

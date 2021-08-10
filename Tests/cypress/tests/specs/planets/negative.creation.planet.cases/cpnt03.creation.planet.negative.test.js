@@ -4,6 +4,7 @@ describe('Create planet negative test || name and discoverer entered', function 
         App.planetsPage.getCreateButton().click();
 
     })
+
     it('Create planet with entered name, discoverer and with no file', function () {
 
         App.planetsPage.getEnterNameField().type(App.repeatableMethods.RandomData.planetName);
@@ -11,6 +12,7 @@ describe('Create planet negative test || name and discoverer entered', function 
 
         App.planetsPage.getCreateButton().click();
     })
+
     it('After clicked on "Create" field "Sats" is focused with warning', function () {
         expect(App.planetsPage.getEnterSatsField().should('be.focused'),
             'Field "Sats" must be focused');

@@ -1,12 +1,12 @@
 describe('Deleting race from planet page test', function () {
     before(function () {
-        App.planetsPage.openUrls()
+        App.planetsPage.openUrls();
         App.racePage.getAllLinksInTable()
             .eq(0)
-            .click()
+            .click();
 
         cy.get('[value="Delete race"]')
-            .click()
+            .click();
     })
 
     describe('All required elements displayed', function () {
@@ -20,17 +20,16 @@ describe('Deleting race from planet page test', function () {
                     .should('have.text',
                         'Choose race which you want to delete'),
                 'Explanation text above race placeholder must be displayed' +
-                'with text "Choose race which you want to delete"')
+                'with text "Choose race which you want to delete"');
         })
 
         it('Placeholder with races displayed and enabled', function () {
-            App.repeatableMethods.elementVisibleAndEnabled('[placeholder="Choose race"]')
+            App.repeatableMethods.elementVisibleAndEnabled('[placeholder="Choose race"]');
         })
 
         it('Delete button displayed and enabled', function () {
-            App.repeatableMethods.elementVisibleAndEnabled('[class="create"]')
+            App.repeatableMethods.elementVisibleAndEnabled('[class="create"]');
         })
-
     })
 
 })

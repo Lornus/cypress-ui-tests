@@ -12,7 +12,7 @@ describe('Update planet`s required fields negative test || "Mass" amount is nega
 
     it('Click on "Update planet" button', function () {
 
-        App.repeatableMethods.clearAllPlanetsRequiredFields()
+        App.repeatableMethods.clearAllPlanetsRequiredFields();
         App.planetsPage.getEnterNameField().type(App.repeatableMethods.RandomData.planetName);
         App.planetsPage.getEnterDiscovererField().type(App.repeatableMethods.RandomData.planetDiscoverer);
         App.planetsPage.getEnterSatsField(2).type(App.repeatableMethods.RandomData.planetSats);
@@ -20,6 +20,7 @@ describe('Update planet`s required fields negative test || "Mass" amount is nega
 
         cy.get(App.planetsPage.updateButton).click()
     })
+
     it('After clicked on "Create" "Mass" field is focused with warning', function () {
         expect(App.planetsPage.getEnterMassField().should('be.focused'),
             '"Mass" field must be focused');

@@ -16,11 +16,10 @@ describe('Create planet negative test || all required data entered + json file u
         App.planetsPage.getCreateButton().click();
     })
 
-
     it('Button "Choose file" is focused with warning', function () {
 
         expect(App.repeatableMethods.getFileUploader().focused(), 'After clicking on "Add planet"' +
-            'with non valid file format must be warning and "Choose file" must be focused')
+            'with non valid file format must be warning and "Choose file" must be focused');
 
     })
 })

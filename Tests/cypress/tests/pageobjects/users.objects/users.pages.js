@@ -18,20 +18,20 @@ class UsersPages extends BaseMethods {
 
     checkBtnClass() {
         return cy.get(this.usersBtn)
-            .eq(1)
+            .eq(1);
     }
 
     getUsersOnlineText() {
-        return cy.get(this.userOnlineText)
+        return cy.get(this.userOnlineText);
     }
 
     checkMainTableDisplayed() {
-        return cy.get(this.mainTable)
+        return cy.get(this.mainTable);
 
     }
 
     getAllRowsOfTable() {
-        return  cy.get(this.mainTable).find(this.allTableRows)
+        return  cy.get(this.mainTable).find(this.allTableRows);
 
     }
 }

@@ -12,12 +12,12 @@ describe('Update race page test', function () {
         const fields = ["name", "strength", "intellect", "dexterity"];
         fields.map(field => {
             it(`All required fields displayed || ${field}`, function () {
-                App.repeatableMethods.elementVisibleAndEnabled(`[name = ${field}]`)
+                App.repeatableMethods.elementVisibleAndEnabled(`[name = ${field}]`);
             })
         })
 
         it('Update button displayed', function () {
-            App.repeatableMethods.elementVisibleAndEnabled('.create')
+            App.repeatableMethods.elementVisibleAndEnabled('.create');
         })
     })
 })

@@ -12,13 +12,14 @@ describe('Update planet`s required fields negative test || "Mass" field is empty
 
     it('Click on "Update planet" button', function () {
 
-        App.repeatableMethods.clearAllPlanetsRequiredFields()
+        App.repeatableMethods.clearAllPlanetsRequiredFields();
         App.planetsPage.getEnterNameField().type(App.repeatableMethods.RandomData.planetName);
         App.planetsPage.getEnterDiscovererField().type(App.repeatableMethods.RandomData.planetDiscoverer);
         App.planetsPage.getEnterSatsField(2).type(2);
 
-        cy.get(App.planetsPage.updateButton).click()
+        cy.get(App.planetsPage.updateButton).click();
     })
+
         it('After clicked on "Create" "Mass" field is focused with warning', function () {
             expect(App.planetsPage.getEnterMassField().should('be.focused'),
                 'Field "Mass" must be focused');

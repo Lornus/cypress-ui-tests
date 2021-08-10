@@ -1,12 +1,12 @@
-import {BaseMethods} from '../base.methods'
+import {BaseMethods} from '../base.methods';
 
 class HomePage extends BaseMethods {
 
-    mainHomePageLink = '/'
-    tableRows = 'ul>li'
-    fromTableException = 'a>li'
-    textAboveImages = '.home_text'
-    homeImages = '.home_images>img'
+    mainHomePageLink = '/';
+    tableRows = 'ul>li';
+    fromTableException = 'a>li';
+    textAboveImages = '.home_text';
+    homeImages = '.home_images>img';
 
 
     openUrls() {
@@ -16,31 +16,31 @@ class HomePage extends BaseMethods {
     async getTextRowsFromMainTable() {
         const text = await new Cypress.Promise((resolve) => {
             cy.get(this.tableRows).invoke("text")
-                .then(txt => resolve(txt.toString()))
+                .then(txt => resolve(txt.toString()));
         })
-        return text
+        return text;
     }
 
     async checkFromTableExceptionDisplayed() {
         const textFromException = await new Cypress.Promise((resolve) => {
             cy.get(this.fromTableException)
                 .invoke('text')
-                .then(txt => resolve(txt.toString()))
+                .then(txt => resolve(txt.toString()));
         })
-        return textFromException
+        return textFromException;
     }
 
     getAboveImagesText() {
-        return cy.get(this.textAboveImages)
+        return cy.get(this.textAboveImages);
 
 
     }
 
     checkHomeImagesVisible() {
-        return cy.get(this.homeImages)
+        return cy.get(this.homeImages);
 
     }
 }
 
 
-module.exports = new HomePage()
+module.exports = new HomePage();

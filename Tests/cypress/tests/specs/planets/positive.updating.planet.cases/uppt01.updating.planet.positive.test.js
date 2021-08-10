@@ -3,20 +3,20 @@ describe('Update planet`s required fields positive test || All required data ent
         App.planetsPage.openUrls()
         cy.get(App.planetsPage.planetFromTable)
             .eq(1)
-            .click()
+            .click();
 
         cy.get('[value="Update planet"]')
-            .click()
+            .click();
 
     })
 
     it('Enter all required data', function () {
 
-        App.repeatableMethods.clearAllPlanetsRequiredFields()
+        App.repeatableMethods.clearAllPlanetsRequiredFields();
 
-        App.repeatableMethods.enterAllPlanetsRequiredFields()
+        App.repeatableMethods.enterAllPlanetsRequiredFields();
 
-        cy.get(App.planetsPage.updateButton).click()
+        cy.get(App.planetsPage.updateButton).click();
     })
 
     it('Updating properties of planet displayed', function () {

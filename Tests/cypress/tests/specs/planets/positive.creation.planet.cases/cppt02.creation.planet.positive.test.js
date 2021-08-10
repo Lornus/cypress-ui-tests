@@ -7,14 +7,14 @@ describe('Create planet positive test || all required data + no uploading file',
 
     it('Create planet with all correct required inputs', function () {
 
-        App.repeatableMethods.enterAllPlanetsRequiredFields()
+        App.repeatableMethods.enterAllPlanetsRequiredFields();
 
         App.planetsPage.getCreateButton().click();
     })
 
     it('On page of created planet is planet information', function () {
 
-        const randomData = App.repeatableMethods.RandomData
+        const randomData = App.repeatableMethods.RandomData;
 
         App.repeatableMethods.checkPlanetPropertiesDisplayed(randomData.planetName, randomData.planetDiscoverer,
             randomData.planetSats, randomData.planetMass);
@@ -23,7 +23,7 @@ describe('Create planet positive test || all required data + no uploading file',
     })
 
     it("New planet is existing in table", function () {
-        const randomData = App.repeatableMethods.RandomData
+        const randomData = App.repeatableMethods.RandomData;
 
         App.repeatableMethods.checkNewPlanetAddedToBd(randomData.planetName);
     })

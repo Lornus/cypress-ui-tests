@@ -7,7 +7,7 @@ describe('Of creation page tests || "/new?" endpoint', function () {
 
         it('All each page element are displayed || on planets creation page', async function () {
 
-            await App.repeatableMethods.DefaultElementsTested()
+            await App.repeatableMethods.DefaultElementsTested();
 
         })
 
@@ -19,26 +19,24 @@ describe('Of creation page tests || "/new?" endpoint', function () {
                     .and('be.enabled')
                     .invoke("attr", 'type')
                     .should('eq', 'text'), 'Field to enter name must be visible' +
-                    'enabled and have type name')
-
-            });
+                    'enabled and have type name');
+            })
         })
 
         it('"Sats" field displayed correctly', function () {
 
-            App.repeatableMethods.checkMaxSatsProperty()
+            App.repeatableMethods.checkMaxSatsProperty();
 
-            App.repeatableMethods.checkMinSatsProperty()
+            App.repeatableMethods.checkMinSatsProperty();
 
-            App.repeatableMethods.clearAllPlanetsRequiredFields()
-
+            App.repeatableMethods.clearAllPlanetsRequiredFields();
         })
 
         it('"Mass" field displayed correctly', function () {
 
-            App.repeatableMethods.checkMaxMassProperty()
+            App.repeatableMethods.checkMaxMassProperty();
 
-            App.repeatableMethods.checkMinMassProperty()
+            App.repeatableMethods.checkMinMassProperty();
         })
 
         it('All input fields are required', function () {
@@ -47,8 +45,8 @@ describe('Of creation page tests || "/new?" endpoint', function () {
             typeString.map(element => {
                 expect(cy.get(element)
                         .should('have.attr', 'required'),
-                    'All input fields must be required')
-            });
+                    'All input fields must be required');
+            })
         })
 
         it('"Choose file" option is enabled', function () {

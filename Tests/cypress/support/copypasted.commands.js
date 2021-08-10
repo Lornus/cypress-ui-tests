@@ -276,9 +276,9 @@ class Copypasted {
         expect(cy.get(element)
                 .should('be.visible')
                 .and('be.enabled'),
-            `${element} must be visible and enabled`)
+            `${element} must be visible and enabled`);
     }
 
 }
 
-module.exports = new Copypasted()
+module.exports = new Copypasted();

@@ -1,4 +1,4 @@
-describe('Deleting race from planet || planet has races to delete', function () {
+describe('Adding race to a planet', function () {
     let existingRace;
     before(function () {
         App.racePage.openUrls();
@@ -6,8 +6,8 @@ describe('Deleting race from planet || planet has races to delete', function () 
             .eq(1)
             .invoke('text')
             .then(elem => {
-                    existingRace = elem.toString()
-                    return existingRace
+                    existingRace = elem.toString();
+                    return existingRace;
                 }
             )
         App.planetsPage.openUrls();
@@ -19,11 +19,10 @@ describe('Deleting race from planet || planet has races to delete', function () 
             .click();
     })
 
-
     it('Add race to a planet', function () {
 
         cy.get('select')
-            .select(existingRace)
+            .select(existingRace);
         cy.get('[value="Add race"]')
             .click();
     })
@@ -31,7 +30,6 @@ describe('Deleting race from planet || planet has races to delete', function () 
     it('Race is added to a planet', function () {
         expect(cy.get('td>a')
                 .should('contain', existingRace)
-            , 'Race must be deleted from planet');
+            , 'Race must be added from planet');
     })
-
 })

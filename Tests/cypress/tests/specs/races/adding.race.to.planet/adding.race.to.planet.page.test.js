@@ -3,10 +3,10 @@ describe('Adding race to planet page test', function () {
         App.planetsPage.openUrls()
         App.racePage.getAllLinksInTable()
             .eq(0)
-            .click()
+            .click();
 
         cy.get('[value="Add race"]')
-            .click()
+            .click();
     })
 
     describe('All required elements displayed', function () {
@@ -20,17 +20,16 @@ describe('Adding race to planet page test', function () {
                     .should('have.text',
                         'Choose race(s) which you want to add'),
                 'Explanation text above race placeholder must be displayed' +
-                'with text "Choose race(s) which you want to add"')
+                'with text "Choose race(s) which you want to add"');
         })
 
         it('Placeholder with races displayed and enabled', function () {
-            App.repeatableMethods.elementVisibleAndEnabled('[placeholder="Choose race"]')
+            App.repeatableMethods.elementVisibleAndEnabled('[placeholder="Choose race"]');
         })
 
         it('Add race button displayed and enabled', function () {
-            App.repeatableMethods.elementVisibleAndEnabled('[value="Add race"]')
+            App.repeatableMethods.elementVisibleAndEnabled('[value="Add race"]');
         })
-
     })
 
 })

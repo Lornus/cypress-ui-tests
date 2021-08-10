@@ -6,7 +6,7 @@ describe('Deleting race test', function () {
             .click();
     })
 
-    let text = null
+    let text = null;
     it('Getting name of deleting race', async function () {
         text = await App.repeatableMethods.getTextFromLocator(':nth-child(1) > em');
 

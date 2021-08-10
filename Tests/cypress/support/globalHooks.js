@@ -1,7 +1,7 @@
 import {App} from "../tests/pageobjects/Application";
 
 before(function () {
-    global.App = App
+    global.App = App;
 
 })
 

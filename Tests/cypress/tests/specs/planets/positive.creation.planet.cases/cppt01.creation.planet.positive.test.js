@@ -11,7 +11,7 @@ describe('Create planet positive test || all required data + png file uploaded',
 
     it('Create planet with all correct inputs and png file added', function () {
 
-        App.repeatableMethods.enterAllPlanetsRequiredFields()
+        App.repeatableMethods.enterAllPlanetsRequiredFields();
 
         App.repeatableMethods.getFileUploader().attachFile(filePath);
         App.repeatableMethods.getFileUploader().click();
@@ -29,7 +29,7 @@ describe('Create planet positive test || all required data + png file uploaded',
 
     })
     it("New planet is existing in table", function () {
-        const randomData = App.repeatableMethods.RandomData
+        const randomData = App.repeatableMethods.RandomData;
 
         App.repeatableMethods.checkNewPlanetAddedToBd(randomData.planetName);
     })
