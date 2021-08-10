@@ -16,7 +16,7 @@ describe('Deleting race test', function () {
         cy.get('[value="Delete race"]').click();
     })
 
-    it('After deleting planet doesn`t exist', function () {
+    it("After deleting race doesn't exist", function () {
         App.racePage.openUrls();
 
         App.racePage.getSearchPlaceHolder().type(text);

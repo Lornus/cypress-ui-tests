@@ -4,7 +4,7 @@ const randomString = require("randomstring");
 class Copypasted {
 
     get planetPages() {
-        return [1, 2, 3, 4, 5]
+        return [1, 2, 3, 4, 5, 6]
     }
 
     get racePages() {
@@ -162,19 +162,17 @@ class Copypasted {
     }
 
     clickingOnLinkFromTable(linkIndex) {
-
         cy.get('td>a')
             .eq(linkIndex)
             .click()
     }
 
     returnRowOfTable() {
-        const row = cy.get("td")
-            .find("a")
-            .then(row =>
-                row);
-        if (!row) cy.log("Row can't be find")
-        return row
+        return (cy.get("td")
+                .find("a")
+                .then(row =>
+                    row)
+        )
     }
 
     async getTextFromLocator(locator) {
@@ -188,7 +186,6 @@ class Copypasted {
 
     getFileUploader() {
         return cy.get('.photo')
-
     }
 
     checkMaxSatsProperty() {
@@ -239,6 +236,7 @@ class Copypasted {
 
         return checkMin
     }
+
     enterAllRequiredRaceFields() {
         cy.get('[name="name"]').type(App.repeatableMethods.RandomData.raceName);
         cy.get('[name="strength"]').type(App.repeatableMethods.RandomData.raceStrength);
@@ -260,7 +258,6 @@ class Copypasted {
             'Image of race must be visible');
 
 
-
         expect(cy.get('.add>p:nth-child(1)').should('contain', `Race ${name}`),
             `On page must be field: Race ${name}`);
 
@@ -274,6 +271,14 @@ class Copypasted {
             `On page must be field: Mass ${dexterity}`);
 
     }
+
+    elementVisibleAndEnabled(element) {
+        expect(cy.get(element)
+                .should('be.visible')
+                .and('be.enabled'),
+            `${element} must be visible and enabled`)
+    }
+
 }
 
 module.exports = new Copypasted()

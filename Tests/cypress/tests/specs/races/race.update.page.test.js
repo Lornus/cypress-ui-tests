@@ -12,18 +12,12 @@ describe('Update race page test', function () {
         const fields = ["name", "strength", "intellect", "dexterity"];
         fields.map(field => {
             it(`All required fields displayed || ${field}`, function () {
-                expect(cy.get(`[name = ${field}]`)
-                        .should('be.visible')
-                        .and('be.enabled'),
-                    'All required fields must be displayed and enabled');
+                App.repeatableMethods.elementVisibleAndEnabled(`[name = ${field}]`)
             })
         })
 
         it('Update button displayed', function () {
-            expect(cy.get('.create')
-                    .should('be.visible')
-                    .and('be.enabled'),
-                'Update button must be displayed and be enabled');
+            App.repeatableMethods.elementVisibleAndEnabled('.create')
         })
     })
 })
