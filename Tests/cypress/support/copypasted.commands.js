@@ -25,25 +25,6 @@ class Copypasted {
     }
 
 
-    async getMainText() {
-        const mainText = await new Cypress.Promise((resolve) => {
-            cy.get('div>img+h1')
-                .invoke('text')
-                .then(txt => resolve(txt.toString()))
-        })
-
-        return mainText
-    }
-
-    async getFooterText() {
-        const text = await new Cypress.Promise((resolve) => {
-            cy.get('.footer')
-                .invoke('text')
-                .then(txt => resolve(txt.toString()))
-        })
-        return text
-    }
-
     checkLogoDisplayed() {
         const checked = cy.get('.logo')
             .invoke('attr', 'alt')
@@ -51,13 +32,19 @@ class Copypasted {
         return checked
     }
 
-    async DefaultElementsTested() {
+    DefaultElementsTested() {
 
-        expect(await this.getMainText()).to.equal('Planets',
-            'Main text must be: "Planets"')
+        cy.get('div>img+h1')
+            .invoke('text')
+            .then(txt =>
+                expect(txt).to.equal('Planets',
+                    'Footer test must be: "Planets"'))
 
-        expect(await this.getFooterText()).to.equal('🔞🔞Planets🔞🔞',
-            'Footer test must be: "🔞🔞Planets🔞🔞"')
+        cy.get('.footer')
+            .invoke('text')
+            .then(txt =>
+                expect(txt).to.equal('🔞🔞Planets🔞🔞',
+                    'Footer test must be: "🔞🔞Planets🔞🔞"'))
 
         expect(this.checkLogoDisplayed().should('contain', 'logo'), 'Alt of logo ' +
             'must be "logo"')
@@ -175,13 +162,20 @@ class Copypasted {
         )
     }
 
-    async getTextFromLocator(locator) {
-        const text = await new Cypress.Promise((resolve) => {
-            cy.get(locator)
-                .invoke('text')
-                .then(txt => resolve(txt.toString()))
-        })
-        return text
+    getTextFromLocator(locator, text) {
+        cy.get(locator)
+            .invoke('text')
+            .then(txt => {
+                expect(txt).to.equal(`${text}`,
+                    `${locator} text must be: ${text}`)
+            })
+
+        // const text =  new Promise(resolve => {
+        //     cy.get(locator)
+        //         .invoke('text')
+        //         .then(txt => resolve(txt.toString()))
+        // })
+        // return text
     }
 
     getFileUploader() {
