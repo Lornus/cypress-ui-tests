@@ -7,10 +7,10 @@ describe('Create planet negative test || sats field getting negative input', fun
 
 
     it('Create planet with negative sats amount', function () {
-        App.planetsPage.getEnterNameField().type(App.repeatableMethods.RandomData.planetName);
-        App.planetsPage.getEnterDiscovererField().type(App.repeatableMethods.RandomData.planetDiscoverer);
+        App.planetsPage.getEnterNameField().type(App.universalMethods.RandomData.planetName);
+        App.planetsPage.getEnterDiscovererField().type(App.universalMethods.RandomData.planetDiscoverer);
         App.planetsPage.getEnterSatsField().type(-5);
-        App.planetsPage.getEnterMassField().type(App.repeatableMethods.RandomData.planetMass);
+        App.planetsPage.getEnterMassField().type(App.universalMethods.RandomData.planetMass);
 
         App.planetsPage.getCreateButton().click();
     })

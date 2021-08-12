@@ -3,14 +3,14 @@ describe('Creation race page test', function () {
         App.racePage.openUrls();
         App.racePage.getCreateButton().click();
     })
-    it("On each page elements displayed || creation race page", async function () {
-        await App.repeatableMethods.DefaultElementsTested();
+    it("On each page elements displayed || creation race page",  function () {
+         App.universalMethods.DefaultElementsTested();
     })
 
     const fields = ["name", "strength", "intellect", "dexterity"]
     fields.map(field => {
         it(`All required fields displayed || ${field}`, function () {
-            App.repeatableMethods.elementVisibleAndEnabled(`[name = ${field}]`);
+            App.universalMethods.elementVisibleAndEnabled(`[name = ${field}]`);
         })
 
 
@@ -18,7 +18,7 @@ describe('Creation race page test', function () {
 
     it('Photo uploader displayed and enabled', function (){
 
-        expect(App.repeatableMethods.getFileUploader()
+        expect(App.universalMethods.getFileUploader()
             .should('be.visible')
             .and('be.enabled'),
             'Photo uploader must be displayed and be enabled');

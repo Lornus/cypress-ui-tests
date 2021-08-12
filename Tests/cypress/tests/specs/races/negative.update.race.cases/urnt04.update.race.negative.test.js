@@ -9,10 +9,10 @@ describe('Update race negative test || Strength is negative', function () {
     })
 
     it('Enter name, strength, intellect and click "Update"', function () {
-        cy.get('[name = "name"]').type(App.repeatableMethods.RandomData.raceName);
+        cy.get('[name = "name"]').type(App.universalMethods.RandomData.raceName);
         cy.get('[name = "strength"]').type(-1);
-        cy.get('[name = "intellect"]').type(App.repeatableMethods.RandomData.raceStrength);
-        cy.get('[name = "dexterity"]').type(App.repeatableMethods.RandomData.raceDexterity);
+        cy.get('[name = "intellect"]').type(App.universalMethods.RandomData.raceStrength);
+        cy.get('[name = "dexterity"]').type(App.universalMethods.RandomData.raceDexterity);
 
         cy.get('.create').click();
     })

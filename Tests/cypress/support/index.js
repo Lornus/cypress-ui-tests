@@ -16,8 +16,11 @@
 // Import commands using ES2015 syntax:
 import '@shelex/cypress-allure-plugin'
 import './globalHooks'
-import './copypasted.commands'
+import './universal.methods'
 import 'cypress-file-upload';
+import './race.helper'
+import './planet.helper'
+
 
 
 

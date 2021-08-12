@@ -54,14 +54,13 @@ describe('Users page test', function () {
             const userLogins = [this.data.userLogin1, this.data.userLogin2];
             userLogins.map(login => {
                 cy.contains(login).click();
-                ;
                 cy.get(App.userPage.loginContainsText).should('contain', `${login}`);
                 cy.go('back');
             })
         })
 
         it('Getting all header rows of table with ' +
-            'users`s planets', async function () {
+            'users`s planets', function () {
 
             const headerRows = [this.data.headerRow1, this.data.headerRow2, this.data.headerRow3];
             headerRows.map(rowText => {
@@ -70,8 +69,8 @@ describe('Users page test', function () {
 
         })
 
-        it('All each page element are displayed || users page', async function () {
-            await App.repeatableMethods.DefaultElementsTested();
+        it('All each page element are displayed || users page', function () {
+            App.universalMethods.DefaultElementsTested();
         })
     })
 })

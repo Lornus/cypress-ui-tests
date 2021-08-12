@@ -12,7 +12,7 @@ describe('Deleting race from planet page test', function () {
     describe('All required elements displayed', function () {
 
         it("On each page elements displayed || deleting race from planet page", async function () {
-            await App.repeatableMethods.DefaultElementsTested();
+            await App.universalMethods.DefaultElementsTested();
         })
 
         it('Explanation text above race placeholder displayed', function () {
@@ -24,11 +24,11 @@ describe('Deleting race from planet page test', function () {
         })
 
         it('Placeholder with races displayed and enabled', function () {
-            App.repeatableMethods.elementVisibleAndEnabled('[placeholder="Choose race"]');
+            App.universalMethods.elementVisibleAndEnabled('[placeholder="Choose race"]');
         })
 
         it('Delete button displayed and enabled', function () {
-            App.repeatableMethods.elementVisibleAndEnabled('[class="create"]');
+            App.universalMethods.elementVisibleAndEnabled('[class="create"]');
         })
     })
 

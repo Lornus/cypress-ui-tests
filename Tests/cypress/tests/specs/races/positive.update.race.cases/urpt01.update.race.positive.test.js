@@ -8,13 +8,13 @@ describe('Update race positive test', function () {
         cy.get('[name = "name"]').clear();
     })
     it('All required fields filled correclty', function () {
-        App.repeatableMethods.enterAllRequiredRaceFields();
+        App.raceHelper.enterAllRequiredRaceFields();
         cy.get('.create').click();
     })
     it('After updating planet its props must be visible on the race main info page', function () {
 
-        const rData = App.repeatableMethods.RandomData;
-        App.repeatableMethods.checkRacePropertiesDisplayed(rData.raceName,
+        const rData = App.universalMethods.RandomData;
+        App.raceHelper.checkRacePropertiesDisplayed(rData.raceName,
             rData.raceStrength, rData.raceIntellect, rData.raceDexterity);
     })
 })

@@ -4,12 +4,11 @@ describe('HomePage test', function () {
             App.homePage.openUrls();
 
         })
-        it('Main table elements displayed', async function () {
+        it('Main table elements displayed', function () {
 
-            expect(await App.homePage.getTextRowsFromMainTable()).to.equal('  Home   Users   Planets   About ');
+            App.universalMethods.checkTextFromLocator(App.homePage.tableRows, '  Home   Users   Planets   About ')
 
-            expect(await App.homePage.checkFromTableExceptionDisplayed()).to.equal(' Races ',
-                'Due to html 4th row is: "Races"');
+            App.universalMethods.checkTextFromLocator(App.homePage.fromTableException, ' Races ')
 
         })
 
@@ -28,8 +27,8 @@ describe('HomePage test', function () {
 
         })
 
-        it('All each page element are displayed || main page', async function () {
-            await App.repeatableMethods.DefaultElementsTested();
+        it('All each page element are displayed || main page', function () {
+            App.universalMethods.DefaultElementsTested();
         })
 
     })

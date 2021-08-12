@@ -7,24 +7,24 @@ describe('Create planet positive test || all required data + no uploading file',
 
     it('Create planet with all correct required inputs', function () {
 
-        App.repeatableMethods.enterAllPlanetsRequiredFields();
+        App.planetsPage.enterAllPlanetsRequiredFields();
 
         App.planetsPage.getCreateButton().click();
     })
 
     it('On page of created planet is planet information', function () {
 
-        const randomData = App.repeatableMethods.RandomData;
+        const randomData = App.universalMethods.RandomData;
 
-        App.repeatableMethods.checkPlanetPropertiesDisplayed(randomData.planetName, randomData.planetDiscoverer,
+        App.planetsPage.checkPlanetPropertiesDisplayed(randomData.planetName, randomData.planetDiscoverer,
             randomData.planetSats, randomData.planetMass);
-        App.repeatableMethods.checkPlanetButtons();
+        App.planetsPage.checkPlanetButtons();
 
     })
 
     it("New planet is existing in table", function () {
-        const randomData = App.repeatableMethods.RandomData;
+        const randomData = App.universalMethods.RandomData;
 
-        App.repeatableMethods.checkNewPlanetAddedToBd(randomData.planetName);
+        App.planetsPage.checkNewPlanetAddedToBd(randomData.planetName);
     })
 })

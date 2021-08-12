@@ -8,7 +8,7 @@ async function writePlanetsToJsonArray(path) {
     //each time make json file empty
 
     path = '../Tests/cypress/fixtures/planets.fixtures/all.planets.fixture.json'
-    cy.writeFile(path, {"planets_on_page": await App.repeatableMethods.getTextFromLocator(App.planetsPage.planetFromTable)},
+    cy.writeFile(path, {"planets_on_page": await App.universalMethods.getTextFromLocator(App.planetsPage.planetFromTable)},
         {flag: 'a+'})
 }
 
@@ -24,15 +24,15 @@ describe('Of main planets page test || "/planets" endpoint', function () {
 
         })
 
-        it('All each page element are displayed || planets page', async function () {
+        it('All each page element are displayed || planets page',  function () {
 
-            await App.repeatableMethods.DefaultElementsTested()
+             App.universalMethods.DefaultElementsTested()
 
         })
 
-        it('Second title "Planets" above search placeholder is displayed', async function () {
+        it('Second title "Planets" above search placeholder is displayed',  function () {
 
-            expect(await App.repeatableMethods.getTextFromLocator(App.planetsPage.mainText)).to.equal('Planets', 'Second title above' +
+            expect(App.universalMethods.checkTextFromLocator(App.planetsPage.mainText, 'Planets'), 'Second title above' +
                 ' search placeholder must be "Planets"')
 
         })
@@ -65,7 +65,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                 const listOfPlanets = this.planets.planets_on_page
 
 
-                App.repeatableMethods.clearSearchInput()
+                App.universalMethods.clearSearchInput()
 
 
                 cy.get(App.planetsPage.searchPlaceHolder).type(tString)
@@ -92,7 +92,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
             })
 
             it('Searching planets with immediately clicks "Find" ', async function () {
-                App.repeatableMethods.clearSearchInput();
+                App.universalMethods.clearSearchInput();
 
                 cy.get(App.planetsPage.planetFromTable)
                     .then(($els) => {
@@ -104,13 +104,13 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                             stringElements
                         )
                     })
-                    .should('contain', await App.repeatableMethods.getTextFromLocator(App.planetsPage.planetFromTable));
+                    .should('contain', await App.universalMethods.getTextFromLocator(App.planetsPage.planetFromTable));
             })
         })
 
         it('Displaying searching string in "Search for"', function () {
 
-            App.repeatableMethods.typeSearchValue(tString);
+            App.universalMethods.typeSearchValue(tString);
 
             expect(cy.get(App.planetsPage.searchFor).should('contain', tString),
                 'Searching string must be displayed in "Search for:"');
@@ -127,14 +127,14 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                 })
 
                 it('On "Go to" clicked with empty page number values and empty search field', function () {
-                    App.repeatableMethods.clearSearchInput();
+                    App.universalMethods.clearSearchInput();
                     App.planetsPage.getGoButton().click();
                     expect(cy.url().should('contain', `?name=&page=`), `url must contain is such case ' +
                                                                                                '"?name=&page="`);
                 })
 
                 it('On "Go to" clicked with empty page number values and non empty search field', function () {
-                    App.repeatableMethods.typeSearchValue(tString);
+                    App.universalMethods.typeSearchValue(tString);
 
                     expect(cy.url().should('contain', `?name=${tString}&page=`), `url must contain is such case ' +
                                                                                                 '"?name=${tString}&page="`);
@@ -143,7 +143,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
 
             describe('Page number works correctly', function () {
                 before(function () {
-                    App.repeatableMethods.clearSearchInput();
+                    App.universalMethods.clearSearchInput();
 
                 })
 
@@ -159,7 +159,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                 })
 
                 it('Changing arrow value in page number', function () {
-                    App.repeatableMethods.planetPages.map(pagesArrow => {
+                    App.planetsPage.planetPages.map(pagesArrow => {
                         App.planetsPage.getPageNumber().type(pagesArrow).trigger('change')
                         App.planetsPage.getGoButton().click();
                         expect(cy.url().should('contain', `?name=&page=${pagesArrow}`), `url must contain is such case ' +
@@ -196,7 +196,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                             'next link must be disabled');
                     }
 
-                    for (let i = 0; i < App.repeatableMethods.planetPages.length - 1; i++) {
+                    for (let i = 0; i < App.planetsPage.planetPages.length - 1; i++) {
                         if (Boolean(expect(App.planetsPage.getNextLink()
                             .should('not.be.disabled')))) {
                             App.planetsPage.getNextLink().click();
@@ -217,13 +217,13 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                         .should('not.be.enabled'), 'On the last page next ' +
                         'link must be disabled');
 
-                    expect(cy.url().should('contain', `page=${App.repeatableMethods.planetPages[App.repeatableMethods.planetPages.length - 1]}`), 'in utl ' +
+                    expect(cy.url().should('contain', `page=${App.planetsPage.planetPages[App.planetsPage.planetPages.length - 1]}`), 'in utl ' +
                         'must be number of last page');
                 })
 
                 it('Go to previous planetPages via "<<Previous" if they are', function () {
 
-                    for (let i = 0; i < App.repeatableMethods.planetPages.length - 1; i++) {
+                    for (let i = 0; i < App.planetsPage.planetPages.length - 1; i++) {
                         if (Boolean(expect(App.planetsPage.getPreviousLink()
                             .should('not.be.disabled')))) {
                             App.planetsPage.getPreviousLink().click();
@@ -234,7 +234,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                         .should('not.be.enabled'), 'On the first page previous ' +
                         'link must be disabled');
 
-                    expect(cy.url().should('contain', `page=${App.repeatableMethods.planetPages[App.repeatableMethods.planetPages.indexOf(1)]}`), 'in utl ' +
+                    expect(cy.url().should('contain', `page=${App.planetsPage.planetPages[App.planetsPage.planetPages.indexOf(1)]}`), 'in utl ' +
                         'must be number of last page');
                 })
             })
@@ -251,7 +251,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
 
             it('Button "Create" displayed on /' +
                 'planets/?name="someName"&page=', function () {
-                App.repeatableMethods.typeSearchValue(tString);
+                App.universalMethods.typeSearchValue(tString);
 
 
                 expect(App.planetsPage.getCreateButton()
@@ -263,7 +263,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
 
             it('Button "Create" displayed on /' +
                 'planets/?name="someName"&page="somePage"', function () {
-                App.repeatableMethods.clearSearchInput();
+                App.universalMethods.clearSearchInput();
 
                 const arrowLimit = '1';
                 App.planetsPage.getPageNumber().type(arrowLimit).trigger('change');

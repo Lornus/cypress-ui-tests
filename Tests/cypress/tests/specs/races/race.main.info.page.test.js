@@ -6,8 +6,8 @@ describe('Main information race page', function () {
             .click();
     })
 
-    it("On each page elements displayed || main information race page", async function () {
-        await App.repeatableMethods.DefaultElementsTested();
+    it("On each page elements displayed || main information race page",  function () {
+         App.universalMethods.DefaultElementsTested();
     })
 
     it('Main title is "Races"', function () {

@@ -4,7 +4,7 @@ describe('About page test', function () {
     })
 
     it('All each page element are displayed || about page', function () {
-        App.repeatableMethods.DefaultElementsTested();
+        App.universalMethods.DefaultElementsTested();
     })
 
     it('Main title "About" displayed', function () {
@@ -14,7 +14,7 @@ describe('About page test', function () {
     })
 
     it('Main text matched with requirements',  function () {
-        App.repeatableMethods.getTextFromLocator('p',
+        App.universalMethods.checkTextFromLocator('p',
             'About: You can use our site for searching, adding and deleting planets. Site was developed by loser.')
     })
 })

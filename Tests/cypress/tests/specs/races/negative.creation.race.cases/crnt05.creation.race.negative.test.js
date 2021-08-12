@@ -7,10 +7,10 @@ describe('Creation race negative test || \t\n' +
     })
 
     it('Enter name, strength, intellect, dexterity and click on the "Create" button', function () {
-        cy.get('[name = "name"]').type(App.repeatableMethods.RandomData.raceName);
+        cy.get('[name = "name"]').type(App.universalMethods.RandomData.raceName);
         cy.get('[name = "strength"]').type(-1);
-        cy.get('[name = "intellect"]').type(App.repeatableMethods.RandomData.raceStrength);
-        cy.get('[name = "dexterity"]').type(App.repeatableMethods.RandomData.raceDexterity);
+        cy.get('[name = "intellect"]').type(App.universalMethods.RandomData.raceStrength);
+        cy.get('[name = "dexterity"]').type(App.universalMethods.RandomData.raceDexterity);
 
         App.racePage.getCreateButton().click();
     })

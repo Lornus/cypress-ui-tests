@@ -7,8 +7,8 @@ describe('Create planet negative test || name and discoverer entered', function 
 
     it('Create planet with entered name, discoverer and with no file', function () {
 
-        App.planetsPage.getEnterNameField().type(App.repeatableMethods.RandomData.planetName);
-        App.planetsPage.getEnterDiscovererField().type(App.repeatableMethods.RandomData.planetDiscoverer);
+        App.planetsPage.getEnterNameField().type(App.universalMethods.RandomData.planetName);
+        App.planetsPage.getEnterDiscovererField().type(App.universalMethods.RandomData.planetDiscoverer);
 
         App.planetsPage.getCreateButton().click();
     })

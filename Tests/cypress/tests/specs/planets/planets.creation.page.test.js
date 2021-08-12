@@ -5,9 +5,9 @@ describe('Of creation page tests || "/new?" endpoint', function () {
     })
     describe('All elements  displayed', function () {
 
-        it('All each page element are displayed || on planets creation page', async function () {
+        it('All each page element are displayed || on planets creation page',  function () {
 
-            await App.repeatableMethods.DefaultElementsTested();
+             App.universalMethods.DefaultElementsTested();
 
         })
 
@@ -25,18 +25,18 @@ describe('Of creation page tests || "/new?" endpoint', function () {
 
         it('"Sats" field displayed correctly', function () {
 
-            App.repeatableMethods.checkMaxSatsProperty();
+            App.planetHelper.checkMaxSatsProperty();
 
-            App.repeatableMethods.checkMinSatsProperty();
+            App.planetHelper.checkMinSatsProperty();
 
-            App.repeatableMethods.clearAllPlanetsRequiredFields();
+            App.planetsPage.clearAllPlanetsRequiredFields();
         })
 
         it('"Mass" field displayed correctly', function () {
 
-            App.repeatableMethods.checkMaxMassProperty();
+            App.planetHelper.checkMaxMassProperty();
 
-            App.repeatableMethods.checkMinMassProperty();
+            App.planetHelper.checkMinMassProperty();
         })
 
         it('All input fields are required', function () {
@@ -50,7 +50,7 @@ describe('Of creation page tests || "/new?" endpoint', function () {
         })
 
         it('"Choose file" option is enabled', function () {
-            App.repeatableMethods.getFileUploader().should('be.enabled');
+            App.universalMethods.getFileUploader().should('be.enabled');
         })
     })
 })

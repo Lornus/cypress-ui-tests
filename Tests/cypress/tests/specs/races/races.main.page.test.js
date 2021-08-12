@@ -6,8 +6,8 @@ describe('Races main page test', function () {
     describe('Main elements displayed', function () {
 
 
-        it("On each page elements displayed || main race page", async function () {
-            await App.repeatableMethods.DefaultElementsTested();
+        it("On each page elements displayed || main race page", function () {
+            App.universalMethods.DefaultElementsTested();
         })
 
         it('Main title is "Races"', function () {
@@ -82,7 +82,7 @@ describe('Races main page test', function () {
         })
     })
 
-    describe('Navigation works correctly', function () {
+    describe.only('Navigation works correctly', function () {
         afterEach(function () {
             App.racePage.openUrls();
         })
@@ -90,17 +90,21 @@ describe('Races main page test', function () {
         it('"Go to" with empty page trigger navigates to name=&page=', function () {
             App.racePage.getGoButton().click();
             expect(cy.url().should('contain', `?name=&page=`), `url must contain' +
-                                                                                               '"?name=&page="`);
+               '"?name=&page="`);
         })
 
-        const pages = [1, 2];
-        pages.map(trigger => {
-            it(`"Go to" with trigger ${trigger} navigates to name=&page=${trigger}`, function () {
-                App.racePage.getPageNumber().type(trigger).trigger('change')
-                App.racePage.getGoButton().click();
-                expect(cy.url().should('contain', `?name=&page=${trigger}`), `url must contain ` +
-                    `"?name=&page=${trigger}"`);
+
+        it(`"Go to" with trigger navigates to name=&page=`, function () {
+            console.time("START")
+            App.racePage.racePages.then(arr => {
+                arr.map((trigger) => {
+                    App.racePage.getPageNumber().type(trigger).trigger('change')
+                    App.racePage.getGoButton().click();
+                    expect(cy.url().should('contain', `?name=&page=${trigger}`), `url must contain ` +
+                        `"?name=&page=${trigger}"`);
+                })
             })
+            console.timeEnd("END")
         })
 
         it('Navigation to a previous page on the main page', async function () {
@@ -109,15 +113,11 @@ describe('Races main page test', function () {
 
         })
 
-        it('Navigation to a next page', async function () {
+        it('Navigation to a next page', function () {
 
-            if (await App.racePage.getCurrentPage() != await App.racePage.getAllPages()) {
+            if (App.racePage.getCurrentPage().then(txt => txt) != App.racePage.getAllPages().then(txt => txt)) {
                 expect(App.racePage.getNextLink().should('not.be.disabled'),
                     'When there is more than 4 races next must be enabled');
-            } else if ((await App.racePage.getTableRowText()).includes('There no races')) {
-                expect(cy.get('tr>td')
-                        .should('have.text', 'There no races'),
-                    'When there is no races text must be "There no races');
             } else {
                 expect(App.racePage.getNextLink().should('have.class', 'disabled_link'),
                     'When there is no races next must be disabled');

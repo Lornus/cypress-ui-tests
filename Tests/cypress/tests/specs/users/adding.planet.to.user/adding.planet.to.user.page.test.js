@@ -7,8 +7,8 @@ describe('Adding planet to user page test', function () {
             .click();
     })
 
-    it("On each page elements displayed ||Page with users planets", async function () {
-        await App.repeatableMethods.DefaultElementsTested();
+    it("On each page elements displayed ||Page with users planets",  function () {
+         App.universalMethods.DefaultElementsTested();
     })
 
     it('Table with planets displayed', function () {
@@ -18,11 +18,11 @@ describe('Adding planet to user page test', function () {
     })
 
     it('Add planet button displayed', function () {
-        App.repeatableMethods.elementVisibleAndEnabled('[value="Add planet"]');
+        App.universalMethods.elementVisibleAndEnabled('[value="Add planet"]');
     })
 
     it('Delete planet button displayed', function () {
-        App.repeatableMethods.elementVisibleAndEnabled('[value="Delete planet"]');
+        App.universalMethods.elementVisibleAndEnabled('[value="Delete planet"]');
     })
 
 })

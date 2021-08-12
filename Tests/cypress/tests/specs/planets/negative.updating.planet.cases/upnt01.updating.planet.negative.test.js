@@ -10,7 +10,7 @@ describe('Update planet`s required fields negative test || All required data emp
     })
 
     it('Click on "Update planet" button', function () {
-        App.repeatableMethods.clearAllPlanetsRequiredFields();
+        App.planetsPage.clearAllPlanetsRequiredFields();
         cy.get(App.planetsPage.updateButton).click();
     })
 

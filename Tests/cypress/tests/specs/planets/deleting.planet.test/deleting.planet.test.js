@@ -7,16 +7,16 @@ describe('Deleting planet test', function () {
         "|| there is more than 1 planet to delete on page", function () {
 
         const entity = "planets";
-        App.repeatableMethods.clickingOnNextLink(App.repeatableMethods.planetPages, entity);
-        const beforeDeleting = App.repeatableMethods.returnRowOfTable();
+        App.universalMethods.clickingOnNextLink(App.planetsPage.planetPages, entity);
+        const beforeDeleting = App.universalMethods.returnRowOfTable();
 
-        App.repeatableMethods.clickingOnLinkFromTable(0);
+        App.universalMethods.clickingOnLinkFromTable(0);
 
         cy.get('[value="Delete planet"]').click();
 
-        App.repeatableMethods.clickingOnNextLink(App.repeatableMethods.planetPages, entity);
+        App.universalMethods.clickingOnNextLink(App.planetsPage.planetPages, entity);
 
-        const afterDeleting = App.repeatableMethods.returnRowOfTable();
+        const afterDeleting = App.universalMethods.returnRowOfTable();
 
         expect(beforeDeleting).to.not.be.equal(afterDeleting);
 

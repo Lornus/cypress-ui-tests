@@ -7,16 +7,16 @@ describe('Creation race positive test || Creation race with all required data fi
     })
 
     it('Enter all required fields correctly', function () {
-        App.repeatableMethods.enterAllRequiredRaceFields();
-        App.repeatableMethods.getFileUploader().attachFile(filePath);
+        App.raceHelper.enterAllRequiredRaceFields();
+        App.universalMethods.getFileUploader().attachFile(filePath);
         App.racePage.getCreateButton().click();
     })
     it('After creation race can be found by name', async function () {
         App.racePage.openUrls();
-        App.racePage.getSearchPlaceHolder().type(App.repeatableMethods.RandomData.raceName);
+        App.racePage.getSearchPlaceHolder().type(App.universalMethods.RandomData.raceName);
         App.racePage.getFindButton().click();
 
-        expect(await (await App.repeatableMethods.getTextFromLocator('td>a'))
-            .includes(App.repeatableMethods.RandomData.raceName));
+        expect(await (await App.universalMethods.getTextFromLocator('td>a'))
+            .includes(App.universalMethods.RandomData.raceName));
     })
 })

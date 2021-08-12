@@ -7,7 +7,7 @@ describe('Create planet negative test || name non empty', function () {
 
     it('Create planet with entered name and with no file', function () {
 
-        App.planetsPage.getEnterNameField().type(App.repeatableMethods.RandomData.planetName);
+        App.planetsPage.getEnterNameField().type(App.universalMethods.RandomData.planetName);
         App.planetsPage.getCreateButton().click();
     })
 

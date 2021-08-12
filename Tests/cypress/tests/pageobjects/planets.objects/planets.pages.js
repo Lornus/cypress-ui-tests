@@ -23,6 +23,10 @@ class PlanetsPages extends BaseMethods {
     fileUploader = '.photo';
     updateButton = '[value = "Update planet"]';
 
+    get planetPages() {
+        return [1, 2, 3]
+    }
+
     openUrls() {
         super.openUrls(this.planetsPageUrl);
     }
@@ -75,7 +79,79 @@ class PlanetsPages extends BaseMethods {
         return cy.get(this.enterMass);
     }
 
+    clearAllPlanetsRequiredFields() {
+        App.planetsPage.getEnterNameField().clear()
+        App.planetsPage.getEnterDiscovererField().clear()
 
+        App.planetsPage.getEnterSatsField().clear()
+        App.planetsPage.getEnterMassField().clear()
+    }
+
+    enterAllPlanetsRequiredFields() {
+        App.planetsPage.getEnterNameField().type(App.universalMethods.RandomData.planetName);
+        App.planetsPage.getEnterDiscovererField().type(App.universalMethods.RandomData.planetDiscoverer);
+
+        App.planetsPage.getEnterSatsField().type(App.universalMethods.RandomData.planetSats).trigger('change');
+        App.planetsPage.getEnterMassField().type(App.universalMethods.RandomData.planetMass).trigger('change');
+    }
+
+    checkPlanetButtons() {
+        it("Buttons on created planet's page are displayed", function () {
+
+            expect(cy.get('[value="Add race"]').should('be.visible')
+                .and('be.enabled'))
+
+            expect(cy.get('[value="Delete race"]').should('be.visible')
+                .and('be.enabled'))
+
+            expect(cy.get('[value="Update planet"]').should('be.visible')
+                .and('be.enabled'))
+
+            expect(cy.get('[value="Delete planet"]').should('be.visible')
+                .and('be.enabled'))
+
+            expect(cy.get('[value="Update planet photo"]').should('be.visible')
+                .and('be.enabled'))
+
+        })
+    }
+
+    checkNewPlanetAddedToBd(planet) {
+
+        App.planetsPage.openUrls();
+        App.planetsPage.getSearchPlaceHolder().type(planet);
+        App.planetsPage.getFindButton().click();
+    }
+
+    checkPlanetPropertiesDisplayed(name, discoverer, sats, mass) {
+
+        expect(cy.get('.planet_ > h1').should('have.text', 'Planet'),
+            'Above planet name must be h1 "Planet"');
+
+        expect(cy.get('.planet_images').invoke('attr', 'alt').should('eq',
+            '*Planet picture',
+            'Alt of picture must be "*Planet picture"')
+        );
+
+        expect(cy.get('.planet_images').and('be.visible'),
+            'Image of planet must be visible');
+
+
+        expect(cy.get('.add>p:nth-child(1)').should('contain', `Planet: ${name}`),
+            `On new page must be field: Planet: ${name}`);
+
+        expect(cy.get('.add>p:nth-child(2)').should('contain', `Discoverer: ${discoverer}`),
+            `On new page must be field: Discoverer: ${discoverer}`);
+
+        expect(cy.get('.add>p:nth-child(3)').should('contain', `Sat's: ${sats}`),
+            `On new page must be field: Sat's: : ${sats}`);
+
+        expect(cy.get('.add>p:nth-child(4)').should('contain', `Mass: ${mass}`),
+            `On new page must be field: Mass: : ${mass}`);
+
+        expect(cy.get('.p_races').should('have.text', 'Races who live on planet'));
+
+    }
 }
 
 module.exports = new PlanetsPages();

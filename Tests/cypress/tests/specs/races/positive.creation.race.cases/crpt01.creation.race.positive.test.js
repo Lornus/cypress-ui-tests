@@ -6,7 +6,7 @@ describe('Creation race positive test || \t\n' +
     })
 
     it('Enter all required fields correctly', function () {
-        App.repeatableMethods.enterAllRequiredRaceFields();
+        App.raceHelper.enterAllRequiredRaceFields();
         App.racePage.getCreateButton().click();
 
 
@@ -14,10 +14,10 @@ describe('Creation race positive test || \t\n' +
 
     it('After creation race can be found by name', async function () {
         App.racePage.openUrls();
-        App.racePage.getSearchPlaceHolder().type(App.repeatableMethods.RandomData.raceName);
+        App.racePage.getSearchPlaceHolder().type(App.universalMethods.RandomData.raceName);
         App.racePage.getFindButton().click();
 
-        expect(await (await App.repeatableMethods.getTextFromLocator('td>a'))
-            .includes(App.repeatableMethods.RandomData.raceName));
+        expect(await (await App.universalMethods.getTextFromLocator('td>a'))
+            .includes(App.universalMethods.RandomData.raceName));
     })
 })

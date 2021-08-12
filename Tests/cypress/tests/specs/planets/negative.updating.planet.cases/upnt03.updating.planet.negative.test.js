@@ -11,8 +11,8 @@ describe('Update planet`s required fields negative test || "Discoverer" field is
 
     it('Click on "Update planet" button', function () {
 
-        App.repeatableMethods.clearAllPlanetsRequiredFields()
-        App.planetsPage.getEnterNameField().type(App.repeatableMethods.RandomData.planetName);
+        App.planetsPage.clearAllPlanetsRequiredFields()
+        App.planetsPage.getEnterNameField().type(App.universalMethods.RandomData.planetName);
         App.planetsPage.getEnterMassField(2).type(2);
         App.planetsPage.getEnterSatsField().type(2);
 

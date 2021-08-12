@@ -12,8 +12,8 @@ describe('Updating page test', function () {
 
     describe('Required elements are displayed', function () {
 
-        it('On each page elements are displayed || update page', async function () {
-            await App.repeatableMethods.DefaultElementsTested();
+        it('On each page elements are displayed || update page',  function () {
+             App.universalMethods.DefaultElementsTested();
         })
 
         it('"Update planet" button is displayed correctly', function () {
@@ -39,17 +39,17 @@ describe('Updating page test', function () {
 
             it('"Sats" field displayed correctly', function () {
 
-                App.repeatableMethods.checkMaxSatsProperty();
+                App.planetHelper.checkMaxSatsProperty();
 
-                App.repeatableMethods.checkMinMassProperty();
+                App.planetHelper.checkMinMassProperty();
 
             })
 
             it('"Mass" field displayed correctly', function () {
 
-                App.repeatableMethods.checkMaxMassProperty();
+                App.planetHelper.checkMaxMassProperty();
 
-                App.repeatableMethods.checkMinMassProperty();
+                App.planetHelper.checkMinMassProperty();
 
             })
         })

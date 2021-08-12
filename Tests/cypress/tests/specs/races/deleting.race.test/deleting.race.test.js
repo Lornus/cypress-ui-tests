@@ -8,7 +8,7 @@ describe('Deleting race test', function () {
 
     let text = null;
     it('Getting name of deleting race', async function () {
-        text = await App.repeatableMethods.getTextFromLocator(':nth-child(1) > em');
+        text = await App.universalMethods.getTextFromLocator(':nth-child(1) > em');
 
     })
 

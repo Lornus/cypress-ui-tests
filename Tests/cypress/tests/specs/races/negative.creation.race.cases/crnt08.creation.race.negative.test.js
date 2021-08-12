@@ -8,13 +8,13 @@ describe('Creation race positive test || Creation race with entering ' +
     })
 
     it('Enter all required fields correctly', function () {
-        App.repeatableMethods.enterAllRequiredRaceFields();
-        App.repeatableMethods.getFileUploader().attachFile(filePath);
+        App.raceHelper.enterAllRequiredRaceFields();
+        App.universalMethods.getFileUploader().attachFile(filePath);
         App.racePage.getCreateButton().click();
     })
 
     it('Displayed warning about wrong file format and "Choose file" is focused', function () {
-        expect(App.repeatableMethods.getFileUploader()
+        expect(App.universalMethods.getFileUploader()
                 .should('be.focused'),
             'Must be warning about wrong file format ' +
             'and "Choose file" must be focused');
