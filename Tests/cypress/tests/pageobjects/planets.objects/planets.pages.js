@@ -24,7 +24,7 @@ class PlanetsPages extends BaseMethods {
     updateButton = '[value = "Update planet"]';
 
     get planetPages() {
-        return [1, 2, 3]
+        return this.getAllPages().then(txt => new Array(Number(txt)).fill(null).map((it, index) => ++index))
     }
 
     openUrls() {
@@ -150,8 +150,23 @@ class PlanetsPages extends BaseMethods {
             `On new page must be field: Mass: : ${mass}`);
 
         expect(cy.get('.p_races').should('have.text', 'Races who live on planet'));
-
     }
+
+    getCurrentPage() {
+        return App.universalMethods.getTextFromLocator('[class="page"]').then(txt => txt.slice(0, 1));
+    }
+
+    getAllPages() {
+        return App.universalMethods.getTextFromLocator('[class="page"]').then(txt => txt.slice(2, 3));
+    }
+
+    getAliasesOfPlanetsLinks(){
+        cy.get(this.planetFromTable)
+            .eq(0)
+            .invoke('text')
+            .as('first')
+    }
+
 }
 
 module.exports = new PlanetsPages();

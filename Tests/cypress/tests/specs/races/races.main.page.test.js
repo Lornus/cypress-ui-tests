@@ -11,35 +11,30 @@ describe('Races main page test', function () {
         })
 
         it('Main title is "Races"', function () {
-            expect(App.racePage.getMainText()
-                    .should('have.text', 'Races'),
-                'Main title should be "Races"');
+            App.racePage.getMainText()
+                    .should('have.text', 'Races')
         })
 
         it('Search input displayed and enabled', function () {
-            expect(App.racePage.getSearchPlaceHolder()
+            App.racePage.getSearchPlaceHolder()
                     .should('be.visible')
-                    .and('be.enabled'),
-                'Search input should displayed and be enabled');
+                    .and('be.enabled')
         })
 
         it('Find button displayed and enabled', function () {
-            expect(App.racePage.getFindButton()
+            App.racePage.getFindButton()
                     .should('be.visible')
-                    .and('be.enabled'),
-                'Find button should displayed and be enabled');
+                    .and('be.enabled')
         })
 
         it('First column header is "NAME"', function () {
-            expect(App.racePage.getFirstColumnHeader()
-                    .should('have.text', 'NAME'),
-                'First column header is "NAME"');
+            App.racePage.getFirstColumnHeader()
+                    .should('have.text', 'NAME')
         })
 
         it('Second column header is "Strength"', function () {
-            expect(App.racePage.getSecondColumnHeader()
-                    .should('have.text', 'Strength'),
-                'Second column header is "Strength"');
+            App.racePage.getSecondColumnHeader()
+                    .should('have.text', 'Strength')
         })
 
         it('Any name of race is clickable || At least one race existing', function () {
@@ -49,62 +44,53 @@ describe('Races main page test', function () {
         })
 
         it('"Go button" displayed and enabled', function () {
-            expect(App.racePage.getGoButton()
+            App.racePage.getGoButton()
                     .should('be.visible')
-                    .and('be.enabled'),
-                'Go button should be displayed and be enabled');
+                    .and('be.enabled')
         })
 
         it('Navigation page trigger displayed and enabled', function () {
-            expect(App.racePage.getPageNumber()
+            App.racePage.getPageNumber()
                     .should('be.visible')
-                    .and('be.enabled'),
-                'Navigation page trigger should be displayed and be enabled');
+                    .and('be.enabled')
         })
 
         it('Previous link displayed', function () {
-            expect(App.racePage.getPreviousLink()
-                    .should('be.visible'),
-                'Previous link should be displayed');
+            App.racePage.getPreviousLink()
+                    .should('be.visible')
         })
 
         it('Next link displayed', function () {
-            expect(App.racePage.getNextLink()
-                    .should('be.visible'),
-                'Next link should be displayed');
+            App.racePage.getNextLink()
+                    .should('be.visible')
         })
 
         it('"Create race" button displayed and enabled', function () {
-            expect(App.racePage.getCreateButton()
+            App.racePage.getCreateButton()
                     .should('be.visible')
-                    .and('be.enabled'),
-                'Create button should be displayed and be enabled');
+                    .and('be.enabled')
         })
     })
 
-    describe.only('Navigation works correctly', function () {
+    describe('Navigation works correctly', function () {
         afterEach(function () {
             App.racePage.openUrls();
         })
 
         it('"Go to" with empty page trigger navigates to name=&page=', function () {
             App.racePage.getGoButton().click();
-            expect(cy.url().should('contain', `?name=&page=`), `url must contain' +
-               '"?name=&page="`);
+            cy.url().should('contain', `?name=&page=`)
         })
 
 
         it(`"Go to" with trigger navigates to name=&page=`, function () {
-            console.time("START")
             App.racePage.racePages.then(arr => {
-                arr.map((trigger) => {
+                arr.map(trigger => {
                     App.racePage.getPageNumber().type(trigger).trigger('change')
                     App.racePage.getGoButton().click();
-                    expect(cy.url().should('contain', `?name=&page=${trigger}`), `url must contain ` +
-                        `"?name=&page=${trigger}"`);
+                    cy.url().should('contain', `?name=&page=${trigger}`)
                 })
             })
-            console.timeEnd("END")
         })
 
         it('Navigation to a previous page on the main page', async function () {
@@ -116,11 +102,9 @@ describe('Races main page test', function () {
         it('Navigation to a next page', function () {
 
             if (App.racePage.getCurrentPage().then(txt => txt) != App.racePage.getAllPages().then(txt => txt)) {
-                expect(App.racePage.getNextLink().should('not.be.disabled'),
-                    'When there is more than 4 races next must be enabled');
+                App.racePage.getNextLink().should('not.be.disabled')
             } else {
-                expect(App.racePage.getNextLink().should('have.class', 'disabled_link'),
-                    'When there is no races next must be disabled');
+                App.racePage.getNextLink().should('have.class', 'disabled_link')
             }
         })
     })

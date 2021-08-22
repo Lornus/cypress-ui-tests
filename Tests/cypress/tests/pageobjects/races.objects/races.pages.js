@@ -42,7 +42,6 @@ class RacesPages extends BaseMethods {
 
     getSecondColumnHeader() {
         return cy.get(this.secondColumnHeader);
-        ;
     }
 
     getGoButton() {
@@ -65,11 +64,11 @@ class RacesPages extends BaseMethods {
         return cy.get(this.createButton);
     }
 
-    async writeRacesToJson() {
+     writeRacesToJson() {
         //call it only if there is new planets or
         //each time make json file empty
         const path = '../Tests/cypress/fixtures/races.fixtures/all.races.json'
-        cy.writeFile(path, {"races": await App.universalMethods.getTextFromLocator('td>a')},
+        cy.writeFile(path, {"races":  App.universalMethods.getTextFromLocator('td>a').then(txt => txt.toString())},
             {flag: 'a+'});
     }
 
