@@ -160,12 +160,6 @@ class PlanetsPages extends BaseMethods {
         return App.universalMethods.getTextFromLocator('[class="page"]').then(txt => txt.slice(2, 3));
     }
 
-    getAliasesOfPlanetsLinks(){
-        cy.get(this.planetFromTable)
-            .eq(0)
-            .invoke('text')
-            .as('first')
-    }
 
 }
 

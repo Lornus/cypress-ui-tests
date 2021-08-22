@@ -51,11 +51,6 @@ describe('Of main planets page test || "/planets" endpoint', function () {
 
         describe('Searching planets by name works correctly', function () {
 
-            before(function () {
-                App.planetsPage.getAliasesOfPlanetsLinks()
-
-            })
-
             it('Searching planets by random strings', function () {
                 const listOfPlanets = this.planets.planets_on_page
 
