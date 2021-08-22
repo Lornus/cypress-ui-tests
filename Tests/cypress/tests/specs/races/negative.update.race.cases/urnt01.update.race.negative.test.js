@@ -13,8 +13,7 @@ describe('Update race negative test || All required fields are empty', function 
     })
 
     it('After clicking "Update" field "Name" is focused with a warning', function () {
-        expect(cy.get('[name = "name"]')
-                .should('be.focused'),
-            'After clicking "Update" field "Name" must be focused with a warning');
+        cy.get('[name = "name"]')
+                .should('be.focused')
     })
 })

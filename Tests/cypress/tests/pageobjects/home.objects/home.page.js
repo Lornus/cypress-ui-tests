@@ -13,32 +13,12 @@ class HomePage extends BaseMethods {
         super.openUrls(this.mainHomePageLink);
     }
 
-    async getTextRowsFromMainTable() {
-        const text = await new Cypress.Promise((resolve) => {
-            cy.get(this.tableRows).invoke("text")
-                .then(txt => resolve(txt.toString()));
-        })
-        return text;
-    }
-
-    async checkFromTableExceptionDisplayed() {
-        const textFromException = await new Cypress.Promise((resolve) => {
-            cy.get(this.fromTableException)
-                .invoke('text')
-                .then(txt => resolve(txt.toString()));
-        })
-        return textFromException;
-    }
-
     getAboveImagesText() {
         return cy.get(this.textAboveImages);
-
-
     }
 
     checkHomeImagesVisible() {
         return cy.get(this.homeImages);
-
     }
 }
 

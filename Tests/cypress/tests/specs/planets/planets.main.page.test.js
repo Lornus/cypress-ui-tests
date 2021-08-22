@@ -82,7 +82,6 @@ describe('Of main planets page test || "/planets" endpoint', function () {
             it.only('Searching planets with immediately clicks "Find" ', function () {
                 App.planetsPage.getCurrentPage().then(txt => expect(txt).to.equal('1'))
 
-
             })
         })
 

@@ -12,14 +12,13 @@ describe('Updating page test', function () {
 
     describe('Required elements are displayed', function () {
 
-        it('On each page elements are displayed || update page',  function () {
-             App.universalMethods.DefaultElementsTested();
+        it('On each page elements are displayed || update page', function () {
+            App.universalMethods.DefaultElementsTested();
         })
 
         it('"Update planet" button is displayed correctly', function () {
-            expect(cy.get(App.planetsPage.updateButton)
-                    .should('be.enabled'),
-                '"Update button" must be enabled');
+            cy.get(App.planetsPage.updateButton)
+                .should('be.enabled')
         })
 
         describe('All input fields are displayed', function () {
@@ -28,17 +27,15 @@ describe('Updating page test', function () {
 
                 const typeString = [App.planetsPage.enterName, App.planetsPage.enterDiscoverer]
                 typeString.map(element => {
-                    expect(cy.get(element).should('be.visible')
+                    cy.get(element).should('be.visible')
                         .and('be.enabled')
                         .invoke("attr", 'type')
-                        .should('eq', 'text'), 'Field to enter name must be visible' +
-                        'enabled and have type name');
+                        .should('eq', 'text')
 
                 })
             })
 
             it('"Sats" field displayed correctly', function () {
-
                 App.planetHelper.checkMaxSatsProperty();
 
                 App.planetHelper.checkMinMassProperty();
@@ -46,7 +43,6 @@ describe('Updating page test', function () {
             })
 
             it('"Mass" field displayed correctly', function () {
-
                 App.planetHelper.checkMaxMassProperty();
 
                 App.planetHelper.checkMinMassProperty();

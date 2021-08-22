@@ -8,9 +8,7 @@ const RaceHelper = require('../../support/race.helper');
 const PlanetHelper = require('../../support/planet.helper');
 
 
-
-
-class Application{
+class Application {
     homePage = HomePage;
     userPage = UserPage;
     planetsPage = PlanetsPage;
@@ -21,4 +19,5 @@ class Application{
     planetHelper = PlanetHelper
 
 }
+
 export const App = new Application();

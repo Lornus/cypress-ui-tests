@@ -7,14 +7,13 @@ describe('Adding planet to user page test', function () {
             .click();
     })
 
-    it("On each page elements displayed ||Page with users planets",  function () {
-         App.universalMethods.DefaultElementsTested();
+    it("On each page elements displayed ||Page with users planets", function () {
+        App.universalMethods.DefaultElementsTested();
     })
 
     it('Table with planets displayed', function () {
-        expect(cy.get('tbody')
-                .should('be.visible')
-            , 'Table with planets must displayed');
+        cy.get('tbody')
+            .should('be.visible')
     })
 
     it('Add planet button displayed', function () {

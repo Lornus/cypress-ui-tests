@@ -17,18 +17,11 @@ describe('Creation race page test', function () {
     })
 
     it('Photo uploader displayed and enabled', function (){
-
-        expect(App.universalMethods.getFileUploader()
-            .should('be.visible')
-            .and('be.enabled'),
-            'Photo uploader must be displayed and be enabled');
+        App.universalMethods.elementVisibleAndEnabled('.photo')
     })
 
     it('Create button displayed and enabled', function (){
+        App.universalMethods.elementVisibleAndEnabled(App.racePage.createButton)
 
-        expect(App.racePage.getCreateButton()
-                .should('be.visible')
-                .and('be.enabled'),
-            'Create button must be displayed and be enabled');
     })
 })

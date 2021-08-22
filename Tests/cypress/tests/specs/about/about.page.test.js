@@ -8,12 +8,11 @@ describe('About page test', function () {
     })
 
     it('Main title "About" displayed', function () {
-        expect(cy.get(App.aboutPage.mainTitle)
-                .should('be.visible'),
-            'Main title must be displayed');
+        cy.get(App.aboutPage.mainTitle)
+            .should('be.visible')
     })
 
-    it('Main text matched with requirements',  function () {
+    it('Main text matched with requirements', function () {
         App.universalMethods.checkTextFromLocator('p',
             'About: You can use our site for searching, adding and deleting planets. Site was developed by loser.')
     })

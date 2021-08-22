@@ -2,10 +2,6 @@ const randomString = require("randomstring");
 
 class UniversalMethods {
 
-
-
-    //universal methods
-
     RandomData = {
         planetName: randomString.generate({length: 6, charset: 'ABCdefgjklmnte'}),
         planetDiscoverer: randomString.generate({length: 6, charset: 'ABCdefgjklmnte'}),
@@ -30,10 +26,9 @@ class UniversalMethods {
     }
 
     checkLogoDisplayed() {
-        const checked = cy.get('.logo')
+        return cy.get('.logo')
             .invoke('attr', 'alt')
-        if (!checked) cy.log("Logo isn't displayed")
-        return checked
+
     }
 
     DefaultElementsTested() {
@@ -50,8 +45,7 @@ class UniversalMethods {
                 expect(txt).to.equal('🔞🔞Planets🔞🔞',
                     'Footer test must be: "🔞🔞Planets🔞🔞"'))
 
-        expect(this.checkLogoDisplayed().should('contain', 'logo'), 'Alt of logo ' +
-            'must be "logo"')
+        this.checkLogoDisplayed().should('contain', 'logo')
 
     }
 
@@ -60,9 +54,8 @@ class UniversalMethods {
             if (Boolean(expect(cy.get('pagination > a:nth-of-type(3)')
                 .should('not.be.disabled')))) {
                 cy.get('pagination > a:nth-of-type(3)').click()
-                expect(cy.get('tbody')
-                    .should('be.visible'), `On each page must be visible' +
-                    ' table with created ${entity}`)
+                cy.get('tbody')
+                    .should('be.visible')
             }
 
         }
@@ -92,12 +85,12 @@ class UniversalMethods {
     }
 
 
-   getTextFromLocator(locator) {
-        return new Cypress.Promise(function (resolve){
+    getTextFromLocator(locator) {
+        return new Cypress.Promise(function (resolve) {
             cy.get(locator)
                 .invoke('text')
                 .then(txt => {
-                   resolve(txt.toString())
+                    resolve(txt.toString())
                 })
         })
     }
@@ -107,10 +100,14 @@ class UniversalMethods {
     }
 
     elementVisibleAndEnabled(element) {
-        expect(cy.get(element)
-                .should('be.visible')
-                .and('be.enabled'),
-            `${element} must be visible and enabled`);
+        cy.get(element)
+            .should('be.visible')
+            .and('be.enabled')
+    }
+
+    checkFieldIsFocused(field) {
+        cy.get(`[name = "${field}"]`)
+            .should('be.focused')
     }
 }
 

@@ -69,7 +69,7 @@ describe('Users page test', function () {
 
         })
 
-        it('All each page element are displayed || users page', function () {
+        it('All each page element are displayed || main users page', function () {
             App.universalMethods.DefaultElementsTested();
         })
     })

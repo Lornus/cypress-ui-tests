@@ -9,28 +9,19 @@ describe('HomePage test', function () {
             App.universalMethods.checkTextFromLocator(App.homePage.tableRows, '  Home   Users   Planets   About ')
 
             App.universalMethods.checkTextFromLocator(App.homePage.fromTableException, ' Races ')
-
         })
 
-
         it('Home page images displayed', function () {
-            expect(App.homePage.checkHomeImagesVisible().should('be.visible'));
-
+            App.homePage.checkHomeImagesVisible().should('be.visible')
         })
 
         it('Text above images displayed', function () {
-
-            expect(App.homePage.getAboveImagesText().should('contain', 'See amazing views of ' +
-                'planets on our site for free!',
-            ), 'Text above images must be: ' +
-                '"See amazing views of planets on our site for free!"');
-
+            App.homePage.getAboveImagesText().should('contain', 'See amazing views of ' +
+                'planets on our site for free!')
         })
 
         it('All each page element are displayed || main page', function () {
             App.universalMethods.DefaultElementsTested();
         })
-
     })
-
 })
