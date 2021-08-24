@@ -16,8 +16,7 @@ describe('Update race negative test || Enter name and strength', function () {
     })
 
     it('After clicking "Update" field "Intellect" is focused with a warning', function () {
-        expect(cy.get('[name = "intellect"]')
-                .should('be.focused'),
-            'After clicking "Update" field "Intellect" must be focused with a warning');
+        App.universalMethods.checkFieldIsFocused('intellect');
+
     })
 })

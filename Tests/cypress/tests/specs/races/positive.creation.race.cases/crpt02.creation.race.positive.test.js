@@ -1,6 +1,6 @@
 const filePath = 'media/test.page.png';
 
-describe('Creation race positive test || Creation race with all required data filled correctly (name, strength, intellect, dexterity) and with jpg/png file', function () {
+describe('Creation race positive test || Creation race with all required data filled correctly and with jpg/png file', function () {
     before(function () {
         App.racePage.openUrls();
         App.racePage.getCreateButton().click();
@@ -16,7 +16,11 @@ describe('Creation race positive test || Creation race with all required data fi
         App.racePage.getSearchPlaceHolder().type(App.universalMethods.RandomData.raceName);
         App.racePage.getFindButton().click();
 
-        expect(await (await App.universalMethods.getTextFromLocator('td>a'))
-            .includes(App.universalMethods.RandomData.raceName));
+
+        App.universalMethods.getTextFromLocator('td>a')
+            .then(createdRaceName => {
+                expect(createdRaceName)
+                    .to.be.equal(App.universalMethods.RandomData.raceName);
+            })
     })
 })

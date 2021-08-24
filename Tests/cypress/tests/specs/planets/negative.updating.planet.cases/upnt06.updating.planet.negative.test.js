@@ -1,7 +1,7 @@
 describe('Update planet`s required fields negative test || "Sat" amount is negative ', function () {
     before('Click on test planet for updating', function () {
         App.planetsPage.openUrls()
-        cy.get(App.planetsPage.planetFromTable)
+        cy.get(App.planetsPage.planetsFromTable)
             .eq(1)
             .click();
 
@@ -11,7 +11,6 @@ describe('Update planet`s required fields negative test || "Sat" amount is negat
     })
 
     it('Click on "Update planet" button', function () {
-
         App.planetsPage.clearAllPlanetsRequiredFields();
         App.planetsPage.getEnterNameField().type(App.universalMethods.RandomData.planetName);
         App.planetsPage.getEnterDiscovererField().type(App.universalMethods.RandomData.planetDiscoverer);
@@ -22,8 +21,8 @@ describe('Update planet`s required fields negative test || "Sat" amount is negat
         cy.get(App.planetsPage.updateButton).click();
     })
 
-    it('After clicked on "Create" "Sat" field is focused with warning', function () {
-        expect(App.planetsPage.getEnterSatsField().should('be.focused'),
-            '"Sat" field must be focused');
+    it('After clicked on "Create" "Sats" field is focused with warning', function () {
+        App.universalMethods.checkFieldIsFocused('sat');
+
     })
 })

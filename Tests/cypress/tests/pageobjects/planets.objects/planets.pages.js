@@ -6,7 +6,7 @@ class PlanetsPages extends BaseMethods {
     mainText = 'body>h1';
     searchPlaceHolder = '[type="text"]';
     findButton = '.find';
-    planetFromTable = 'td>a';
+    planetsFromTable = 'td>a';
     noPlanets = 'tr>td';
     table = 'tbody';
     searchFor = 'div >p + p';
@@ -130,8 +130,7 @@ class PlanetsPages extends BaseMethods {
         cy.get('.planet_images').invoke('attr', 'alt').should('eq',
             '*Planet picture')
 
-        cy.get('.planet_images').and('be.visible')
-
+        cy.get('.planet_images').should('be.visible')
 
         cy.get('.add>p:nth-child(1)').should('contain', `Planet: ${name}`)
 

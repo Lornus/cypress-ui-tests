@@ -1,7 +1,7 @@
 describe('Update planet`s required fields negative test || "Discoverer" field is empty', function () {
     before('Click on test planet for updating', function () {
         App.planetsPage.openUrls()
-        cy.get(App.planetsPage.planetFromTable)
+        cy.get(App.planetsPage.planetsFromTable)
             .eq(1)
             .click();
 
@@ -10,7 +10,6 @@ describe('Update planet`s required fields negative test || "Discoverer" field is
     })
 
     it('Click on "Update planet" button', function () {
-
         App.planetsPage.clearAllPlanetsRequiredFields()
         App.planetsPage.getEnterNameField().type(App.universalMethods.RandomData.planetName);
         App.planetsPage.getEnterMassField(2).type(2);
@@ -20,7 +19,6 @@ describe('Update planet`s required fields negative test || "Discoverer" field is
     })
 
     it('After clicked on "Create" "Discoverer" field is focused with warning', function () {
-        expect(App.planetsPage.getEnterDiscovererField().should('be.focused'),
-            'Field "Discoverer" must be focused');
+        App.universalMethods.checkFieldIsFocused('discoverer');
     })
 })

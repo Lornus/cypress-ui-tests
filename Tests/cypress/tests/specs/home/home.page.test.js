@@ -12,12 +12,11 @@ describe('HomePage test', function () {
         })
 
         it('Home page images displayed', function () {
-            App.homePage.checkHomeImagesVisible().should('be.visible')
+            App.homePage.getHomeImages().should('be.visible')
         })
 
         it('Text above images displayed', function () {
-            App.homePage.getAboveImagesText().should('contain', 'See amazing views of ' +
-                'planets on our site for free!')
+          App.universalMethods.checkTextFromLocator(App.homePage.textAboveImages, 'See amazing views of planets on our site for free!')
         })
 
         it('All each page element are displayed || main page', function () {

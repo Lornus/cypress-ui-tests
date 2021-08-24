@@ -4,6 +4,7 @@ describe('Update race page test', function () {
         App.racePage.getAllLinksInTable()
             .eq(1)
             .click();
+
         cy.get('[value="Update race"]').click();
     })
 
@@ -12,12 +13,12 @@ describe('Update race page test', function () {
         const fields = ["name", "strength", "intellect", "dexterity"];
         fields.map(field => {
             it(`All required fields displayed || ${field}`, function () {
-                App.universalMethods.elementVisibleAndEnabled(`[name = ${field}]`);
+                App.universalMethods.elementVisibleAndEnabledBySelector(`[name = ${field}]`);
             })
         })
 
         it('Update button displayed', function () {
-            App.universalMethods.elementVisibleAndEnabled('.create');
+            App.universalMethods.elementVisibleAndEnabledBySelector('.create');
         })
     })
 })

@@ -11,24 +11,20 @@ describe('Deleting race from planet page test', function () {
 
     describe('All required elements displayed', function () {
 
-        it("On each page elements displayed || deleting race from planet page", async function () {
-            await App.universalMethods.DefaultElementsTested();
+        it("On each page elements displayed || deleting race from planet page",  function () {
+             App.universalMethods.DefaultElementsTested();
         })
 
         it('Explanation text above race placeholder displayed', function () {
-            expect(cy.get('p')
-                    .should('have.text',
-                        'Choose race which you want to delete'),
-                'Explanation text above race placeholder must be displayed' +
-                'with text "Choose race which you want to delete"');
+           App.universalMethods.checkTextFromLocator('p', 'Choose race which you want to delete')
         })
 
         it('Placeholder with races displayed and enabled', function () {
-            App.universalMethods.elementVisibleAndEnabled('[placeholder="Choose race"]');
+            App.universalMethods.elementVisibleAndEnabledBySelector('[placeholder="Choose race"]');
         })
 
         it('Delete button displayed and enabled', function () {
-            App.universalMethods.elementVisibleAndEnabled('[class="create"]');
+            App.universalMethods.elementVisibleAndEnabledBySelector('[class="create"]');
         })
     })
 

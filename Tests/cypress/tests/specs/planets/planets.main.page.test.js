@@ -64,7 +64,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
 
 
                 if (listOfPlanets.includes(tString)) {
-                    cy.get(App.planetsPage.planetFromTable)
+                    cy.get(App.planetsPage.planetsFromTable)
                         .then(($els) => {
                             const elementsArray = Cypress.$.makeArray($els).map((el) => el.innerText);
                             const stringElements = elementsArray.join('');
@@ -79,7 +79,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                 }
             })
 
-            it.only('Searching planets with immediately clicks "Find" ', function () {
+            it('Searching planets with immediately clicks "Find" ', function () {
                 App.planetsPage.getCurrentPage().then(txt => expect(txt).to.equal('1'))
 
             })
@@ -89,7 +89,7 @@ describe('Of main planets page test || "/planets" endpoint', function () {
 
             App.universalMethods.typeSearchValue(tString);
 
-            cy.get(App.planetsPage.searchFor).should('contain', tString)
+            App.universalMethods.checkTextFromLocator(App.planetsPage.searchFor, tString)
         })
 
         describe('Pagination items works correctly', function () {
@@ -145,6 +145,11 @@ describe('Of main planets page test || "/planets" endpoint', function () {
                     App.planetsPage.getGoButton().click();
                 })
 
+                afterEach(function () {
+                    App.planetsPage.getPageNumber().clear();
+                    App.planetsPage.getGoButton().click();
+                })
+
                 it('"Previous" link displayed', function () {
 
                     App.planetsPage.getPreviousLink().should('be.visible')
@@ -157,46 +162,31 @@ describe('Of main planets page test || "/planets" endpoint', function () {
 
 
                 it('Go to next planetPages via "Next>>" if they are', function () {
-
-                    if (!(Boolean(cy.get(App.planetsPage.nextLinkPage)
-                        .should('not.be.disabled')))) {
-                        App.planetsPage.getNextLink()
-                            .should('be.disabled')
-                    }
-
-                    for (let i = 0; i < App.planetsPage.planetPages.length - 1; i++) {
-                        if (Boolean(App.planetsPage.getNextLink()
-                            .should('not.be.disabled'))) {
+                    App.planetsPage.planetPages.then(arr => {
+                        for (let i = 0; i < arr.length - 1; i++) {
                             App.planetsPage.getNextLink().click();
-
-                            cy.get(App.planetsPage.table)
-                                .should('be.visible')
-
-                            App.planetsPage.getPreviousLink().should('not.be.disabled')
-
-                            App.planetsPage.getCreateButton().should('be.enabled')
                         }
-                    }
-
-                    App.planetsPage.getNextLink()
-                        .should('not.be.enabled')
-
-                    cy.url().should('contain', `page=${App.planetsPage.planetPages[App.planetsPage.planetPages.length - 1]}`)
+                        cy.url().should('contain', `page=${arr.length}`)
+                    })
                 })
 
                 it('Go to previous planetPages via "<<Previous" if they are', function () {
 
-                    for (let i = 0; i < App.planetsPage.planetPages.length - 1; i++) {
-                        if (Boolean(App.planetsPage.getPreviousLink()
-                            .should('not.be.disabled'))) {
-                            App.planetsPage.getPreviousLink().click();
-                        }
-                    }
+                    App.planetsPage.getNextLink().click();
 
-                    App.planetsPage.getPreviousLink()
-                        .should('not.be.enabled')
-
-                    cy.url().should('contain', `page=${App.planetsPage.planetPages[App.planetsPage.planetPages.indexOf(1)]}`)
+                    cy.get('.pagination a')
+                        .eq(0)
+                        .then(pagination => {
+                            if (pagination.hasClass('disabled_link')) {
+                                cy.log('DISABLED')
+                            } else {
+                                App.planetsPage.getPreviousLink().click()
+                                    .then(() => {
+                                        App.planetsPage.getCurrentPage()
+                                            .then(txt => cy.url().should('contain', `page=${txt}`))
+                                    })
+                            }
+                        })
                 })
             })
         })

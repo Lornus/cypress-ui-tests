@@ -17,11 +17,11 @@ describe('Adding planet to user page test', function () {
     })
 
     it('Add planet button displayed', function () {
-        App.universalMethods.elementVisibleAndEnabled('[value="Add planet"]');
+        App.universalMethods.elementVisibleAndEnabledBySelector('[value="Add planet"]');
     })
 
     it('Delete planet button displayed', function () {
-        App.universalMethods.elementVisibleAndEnabled('[value="Delete planet"]');
+        App.universalMethods.elementVisibleAndEnabledBySelector('[value="Delete planet"]');
     })
 
 })

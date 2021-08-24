@@ -13,9 +13,7 @@ describe('Creation race negative test || Creation race without entering a dexter
     })
 
     it('“Dexterity” field is focused with a warning about requiring a value of the “Dexterity” field', function () {
-        expect(cy.get('[name = "dexterity"]')
-                .should('be.focused'),
-            '“Dexterity” field must be focused with a ' +
-            'warning about requiring a value of the “Dexterity” field');
+        App.universalMethods.checkFieldIsFocused('dexterity');
+
     })
 })

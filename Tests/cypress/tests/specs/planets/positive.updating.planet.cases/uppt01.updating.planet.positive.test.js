@@ -1,7 +1,7 @@
 describe('Update planet`s required fields positive test || All required data entered correctly', function () {
     before('Click on test planet for updating', function () {
         App.planetsPage.openUrls()
-        cy.get(App.planetsPage.planetFromTable)
+        cy.get(App.planetsPage.planetsFromTable)
             .eq(1)
             .click();
 

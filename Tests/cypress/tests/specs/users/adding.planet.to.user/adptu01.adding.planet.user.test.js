@@ -1,6 +1,7 @@
 describe('Adding planet to user', function () {
     before(function () {
         App.planetsPage.openUrls();
+
         cy.get('td>a')
             .eq(0)
             .invoke('text')
@@ -14,7 +15,6 @@ describe('Adding planet to user', function () {
         cy.get('[value="Add planet"]')
             .click();
     })
-
 
     it('Add planet to a user', function () {
 

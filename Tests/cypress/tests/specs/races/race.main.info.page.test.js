@@ -11,8 +11,7 @@ describe('Main information race page', function () {
     })
 
     it('Main title is "Races"', function () {
-        cy.get('.race_ h1')
-            .should('have.text', 'Race')
+        App.universalMethods.checkTextFromLocator('.race_ > h1', 'Race');
     })
 
     it('Race photo displayed', function () {
@@ -21,6 +20,7 @@ describe('Main information race page', function () {
             .and('have.attr', 'alt')
             .should('eq', '*Race picture')
     })
+
     //array of elements on page
     const childs = [1, 2, 3, 4];
     childs.map(child => {
@@ -31,10 +31,10 @@ describe('Main information race page', function () {
     })
 
     const buttons = [0, 1, 2];
-    buttons.map(button => {
-        it(`${button}'st button displayed and enabled`, function () {
+    buttons.map(buttonIndex => {
+        it(` A button with ${buttonIndex} index displayed and enabled`, function () {
             cy.get('form>input')
-                .eq(button)
+                .eq(buttonIndex)
                 .should('be.visible')
                 .and('be.enabled')
         })

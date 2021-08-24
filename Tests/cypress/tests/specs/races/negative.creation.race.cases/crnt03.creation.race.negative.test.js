@@ -12,9 +12,6 @@ describe('Creation race negative test || Creation race with entering only name a
     })
 
     it('“Intellect” field is focused with a warning about requiring a value of the “Intellect” field', function () {
-        expect(cy.get('[name = "intellect"]')
-                .should('be.focused'),
-            '“Intellect” field must be focused with a ' +
-            'warning about requiring a value of the “Intellect” field');
+        App.universalMethods.checkFieldIsFocused('intellect');
     })
 })

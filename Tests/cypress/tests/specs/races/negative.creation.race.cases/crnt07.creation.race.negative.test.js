@@ -14,9 +14,7 @@ describe('Creation race negative test || Creation race with entering the negativ
     })
 
     it('“Dexterity” field is focused with a warning about incorrect value of “Dexterity” field', function () {
-        expect(cy.get('[name = "dexterity"]')
-                .should('be.focused'),
-            '“Dexterity” field must be focused with a' +
-            'warning about incorrect value of “Dexterity” field');
+        App.universalMethods.checkFieldIsFocused('dexterity');
+
     })
 })

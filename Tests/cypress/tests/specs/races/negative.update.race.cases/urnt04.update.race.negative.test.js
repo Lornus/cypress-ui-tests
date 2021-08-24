@@ -17,8 +17,6 @@ describe('Update race negative test || Strength is negative', function () {
         cy.get('.create').click();
     })
     it('After clicking "Update" field "Strength" is focused with a warning', function () {
-        expect(cy.get('[name = "strength"]')
-                .should('be.focused'),
-            'After clicking "Update" field "Strength" must be focused with a warning');
+        App.universalMethods.checkFieldIsFocused('strength');
     })
 })

@@ -1,7 +1,7 @@
 describe('Updating page test', function () {
     before('Click on test planet for updating', function () {
         App.planetsPage.openUrls()
-        cy.get(App.planetsPage.planetFromTable)
+        cy.get(App.planetsPage.planetsFromTable)
             .eq(1)
             .click();
 
@@ -24,7 +24,6 @@ describe('Updating page test', function () {
         describe('All input fields are displayed', function () {
 
             it('Name and Discoverer fields displayed correctly', function () {
-
                 const typeString = [App.planetsPage.enterName, App.planetsPage.enterDiscoverer]
                 typeString.map(element => {
                     cy.get(element).should('be.visible')
@@ -46,7 +45,6 @@ describe('Updating page test', function () {
                 App.planetHelper.checkMaxMassProperty();
 
                 App.planetHelper.checkMinMassProperty();
-
             })
         })
     })

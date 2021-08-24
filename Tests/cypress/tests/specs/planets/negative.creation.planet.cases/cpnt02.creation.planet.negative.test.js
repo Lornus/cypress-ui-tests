@@ -12,7 +12,6 @@ describe('Create planet negative test || name non empty', function () {
     })
 
     it('After clicked on "Create" field "Discoverer" must be focused with warning', function () {
-        expect(App.planetsPage.getEnterDiscovererField().should('be.focused'),
-            'Field "Discoverer" must be focused');
+       App.universalMethods.checkFieldIsFocused('discoverer');
     })
 })

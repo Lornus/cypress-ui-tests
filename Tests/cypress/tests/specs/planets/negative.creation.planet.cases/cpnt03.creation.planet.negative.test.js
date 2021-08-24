@@ -14,7 +14,6 @@ describe('Create planet negative test || name and discoverer entered', function 
     })
 
     it('After clicked on "Create" field "Sats" is focused with warning', function () {
-        expect(App.planetsPage.getEnterSatsField().should('be.focused'),
-            'Field "Sats" must be focused');
+        App.universalMethods.checkFieldIsFocused('sat');
     })
 })

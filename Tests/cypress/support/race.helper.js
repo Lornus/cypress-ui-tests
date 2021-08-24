@@ -15,7 +15,6 @@ class RaceHelper {
 
         cy.get('.race_images').and('be.visible')
 
-
         cy.get('.add>p:nth-child(1)').should('contain', `Race ${name}`)
 
         cy.get('.add>p:nth-child(2)').should('contain', `Strength ${strength}`)

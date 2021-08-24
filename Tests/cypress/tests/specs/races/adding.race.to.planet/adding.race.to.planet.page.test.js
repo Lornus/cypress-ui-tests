@@ -11,24 +11,21 @@ describe('Adding race to planet page test', function () {
 
     describe('All required elements displayed', function () {
 
-        it("On each page elements displayed || adding race from planet page", async function () {
-            await App.universalMethods.DefaultElementsTested();
+        it("On each page elements displayed || adding race from planet page", function () {
+            App.universalMethods.DefaultElementsTested();
         })
 
         it('Explanation text above race placeholder displayed', function () {
-            expect(cy.get('p')
-                    .should('have.text',
-                        'Choose race(s) which you want to add'),
-                'Explanation text above race placeholder must be displayed' +
-                'with text "Choose race(s) which you want to add"');
+            App.universalMethods.checkTextFromLocator('p', 'Choose race(s) which you want to add')
+
         })
 
         it('Placeholder with races displayed and enabled', function () {
-            App.universalMethods.elementVisibleAndEnabled('[placeholder="Choose race"]');
+            App.universalMethods.elementVisibleAndEnabledBySelector('[placeholder="Choose race"]');
         })
 
         it('Add race button displayed and enabled', function () {
-            App.universalMethods.elementVisibleAndEnabled('[value="Add race"]');
+            App.universalMethods.elementVisibleAndEnabledBySelector('[value="Add race"]');
         })
     })
 

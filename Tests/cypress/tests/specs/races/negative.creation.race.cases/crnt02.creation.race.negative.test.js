@@ -11,9 +11,7 @@ describe('Creation race negative test || Creation race with entering the only na
     })
 
     it('“Strength” field is focused with a warning about requiring a value of the “Strength” field', function () {
-        expect(cy.get('[name = "strength"]')
-                .should('be.focused'),
-            '“Strength” field must be focused with a ' +
-            'warning about requiring a value of the “Strength” field');
+        App.universalMethods.checkFieldIsFocused('strength');
+
     })
 })

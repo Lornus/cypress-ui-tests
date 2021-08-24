@@ -1,14 +1,13 @@
 describe('Of creation page tests || "/new?" endpoint', function () {
     before(function () {
         App.planetsPage.openUrls();
+
         App.planetsPage.getCreateButton().click();
     })
     describe('All elements  displayed', function () {
 
         it('All each page element are displayed || on planets creation page',  function () {
-
              App.universalMethods.DefaultElementsTested();
-
         })
 
         it('Text type fields displayed correctly', function () {
@@ -43,9 +42,8 @@ describe('Of creation page tests || "/new?" endpoint', function () {
             const typeString = [App.planetsPage.enterName, App.planetsPage.enterDiscoverer,
                 App.planetsPage.enterSats, App.planetsPage.enterSats];
             typeString.map(element => {
-                expect(cy.get(element)
-                        .should('have.attr', 'required'),
-                    'All input fields must be required');
+                cy.get(element)
+                        .should('have.attr', 'required');
             })
         })
 

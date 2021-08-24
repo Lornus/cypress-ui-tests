@@ -17,9 +17,6 @@ describe('Create planet negative test || all required data entered + json file u
     })
 
     it('Button "Choose file" is focused with warning', function () {
-
-        expect(App.universalMethods.getFileUploader().focused(), 'After clicking on "Add planet"' +
-            'with non valid file format must be warning and "Choose file" must be focused');
-
+        App.universalMethods.getFileUploader().should('be.focused')
     })
 })

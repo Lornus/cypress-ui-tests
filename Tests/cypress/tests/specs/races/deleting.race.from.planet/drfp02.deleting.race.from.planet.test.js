@@ -15,8 +15,6 @@ describe("Deleting race from planet || planet doesn't hase races to delete", fun
     })
 
     it('After deleting "There no races" remains', function () {
-        expect(cy.get('td').should('have.text',
-            'There no races'),
-            'After deleting "There no races" must remain');
+       App.universalMethods.checkTextFromLocator('td', 'There no races')
     })
 })

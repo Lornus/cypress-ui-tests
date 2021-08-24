@@ -1,6 +1,6 @@
 const filePath = 'media/upload.test.file.json';
 
-describe('Creation race positive test || Creation race with entering ' +
+describe('Creation race negative test || Creation race with entering ' +
     'all required data correctly and file with the non-valid format to upload ', function () {
     before(function () {
         App.racePage.openUrls();
@@ -14,9 +14,7 @@ describe('Creation race positive test || Creation race with entering ' +
     })
 
     it('Displayed warning about wrong file format and "Choose file" is focused', function () {
-        expect(App.universalMethods.getFileUploader()
-                .should('be.focused'),
-            'Must be warning about wrong file format ' +
-            'and "Choose file" must be focused');
+    App.universalMethods.getFileUploader().should('be.focused')
+
     })
 })

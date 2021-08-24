@@ -28,11 +28,9 @@ class UniversalMethods {
     checkLogoDisplayed() {
         return cy.get('.logo')
             .invoke('attr', 'alt')
-
     }
 
     DefaultElementsTested() {
-
         cy.get('div>img+h1')
             .invoke('text')
             .then(txt =>
@@ -49,7 +47,7 @@ class UniversalMethods {
 
     }
 
-    clickingOnNextLink(pages, entity) {
+    clickingOnNextLink(pages) {
         for (let i = 0; i < pages - 1; i++) {
             if (Boolean(expect(cy.get('pagination > a:nth-of-type(3)')
                 .should('not.be.disabled')))) {
@@ -96,12 +94,17 @@ class UniversalMethods {
     }
 
     getFileUploader() {
-        return cy.get('.photo')
+         return cy.get('.photo')
     }
 
-    elementVisibleAndEnabled(element) {
+    elementVisibleAndEnabledBySelector(element) {
         cy.get(element)
             .should('be.visible')
+            .and('be.enabled')
+    }
+
+    elementVisibleAndEnabledByCyGet(element){
+        element.should('be.visible')
             .and('be.enabled')
     }
 

@@ -16,7 +16,6 @@ describe('Create planet negative test || mass field getting zero input', functio
     })
 
     it('After clicked on "Create" field "Mass" is focused with warning', function () {
-        expect(App.planetsPage.getEnterMassField().should('be.focused'),
-            'Field "Mass" must be focused as it`s warning here ');
+        App.universalMethods.checkFieldIsFocused('mass');
     })
 })

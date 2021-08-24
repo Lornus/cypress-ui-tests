@@ -18,8 +18,7 @@ describe('Update race negative test || Dexterity is negative', function () {
     })
 
     it('After clicking "Update" field "Dexterity" is focused with a warning', function () {
-        expect(cy.get('[name = "dexterity"]')
-                .should('be.focused'),
-            'After clicking "Update" field "Dexterity" must be focused with a warning');
+        App.universalMethods.checkFieldIsFocused('dexterity');
+
     })
 })

@@ -1,5 +1,5 @@
 describe('Creation race positive test || \t\n' +
-    'Creation race with all required data filled correctly (name, strength, intellect, dexterity)', function () {
+    'Creation race with all required data filled correctly', function () {
     before(function () {
         App.racePage.openUrls();
         App.racePage.getCreateButton().click();
@@ -12,12 +12,15 @@ describe('Creation race positive test || \t\n' +
 
     })
 
-    it('After creation race can be found by name', async function () {
+    it('After creation race can be found by name', function () {
         App.racePage.openUrls();
         App.racePage.getSearchPlaceHolder().type(App.universalMethods.RandomData.raceName);
         App.racePage.getFindButton().click();
 
-        expect(await (await App.universalMethods.getTextFromLocator('td>a'))
-            .includes(App.universalMethods.RandomData.raceName));
+        App.universalMethods.getTextFromLocator('td>a')
+            .then(createdRaceName => {
+                expect(createdRaceName)
+                    .to.be.equal(App.universalMethods.RandomData.raceName);
+            })
     })
 })

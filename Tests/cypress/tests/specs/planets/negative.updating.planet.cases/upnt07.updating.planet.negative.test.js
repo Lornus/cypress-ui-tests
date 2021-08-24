@@ -1,7 +1,7 @@
 describe('Update planet`s required fields negative test || "Mass" amount is negative ', function () {
     before('Click on test planet for updating', function () {
         App.planetsPage.openUrls()
-        cy.get(App.planetsPage.planetFromTable)
+        cy.get(App.planetsPage.planetsFromTable)
             .eq(1)
             .click();
 
@@ -11,7 +11,6 @@ describe('Update planet`s required fields negative test || "Mass" amount is nega
     })
 
     it('Click on "Update planet" button', function () {
-
         App.planetsPage.clearAllPlanetsRequiredFields();
         App.planetsPage.getEnterNameField().type(App.universalMethods.RandomData.planetName);
         App.planetsPage.getEnterDiscovererField().type(App.universalMethods.RandomData.planetDiscoverer);
@@ -22,7 +21,6 @@ describe('Update planet`s required fields negative test || "Mass" amount is nega
     })
 
     it('After clicked on "Create" "Mass" field is focused with warning', function () {
-        expect(App.planetsPage.getEnterMassField().should('be.focused'),
-            '"Mass" field must be focused');
+        App.universalMethods.checkFieldIsFocused('mass');
     })
 })

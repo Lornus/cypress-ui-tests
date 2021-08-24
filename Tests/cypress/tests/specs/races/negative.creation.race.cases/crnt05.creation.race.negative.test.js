@@ -16,9 +16,7 @@ describe('Creation race negative test || \t\n' +
     })
 
     it('“Strength” field is focused with a warning about incorrect value of “Strength” field', function () {
-        expect(cy.get('[name = "strength"]')
-                .should('be.focused'),
-            '“Strength” field must be focused with a' +
-            ' warning about incorrect value of “Strength” field');
+        App.universalMethods.checkFieldIsFocused('strength');
+
     })
 })

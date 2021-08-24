@@ -17,7 +17,7 @@ class HomePage extends BaseMethods {
         return cy.get(this.textAboveImages);
     }
 
-    checkHomeImagesVisible() {
+    getHomeImages() {
         return cy.get(this.homeImages);
     }
 }

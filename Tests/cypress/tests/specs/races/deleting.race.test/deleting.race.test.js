@@ -6,10 +6,10 @@ describe('Deleting race test', function () {
             .click();
     })
 
-    let text = null;
-    it('Getting name of deleting race', async function () {
-        text = await App.universalMethods.getTextFromLocator(':nth-child(1) > em');
-
+    it('Getting name of deleting race', function () {
+        cy.get(':nth-child(1) > em')
+            .invoke('text')
+            .as('nameOfRace')
     })
 
     it('Click on delete button', function () {
@@ -19,10 +19,9 @@ describe('Deleting race test', function () {
     it("After deleting race doesn't exist", function () {
         App.racePage.openUrls();
 
-        App.racePage.getSearchPlaceHolder().type(text);
+        App.racePage.getSearchPlaceHolder().type(this.nameOfRace);
         App.racePage.getFindButton().click();
 
-        expect(cy.get(App.racePage.noRaces)
-            .should('have.text', 'There no races'));
+        App.universalMethods.checkTextFromLocator(App.racePage.noRaces, 'There no races')
     })
 })

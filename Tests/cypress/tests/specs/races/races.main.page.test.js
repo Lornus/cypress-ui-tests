@@ -5,36 +5,31 @@ describe('Races main page test', function () {
     })
     describe('Main elements displayed', function () {
 
-
         it("On each page elements displayed || main race page", function () {
             App.universalMethods.DefaultElementsTested();
         })
 
         it('Main title is "Races"', function () {
             App.racePage.getMainText()
-                    .should('have.text', 'Races')
+                .should('have.text', 'Races')
         })
 
         it('Search input displayed and enabled', function () {
             App.racePage.getSearchPlaceHolder()
-                    .should('be.visible')
-                    .and('be.enabled')
+                .should('be.visible')
+                .and('be.enabled')
         })
 
         it('Find button displayed and enabled', function () {
-            App.racePage.getFindButton()
-                    .should('be.visible')
-                    .and('be.enabled')
+            App.universalMethods.elementVisibleAndEnabledByCyGet(App.racePage.getFindButton())
         })
 
         it('First column header is "NAME"', function () {
-            App.racePage.getFirstColumnHeader()
-                    .should('have.text', 'NAME')
+            App.universalMethods.checkTextFromLocator('tr>th:nth-child(1)', 'NAME')
         })
 
         it('Second column header is "Strength"', function () {
-            App.racePage.getSecondColumnHeader()
-                    .should('have.text', 'Strength')
+            App.universalMethods.checkTextFromLocator('tr>th:nth-child(2)', 'Strength')
         })
 
         it('Any name of race is clickable || At least one race existing', function () {
@@ -44,31 +39,26 @@ describe('Races main page test', function () {
         })
 
         it('"Go button" displayed and enabled', function () {
-            App.racePage.getGoButton()
-                    .should('be.visible')
-                    .and('be.enabled')
+            App.universalMethods.elementVisibleAndEnabledByCyGet(App.racePage.getGoButton())
+
         })
 
         it('Navigation page trigger displayed and enabled', function () {
-            App.racePage.getPageNumber()
-                    .should('be.visible')
-                    .and('be.enabled')
+            App.universalMethods.elementVisibleAndEnabledByCyGet(App.racePage.getPageNumber())
         })
 
         it('Previous link displayed', function () {
             App.racePage.getPreviousLink()
-                    .should('be.visible')
+                .should('be.visible')
         })
 
         it('Next link displayed', function () {
             App.racePage.getNextLink()
-                    .should('be.visible')
+                .should('be.visible')
         })
 
         it('"Create race" button displayed and enabled', function () {
-            App.racePage.getCreateButton()
-                    .should('be.visible')
-                    .and('be.enabled')
+            App.universalMethods.elementVisibleAndEnabledByCyGet(App.racePage.getCreateButton())
         })
     })
 
@@ -82,7 +72,6 @@ describe('Races main page test', function () {
             cy.url().should('contain', `?name=&page=`)
         })
 
-
         it(`"Go to" with trigger navigates to name=&page=`, function () {
             App.racePage.racePages.then(arr => {
                 arr.map(trigger => {
@@ -93,10 +82,8 @@ describe('Races main page test', function () {
             })
         })
 
-        it('Navigation to a previous page on the main page', async function () {
-
+        it('Navigation to a previous page on the main page',  function () {
             App.racePage.getPreviousLink().should('have.class', 'disabled_link');
-
         })
 
         it('Navigation to a next page', function () {
