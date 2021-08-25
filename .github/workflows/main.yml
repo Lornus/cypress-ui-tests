@@ -10,16 +10,17 @@ on:
   pull_request:
     branches: [ main ]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  # Allows you to run this workflow manually from the Actions tab  
+
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
     # The type of runner that the job will run on
  cypress-run:
-    runs-on: ubuntu-latest
-    steps:
+   runs-on: ubuntu-latest
+   steps:
       - name: Checkout
         uses: actions/checkout@v2
       # Install NPM dependencies, cache them correctly
@@ -28,5 +29,6 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           build: npm install 
+          working-directory: ./Tests
           runTests: npm run cl:tests
 
