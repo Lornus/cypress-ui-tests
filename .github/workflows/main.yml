@@ -26,6 +26,8 @@ jobs:
      - name: Cypress run
        uses: cypress-io/github-action@v2
        with: 
+        run: ls -la
+        working-directory: ${{ github.workspace }}/tmp
         build: npm install && npm ci
         start: npm run cl:test
 
