@@ -33,7 +33,7 @@ jobs:
           runTests: npm run cl:tests
       - name: Report
         if: always()
-        run: cp -r $(pwd)/allure-report/history/ $(pwd)/allure-results/history || true && npm run report 
+        run: npm run report 
       - uses: actions/upload-artifact@v1
         if: always()
         with: 
@@ -43,6 +43,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.1.0
         if: always()
         with: 
+          ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}} 
           branch: main
           folder: allure-report
           target_folder: docs
