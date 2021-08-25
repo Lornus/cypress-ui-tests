@@ -31,22 +31,7 @@ jobs:
           build: npm install 
           working-directory: ./Tests
           runTests: npm run cl:tests
-      - name: Report
-        if: always()
-        run: npm run report 
-      - uses: actions/upload-artifact@v1
-        if: always()
-        with: 
-          name: allure-report
-          path: ./Tests/allure-report
-      - name: Deploy report
-        uses: JamesIves/github-pages-deploy-action@3.1.0
-        if: always()
-        with: 
-          ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}} 
-          branch: main
-          folder: allure-report
-          target_folder: docs
+          
      
 
 
