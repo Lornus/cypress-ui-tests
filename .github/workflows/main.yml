@@ -29,5 +29,5 @@ jobs:
         with:
           build: npm run build
           start: npm start
-          run: npm run cl:tests
+          runTests: npm run cl:tests
 
