@@ -1,9 +1,8 @@
 describe('Adding race to planet page test', function () {
     before(function () {
         App.planetsPage.openUrls()
-        App.racePage.getAllLinksInTable()
-            .eq(0)
-            .click();
+        App.universalMethods.clickingOnLinkFromTable(0)
+
 
         cy.get('[value="Add race"]')
             .click();

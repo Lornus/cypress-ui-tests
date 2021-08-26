@@ -2,9 +2,7 @@ describe('Adding planet to user page test', function () {
     before(function () {
         App.userPage.openUrls();
 
-        cy.get('td>a')
-            .eq(0)
-            .click();
+        App.universalMethods.clickingOnLinkFromTable(0)
     })
 
     it("On each page elements displayed ||Page with users planets", function () {

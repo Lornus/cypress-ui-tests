@@ -1,9 +1,8 @@
 describe('Main information race page', function () {
     before(function () {
         App.racePage.openUrls();
-        App.racePage.getAllLinksInTable()
-            .eq(0)
-            .click();
+        App.universalMethods.clickingOnLinkFromTable(0)
+
     })
 
     it("On each page elements displayed || main information race page", function () {

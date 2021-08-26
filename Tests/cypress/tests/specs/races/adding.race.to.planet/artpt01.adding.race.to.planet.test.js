@@ -8,9 +8,7 @@ describe('Adding race to a planet', function () {
 
         App.planetsPage.openUrls();
 
-        App.racePage.getAllLinksInTable()
-            .eq(1)
-            .click();
+        App.universalMethods.clickingOnLinkFromTable(0)
 
         cy.get('[value="Add race"]')
             .click();

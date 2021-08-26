@@ -14,11 +14,10 @@ describe('Of creation page tests || "/new?" endpoint', function () {
 
             const typeString = [App.planetsPage.enterName, App.planetsPage.enterDiscoverer]
             typeString.map(element => {
-                expect(cy.get(element).should('be.visible')
+                cy.get(element).should('be.visible')
                     .and('be.enabled')
                     .invoke("attr", 'type')
-                    .should('eq', 'text'), 'Field to enter name must be visible' +
-                    'enabled and have type name');
+                    .should('eq', 'text')
             })
         })
 

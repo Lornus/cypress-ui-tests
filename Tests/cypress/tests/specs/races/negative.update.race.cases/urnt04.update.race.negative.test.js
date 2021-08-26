@@ -1,9 +1,7 @@
 describe('Update race negative test || Strength is negative', function () {
     before(function () {
         App.racePage.openUrls();
-        App.racePage.getAllLinksInTable()
-            .eq(1)
-            .click();
+        App.universalMethods.clickingOnLinkFromTable(1)
 
         cy.get('[value="Update race"]').click();
     })

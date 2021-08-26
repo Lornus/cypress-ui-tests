@@ -1,9 +1,7 @@
 describe('Deleting race test', function () {
     before(function () {
         App.racePage.openUrls();
-        App.racePage.getAllLinksInTable()
-            .eq(0)
-            .click();
+        App.universalMethods.clickingOnLinkFromTable(0)
     })
 
     it('Getting name of deleting race', function () {

@@ -9,9 +9,8 @@ describe('Update planet positive test || Left all data originally', function () 
     })
 
     it('Name in the table planet === name on the update page', function () {
-        cy.get(App.planetsPage.planetsFromTable)
-            .eq(0)
-            .click()
+        App.universalMethods.clickingOnLinkFromTable(1)
+
 
         cy.get(App.planetsPage.updateButton).click()
         cy.get(App.planetsPage.updateButton).click()

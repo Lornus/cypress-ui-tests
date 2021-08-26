@@ -8,9 +8,7 @@ describe('Adding planet to user', function () {
             .as('existingPlanet')
 
         App.userPage.openUrls();
-        cy.get('td>a')
-            .eq(0)
-            .click();
+        App.universalMethods.clickingOnLinkFromTable(0)
 
         cy.get('[value="Add planet"]')
             .click();

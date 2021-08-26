@@ -1,9 +1,7 @@
 describe('Deleting race from planet page test', function () {
     before(function () {
         App.planetsPage.openUrls();
-        App.racePage.getAllLinksInTable()
-            .eq(0)
-            .click();
+        App.universalMethods.clickingOnLinkFromTable(0)
 
         cy.get('[value="Delete race"]')
             .click();
