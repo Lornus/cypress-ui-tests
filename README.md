@@ -10,8 +10,21 @@ Site was written by me
 5. chai
 
 # For running test 
-1. clone repo 
-2. npm install 
-3. npm run cy-studio:test for launching test in cypress studio
-4. npm run cl:test for launching test in terminal 
-5. npm run report for seeing allure report
+```
+git clone 
+```
+```
+npm install 
+```
+### Launching test in cypress studio
+```
+npm run cy-studio:test 
+```
+### Launching test in terminal 
+```
+npm run cl:test for 
+```
+### Allure report
+```
+npm run report
+```
