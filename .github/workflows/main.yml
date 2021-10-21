@@ -30,7 +30,9 @@ jobs:
         with:
           working-directory: ./Tests
           runTests: npm run cl:tests
-          genReport: npm run allure generate allure-results --clean -o allure-report
+      - run: | 
+                npm run allure generate allure-results --clean -o allure-report
+                
       - uses: actions/upload-artifact@master
         with:
           name: allure-results
