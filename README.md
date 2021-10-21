@@ -22,7 +22,7 @@ npm run cy-studio:test
 ```
 ### Launching test in terminal 
 ```
-npm run cl:test for 
+npm run cl:test  
 ```
 ### Allure report
 ```
