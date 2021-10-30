@@ -1,5 +1,4 @@
-# cypress-ui-tests
-This is repo for cv as a proof of my experience 
+# cypress ui and functional tests
 # Site under testing: https://npplanets.herokuapp.com/     
 Site was written by me
 # Test stack: 
