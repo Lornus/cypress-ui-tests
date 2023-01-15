@@ -10,7 +10,7 @@ stages{
     steps{
         sh "echo 'Init'"
         script{
-            sh "cd Tests"
+            sh "pwd && ls -la"
              sh "npm i"
     }
     }
