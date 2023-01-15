@@ -11,7 +11,7 @@ stages{
         sh "echo 'Init'"
         script{
             sh "pwd && ls -la"
-             sh "npm i"
+             sh "cd Tests/ && npm i"
     }
     }
   }
