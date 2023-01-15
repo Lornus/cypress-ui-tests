@@ -16,7 +16,7 @@ stages{
         sh "echo 'run tests headless'"
       script{
             pwd && ls
-            npm run cl:test 
+            sh "npm run cl:test"
       }
       }
     }
