@@ -6,7 +6,7 @@ stages{
     steps{
         sh "echo 'Init'"
         script{
-            cd Tests
+            sh "cd Tests"
              npm i 
     }
     }
