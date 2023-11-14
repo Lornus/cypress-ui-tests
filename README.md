@@ -1,6 +1,6 @@
 # cypress ui and functional tests
-'''Site under testing: https://npplanets.herokuapp.com/     
-Site was written by me'''
+’’’Site under testing: https://npplanets.herokuapp.com/     
+Site was written by me’’’
 # Test stack: 
 1. node: v14.17.0
 2. Cypress package version: 7.6.0
